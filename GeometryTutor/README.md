@@ -9,7 +9,7 @@
   认识基本几何体、棱柱的表面积与体积、棱锥的体积、截面问题入门、
   展开图、空间点线面的位置关系、平行与垂直的判定、三视图、
   空间向量及运算、向量法求角与证位置关系；课程进度自动记录（断点续学）
-- **题库**：50 道经典中高考风格选择题（难度 1-3 梯度），答后给分步讲解
+- **题库**：100 道经典中高考风格选择题（8 大章节分类 + 难度 1-3 梯度 + 状态筛选），答后给分步讲解
 - **错题本**：答错自动收录，可重答订正/移除；带作答数与正确率统计
 - **实验室**：10 种几何体自由观察（旋转/缩放），遮挡棱自动虚线，
   顶点标注、自动旋转、水平截面滑杆、展开图动画（正方体/棱柱/棱锥/圆柱/圆锥/
@@ -43,10 +43,10 @@ src/engine/audio.js    语音播放（ogg→m4a 兜底、变速、iOS 解锁、W
 src/engine/progress.js 学习进度/作答记录/错题本（localStorage，隐私模式降级）
 src/ui/app.js          课程/题库/错题本/实验室四个视图
 src/data/              课程内容与题库（数据驱动，schema 见文件头注释；scene 支持 unfold 字段）
-tools/tts_lines.py     讲解台词表（108 条）
+tools/tts_lines.py     讲解台词表（269 条，统一语气指令 + loudnorm 响度归一 -16 LUFS）
 tools/gen_voice.py     TTS 生成脚本（复用 SoundGame 的 Qwen3-TTS 环境，幂等增量）
 tools/check_audio_refs.mjs  音频引用↔台词表↔文件三方核对
-assets/audio/voice/    生成的讲解语音（.ogg + .m4a 双格式，216 个文件）
+assets/audio/voice/    生成的讲解语音（.ogg + .m4a 双格式，538 个文件）
 docs/audio-manifest.md 音频资产清单
 ```
 

@@ -104,3 +104,19 @@ test('quiz 的 correct 在 options 界内，且 explain 至少 2 步', () => {
     assert.ok(quiz.explain.length >= 2, `${quiz.id}: explain 至少 2 步`);
   }
 });
+
+const CATEGORIES = ['结构', '表面积体积', '展开图', '三视图', '截面', '位置关系', '平行垂直', '空间向量'];
+
+test('每题 category 存在且在 8 个合法值内；每类至少 5 题；总题数 ≥ 100', () => {
+  assert.ok(QUIZZES.length >= 100, `总题数 ${QUIZZES.length} < 100`);
+  const count = new Map(CATEGORIES.map((c) => [c, 0]));
+  for (const quiz of QUIZZES) {
+    assert.ok(quiz.category, `${quiz.id}: 缺 category`);
+    assert.ok(CATEGORIES.includes(quiz.category),
+      `${quiz.id}: category "${quiz.category}" 不在合法值集合内`);
+    count.set(quiz.category, count.get(quiz.category) + 1);
+  }
+  for (const [cat, n] of count) {
+    assert.ok(n >= 5, `category "${cat}" 只有 ${n} 题（< 5）`);
+  }
+});

@@ -2,8 +2,11 @@
 """GeometryTutor 讲解语音生成管线（复用 SoundGame Qwen3-TTS 环境）。
 
 台词表：tools/tts_lines.py 的 LINES = [(id, instruct, 文本), ...]
+  注意：生成时统一使用 UNIFORM_INSTRUCT 覆盖逐条 instruct（语气/音色一致性，
+  台词表里的 instruct 字段保留给内容方参考，不参与生成）。
 输出：  assets/audio/voice/<id>.ogg (libvorbis q3, 44.1kHz)
         assets/audio/voice/<id>.m4a (AAC 128k)
+  转码前先做 ffmpeg loudnorm 两遍法响度归一（I=-16 LUFS, TP=-1.5, LRA=11）。
 staging wav 在 tools/tts_wav/<id>.wav（24kHz），已存在的有效 wav 会跳过，可断点续跑。
 
 用法（GPU 串行，遵守 SoundGame 的 flock 约定）：
@@ -30,6 +33,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STAGING = os.path.join(ROOT, "tools", "tts_wav")
 OUT_DIR = os.path.join(ROOT, "assets", "audio", "voice")
 SPEAKER = "Serena"  # 温暖柔和的年轻女声，贴合数学老师人设
+# 统一 instruct：全量重录后逐条 instruct 差异是音色/韵律漂移的来源之一，强制覆盖。
+UNIFORM_INSTRUCT = "耐心的中学数学老师，语气温和清晰，语速平稳"
+# loudnorm 两遍法目标（转码环节，见 convert）
+LOUDNESS = {"I": "-16", "TP": "-1.5", "LRA": "11"}
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tts_lines import LINES  # noqa: E402
@@ -52,14 +59,15 @@ def generate(only):
     print("model loaded", flush=True)
 
     # 展开成 (fid, chunk_idx, n_chunks, text, instruct)，跳过已完成
+    # instruct 统一覆盖为 UNIFORM_INSTRUCT（忽略台词表逐条差异，避免韵律漂移）
     items = []
-    for fid, instruct, text in lines:
+    for fid, _instruct, text in lines:
         path = os.path.join(STAGING, fid + ".wav")
         if valid_wav(path):
             continue
         chunks = split_text(text)
         for ci, ctext in enumerate(chunks):
-            items.append((fid, ci, len(chunks), ctext, instruct))
+            items.append((fid, ci, len(chunks), ctext, UNIFORM_INSTRUCT))
     if not items:
         print("nothing to do", flush=True)
         return
@@ -98,6 +106,22 @@ def generate(only):
         print(f"[ok] {fid}  {dur:.2f}s chunks={n_chunks}", flush=True)
 
 
+def _loudnorm_filter(src):
+    """第一遍测量，返回带 measured_* 参数的 loudnorm 滤镜串（linear 模式）。"""
+    import json
+    import re
+    target = f"loudnorm=I={LOUDNESS['I']}:TP={LOUDNESS['TP']}:LRA={LOUDNESS['LRA']}"
+    p = subprocess.run(["ffmpeg", "-v", "info", "-i", src,
+                        "-af", target + ":print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True, check=True)
+    m = re.search(r"\{\s*\"input_i\".*?\}", p.stderr, re.S)
+    meas = json.loads(m.group(0))
+    return (target +
+            f":measured_I={meas['input_i']}:measured_TP={meas['input_tp']}"
+            f":measured_LRA={meas['input_lra']}:measured_thresh={meas['input_thresh']}"
+            f":offset={meas['target_offset']}:linear=true")
+
+
 def convert(only):
     os.makedirs(OUT_DIR, exist_ok=True)
     total = 0
@@ -109,12 +133,13 @@ def convert(only):
             print(f"[convert] WARN missing {fid}.wav")
             continue
         base = os.path.join(OUT_DIR, fid)
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src,
+        af = _loudnorm_filter(src)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-af", af,
                         "-ar", "44100", "-c:a", "libvorbis", "-q:a", "3", base + ".ogg"], check=True)
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src,
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-af", af,
                         "-ar", "44100", "-c:a", "aac", "-b:a", "128k", base + ".m4a"], check=True)
         total += 1
-    print(f"converted {total} ids (ogg+m4a each)")
+    print(f"converted {total} ids (loudnorm I={LOUDNESS['I']} LUFS, ogg+m4a each)")
 
 
 def main():

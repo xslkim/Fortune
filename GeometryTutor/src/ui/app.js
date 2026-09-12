@@ -59,15 +59,20 @@ function makeSolid(id) {
   return item ? item.make() : CATALOG.get('cube').make();
 }
 
-// 学习统计条：已完成课程数 / 已答题数 / 正确率
-function statsBar() {
-  const done = LESSONS.filter((l) => progress.isLessonDone(l.id, l.steps.length)).length;
-  const at = progress.allAttempts();
+// 学习统计条：已完成课程数 / 已答题数 / 正确率；传入 quizIds(Set) 时跟随筛选范围统计
+function statsBar(quizIds = null) {
+  const all = progress.allAttempts();
+  const at = quizIds ? all.filter((a) => quizIds.has(a.id)) : all;
   const answered = new Set(at.map((a) => a.id)).size;
   const okCount = at.filter((a) => a.ok).length;
   const acc = at.length ? Math.round((okCount / at.length) * 100) : 0;
   const bar = el('div', 'stats stat-bar');
-  bar.appendChild(el('div', 'stat', `<strong>${done}</strong><span>已完成课程</span>`));
+  if (quizIds) {
+    bar.appendChild(el('div', 'stat', `<strong>${quizIds.size}</strong><span>本组题目</span>`));
+  } else {
+    const done = LESSONS.filter((l) => progress.isLessonDone(l.id, l.steps.length)).length;
+    bar.appendChild(el('div', 'stat', `<strong>${done}</strong><span>已完成课程</span>`));
+  }
   bar.appendChild(el('div', 'stat', `<strong>${answered}</strong><span>已答题数</span>`));
   bar.appendChild(el('div', 'stat', `<strong>${acc}%</strong><span>正确率</span>`));
   return bar;
@@ -215,37 +220,73 @@ function renderLessonStep() {
   state._replay = () => playStepAudio(step);
   applyScene(step.scene);
   playStepAudio(step);
-  panel.scrollTop = 0;
 }
 
 // ---------- 题库 ----------
 
 const DIFF_NAMES = { 1: '简单', 2: '中等', 3: '困难' };
 const QUIZ_STATUS = { none: ['未做', 'st-none'], ok: ['已对', 'st-ok'], wrong: ['错过', 'st-wrong'] };
-let quizFilter = 0; // 0 = 全部
+// 题目分类（与内容方约定的 8 类；缺 category 或取值未知时归入'综合'，不报错）
+const CATEGORIES = ['结构', '表面积体积', '展开图', '三视图', '截面', '位置关系', '平行垂直', '空间向量'];
+const FALLBACK_CAT = '综合';
+
+function quizCategory(q) {
+  return CATEGORIES.includes(q.category) ? q.category : FALLBACK_CAT;
+}
+
+// 筛选状态持久化（gt_filter）：难度 + 分类，刷新后保留；读写全程 try/catch
+function loadFilter() {
+  try {
+    const v = JSON.parse(localStorage.getItem('gt_filter') || 'null');
+    return v && typeof v === 'object' ? v : {};
+  } catch {
+    return {};
+  }
+}
+function saveFilter() {
+  try {
+    localStorage.setItem('gt_filter', JSON.stringify({ difficulty: quizFilter, category: quizCategoryFilter }));
+  } catch { /* 存储不可用时静默 */ }
+}
+const _savedFilter = loadFilter();
+let quizFilter = Number.isInteger(_savedFilter.difficulty) ? _savedFilter.difficulty : 0; // 0 = 全部
+let quizCategoryFilter = typeof _savedFilter.category === 'string' ? _savedFilter.category : ''; // '' = 全部
 
 function renderQuizList() {
   audio.stopAll();
   state.quiz = null;
   panel.innerHTML = '';
   panel.appendChild(el('h2', 'panel-title', '题库'));
-  panel.appendChild(statsBar());
+
+  // 分类筛选行：全部 + 8 类（存在未分类题目时追加'综合'），横滑可滚动
+  const cats = [...CATEGORIES];
+  if (QUIZZES.some((q) => quizCategory(q) === FALLBACK_CAT)) cats.push(FALLBACK_CAT);
+  if (quizCategoryFilter && !cats.includes(quizCategoryFilter)) quizCategoryFilter = ''; // 数据变更后容错
+  const catBar = el('div', 'filter-bar cat-bar');  for (const [v, name] of [['', '全部'], ...cats.map((c) => [c, c])]) {
+    const b = el('button', `btn btn-small chip${quizCategoryFilter === v ? ' btn-primary' : ''}`, name);
+    b.addEventListener('click', () => { quizCategoryFilter = v; saveFilter(); renderQuizList(); });
+    catBar.appendChild(b);
+  }
+  panel.appendChild(catBar);
 
   const filters = el('div', 'filter-bar');
   for (const [v, name] of [[0, '全部'], [1, '简单'], [2, '中等'], [3, '困难']]) {
     const b = el('button', `btn btn-small${quizFilter === v ? ' btn-primary' : ''}`, name);
-    b.addEventListener('click', () => { quizFilter = v; renderQuizList(); });
+    b.addEventListener('click', () => { quizFilter = v; saveFilter(); renderQuizList(); });
     filters.appendChild(b);
   }
   panel.appendChild(filters);
 
   const list = el('div', 'card-list');
-  const items = QUIZZES.filter((q) => !quizFilter || q.difficulty === quizFilter);
-  if (!items.length) list.appendChild(el('p', 'muted', '该难度暂无题目'));
+  const items = QUIZZES.filter((q) => (!quizFilter || q.difficulty === quizFilter)
+    && (!quizCategoryFilter || quizCategory(q) === quizCategoryFilter));
+  panel.appendChild(statsBar(new Set(items.map((q) => q.id)))); // 统计条跟随筛选范围
+  if (!items.length) list.appendChild(el('p', 'muted', '该筛选条件下暂无题目'));
   for (const q of items) {
     const card = el('button', 'card');
     card.appendChild(el('strong', null, q.title));
     const badges = el('span', 'badge-row');
+    badges.appendChild(el('span', 'badge cat', quizCategory(q)));
     badges.appendChild(el('span', `badge diff-${q.difficulty}`, DIFF_NAMES[q.difficulty] || ''));
     const [stName, stCls] = QUIZ_STATUS[progress.quizStatus(q.id)];
     badges.appendChild(el('span', `badge ${stCls}`, stName));
@@ -293,7 +334,6 @@ function renderQuizQuestion() {
 
   state._replay = () => audio.speak(stripHtml(q.question));
   applyScene(q.scene);
-  panel.scrollTop = 0;
 }
 
 function pickOption(idx) {
@@ -344,7 +384,6 @@ function renderExplainStep() {
   state._replay = () => playStepAudio(step);
   applyScene(step.scene);
   playStepAudio(step);
-  panel.scrollTop = 0;
 }
 
 // ---------- 错题本 ----------
