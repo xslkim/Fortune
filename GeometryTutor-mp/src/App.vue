@@ -1,6 +1,14 @@
 <script>
 export default {
-  onLaunch() {},
+  onLaunch() {
+    // 开启分享菜单：微信含朋友圈（shareTimeline），抖音为站内分享
+    // #ifdef MP-WEIXIN
+    uni.showShareMenu({ menus: ['shareAppMessage', 'shareTimeline'] });
+    // #endif
+    // #ifdef MP-TOUTIAO
+    try { uni.showShareMenu({}); } catch { /* 旧版抖音无此 API 时忽略 */ }
+    // #endif
+  },
 };
 </script>
 

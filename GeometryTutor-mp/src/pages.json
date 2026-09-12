@@ -53,17 +53,39 @@
     "navigationBarTitleText": "立体几何课堂",
     "navigationBarBackgroundColor": "#1f3a5f",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#f6f8fb"
+    "backgroundColor": "#f6f8fb",
+    "enableShareAppMessage": true,
+    "enableShareTimeline": true
   },
   "tabBar": {
-    "color": "#7a8aa0",
+    "color": "#7a8699",
     "selectedColor": "#1f3a5f",
     "backgroundColor": "#ffffff",
     "list": [
-      { "pagePath": "pages/lessons/index", "text": "课程" },
-      { "pagePath": "pages/quiz/index", "text": "题库" },
-      { "pagePath": "pages/wrong/index", "text": "错题本" },
-      { "pagePath": "pages/lab/index", "text": "实验室" }
+      {
+        "pagePath": "pages/lessons/index",
+        "text": "课程",
+        "iconPath": "static/tabbar/lessons.png",
+        "selectedIconPath": "static/tabbar/lessons-active.png"
+      },
+      {
+        "pagePath": "pages/quiz/index",
+        "text": "题库",
+        "iconPath": "static/tabbar/quiz.png",
+        "selectedIconPath": "static/tabbar/quiz-active.png"
+      },
+      {
+        "pagePath": "pages/wrong/index",
+        "text": "错题本",
+        "iconPath": "static/tabbar/wrong.png",
+        "selectedIconPath": "static/tabbar/wrong-active.png"
+      },
+      {
+        "pagePath": "pages/lab/index",
+        "text": "实验室",
+        "iconPath": "static/tabbar/lab.png",
+        "selectedIconPath": "static/tabbar/lab-active.png"
+      }
     ]
   }
 }

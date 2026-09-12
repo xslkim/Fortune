@@ -24,10 +24,14 @@ src/engine/   storage.js（uni.setStorageSync，gt_ 前缀）/ progress.js / aud
 src/viewer/   mpviewer.js（GeoViewerMP：web 版 viewer.js 的小程序移植，无 DOM）
 src/components/ GeoCanvas.vue（webgl canvas + 顶点标注层 + 触控）/ ThreeView.vue（canvas 2d 三视图）/ AudioBar.vue
 src/pages/    lessons(index+player) / quiz(index+detail) / wrong / lab，前四者为 tabBar
+src/static/tabbar/  tabBar 图标（tools/gen-icons.sh 生成：python3 + PIL，81×81 透明 PNG）
 src/config.js AUDIO_BASE 等常量（CDN 占位，上线前替换）
 tools/sync-core.sh  同步脚本；tools/tts_lines.py 为测试核对用的台词表副本
 tests/        从 web 版同步的 node --test 用例
 ```
+
+分享：全部页面实现 onShareAppMessage（播放器/答题页/实验室带 path 参数直达内容）；
+微信端额外 onShareTimeline + showShareMenu 开朋友圈，抖音端条件编译排除。
 
 ## 约定
 

@@ -1,7 +1,8 @@
 // 答题页：题目 → 选项判分（记录作答、答错进错题本）→ 分步讲解（3D 高亮联动 + 语音）。
+// 顶点标注已接入（与实验室同一实现，节流已就位）。
 <template>
   <view class="page">
-    <geo-canvas :height="glHeight" :show-labels="false" @ready="onViewerReady" />
+    <geo-canvas :height="glHeight" :show-labels="true" @ready="onViewerReady" />
     <view class="panel" v-if="quiz">
       <view class="player-head">
         <view class="player-title">
@@ -94,6 +95,17 @@ export default {
   onUnload() {
     audio.stopAll();
   },
+  onShareAppMessage() {
+    return {
+      title: `几何题：${this.quiz ? this.quiz.title : '立体几何题库'}`,
+      path: `pages/quiz/detail?id=${this.quiz ? this.quiz.id : ''}&from=quizzes`,
+    };
+  },
+  // #ifdef MP-WEIXIN
+  onShareTimeline() {
+    return { title: `几何题：${this.quiz ? this.quiz.title : '立体几何题库'}` };
+  },
+  // #endif
   methods: {
     onViewerReady(viewer) {
       this.viewer = viewer;

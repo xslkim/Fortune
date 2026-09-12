@@ -89,6 +89,14 @@ export default {
   onShow() {
     this.refresh();
   },
+  onShareAppMessage() {
+    return { title: '立体几何题库：100 道经典中高考风格几何题', path: 'pages/quiz/index' };
+  },
+  // #ifdef MP-WEIXIN
+  onShareTimeline() {
+    return { title: '立体几何题库：100 道经典中高考风格几何题' };
+  },
+  // #endif
   methods: {
     pickCategory(v) {
       this.category = v;

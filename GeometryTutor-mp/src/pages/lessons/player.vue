@@ -1,8 +1,9 @@
 // 课程播放器：上方 3D（GeoCanvas），下方分步讲解（文字 + 语音 + 步骤与 3D 高亮联动）。
-// 顶点标注 v1 在课程页关闭（同层渲染兼容性 TODO，实验室页已开）。
+// 顶点标注已接入（与实验室同一实现，标注层更新已节流）；旧基础库同层渲染失效时
+// 标注可能被画布盖住，属已知兼容风险（见 SMOKE.md）。
 <template>
   <view class="page">
-    <geo-canvas :height="glHeight" :show-labels="false" @ready="onViewerReady" />
+    <geo-canvas :height="glHeight" :show-labels="true" @ready="onViewerReady" />
     <view class="panel">
       <view class="player-head">
         <view class="player-title">
@@ -61,6 +62,17 @@ export default {
   onUnload() {
     audio.stopAll();
   },
+  onShareAppMessage() {
+    return {
+      title: `立体几何课堂：${this.lesson ? this.lesson.title : '3D 互动学几何'}`,
+      path: `pages/lessons/player?id=${this.lesson ? this.lesson.id : ''}&step=${this.stepIndex}`,
+    };
+  },
+  // #ifdef MP-WEIXIN
+  onShareTimeline() {
+    return { title: `立体几何课堂：${this.lesson ? this.lesson.title : '3D 互动学几何'}` };
+  },
+  // #endif
   methods: {
     onViewerReady(viewer) {
       this.viewer = viewer;

@@ -51,6 +51,14 @@ export default {
   onShow() {
     this.refresh();
   },
+  onShareAppMessage() {
+    return { title: '立体几何错题本：答错自动收录，订正追踪', path: 'pages/wrong/index' };
+  },
+  // #ifdef MP-WEIXIN
+  onShareTimeline() {
+    return { title: '立体几何错题本：答错自动收录，订正追踪' };
+  },
+  // #endif
   methods: {
     refresh() {
       const at = progress.allAttempts();

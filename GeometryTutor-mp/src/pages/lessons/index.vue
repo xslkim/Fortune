@@ -42,6 +42,14 @@ export default {
   onShow() {
     this.refresh();
   },
+  onShareAppMessage() {
+    return { title: '立体几何课堂：3D 互动学几何', path: 'pages/lessons/index' };
+  },
+  // #ifdef MP-WEIXIN
+  onShareTimeline() {
+    return { title: '立体几何课堂：3D 互动学几何' };
+  },
+  // #endif
   methods: {
     refresh() {
       this.lessonCards = LESSONS.map((l) => {

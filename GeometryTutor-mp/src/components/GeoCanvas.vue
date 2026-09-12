@@ -1,8 +1,8 @@
 // 3D 画布组件：WebGL canvas + 顶点文字标注层（绝对定位 view，同层渲染）+ 触控转发。
 // 用法：<geo-canvas ref="gl" :show-labels="true" @ready="onViewerReady" />
 // ready 回调拿到 GeoViewerMP 实例后调用其 setSolid/highlight/setSpin/setSection/setUnfold 等 API。
-// 注意：webgl canvas 是原生组件，标注层依赖同层渲染；旧基础库若同层渲染失效，
-// 标注会被 canvas 盖住（v1 仅在实验室开启标注，课程页允许缺失，见 SMOKE.md TODO）。
+// 标注层已做 ~50ms 节流以降低 setData 压力。注意：webgl canvas 是原生组件，
+// 标注层依赖同层渲染；旧基础库若同层渲染失效，标注会被 canvas 盖住（见 SMOKE.md）。
 <template>
   <view class="geo-wrap" :style="{ height: height + 'px' }">
     <canvas

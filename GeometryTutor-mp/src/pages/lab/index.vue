@@ -122,22 +122,39 @@ export default {
       return (this.maxY - this.minY).toFixed(2);
     },
   },
-  onLoad() {
+  onLoad(query = {}) {
     const sys = uni.getSystemInfoSync();
     const wh = sys.windowHeight || 640;
     this.glHeight = Math.round(wh * 0.45);
     this.panelMaxH = wh - this.glHeight - 60;
+    // 深链：?solid=<id> 直达指定几何体（对齐 web 版 ?view=lab&solid=xxx）
+    if (query.solid) {
+      const idx = CATALOG.findIndex((c) => c.id === query.solid);
+      this._initialSolidIndex = idx >= 0 ? idx : 0;
+    }
   },
   onShow() {
     audio.stopAll();
   },
+  onShareAppMessage() {
+    const solid = CATALOG[this.solidIndex];
+    return {
+      title: `几何实验室：${solid ? solid.name : '3D 几何体'} 旋转/展开/截面/三视图`,
+      path: `pages/lab/index?solid=${solid ? solid.id : 'cube'}`,
+    };
+  },
+  // #ifdef MP-WEIXIN
+  onShareTimeline() {
+    return { title: '几何实验室：3D 几何体 旋转/展开/截面/三视图' };
+  },
+  // #endif
   onUnload() {
     this._animToken = (this._animToken || 0) + 1;
   },
   methods: {
     onViewerReady(viewer) {
       this.viewer = viewer;
-      this.loadSolid(0);
+      this.loadSolid(this._initialSolidIndex || 0);
     },
     loadSolid(index) {
       this.solidIndex = index;

@@ -55,16 +55,27 @@
 
 ## 4. 已知差异 / TODO
 
-- **顶点标注依赖 canvas 同层渲染**（绝对定位 view 盖在 webgl canvas 上）。旧版微信基础库
-  同层渲染失效时标注会被画布盖住：v1 只在实验室开启标注，课程/答题页允许标注缺失。
-  若真机发现标签不显示，先把实验室「顶点标注」关掉验证其余功能，再考虑把标签层换成
-  `cover-view`（cover-view 只支持有限样式）或 canvas 内绘字方案。
+- **顶点标注依赖 canvas 同层渲染**（绝对定位 view 盖在 webgl canvas 上）。实验室、课程
+  播放器、答题页均已开启标注。旧版微信基础库同层渲染失效时标注会被画布盖住：若真机
+  发现标签不显示，先验证其余功能，再考虑把标签层换成 `cover-view`（只支持有限样式）
+  或 canvas 内绘字方案。
+- **tabBar 图标**：`src/static/tabbar/` 下 4 tab × 2 态 PNG，由 `tools/gen-icons.sh`
+  （python3 + PIL）生成，改设计后重跑该脚本即可。
 - **BytePlatform 触控**：未使用 three-platformize 的 `dispatchTouchEvent`/TouchEventHandler
   （社区报告抖音端控制器有 bug），触控由页面 `bindtouch*` 直接喂给 viewer 自实现的轨道逻辑。
   若抖音端出现触摸事件字段差异（如 `touches` 缺 `identifier`），在
   `src/viewer/mpviewer.js` 的 `_touchId/touchStart` 处打补丁即可。
-- **tabBar 无图标**（纯文字，双端均允许）；如需图标放 `src/static/` 并在 `src/pages.json` 配
-  `iconPath`/`selectedIconPath`。
-- 深链（web 版 `?view=lab&solid=cube&unfold=1&views=1`）小程序端未做等价物（小程序分享卡片
-  可带 path 参数，v2 再加）。
+- 深链：课程播放器（id+step）、答题页（id）、实验室（solid）均支持 path 参数直达；
+  web 版的 unfold/views 深链参数未做等价物（v2 再加）。
 - 语音 TTS 兜底（web 版 WebSpeech）小程序无等价 API，音频缺失时直接静默跳过。
+- 分享：全部页面已实现 onShareAppMessage；微信端额外开启朋友圈（onShareTimeline +
+  showShareMenu），抖音端无朋友圈概念，仅站内分享。冒烟时验证：课程/答题分享卡片带
+  具体标题，从分享卡片打开能经 path 参数直达对应课程步骤/题目/几何体。
+
+## 5. 分享冒烟
+
+1. 每个 tab 页右上角「···」→ 转发，卡片标题符合页面内容。
+2. 课程播放器转发后，从卡片打开应直达该课程当前步骤（path 带 id 和 step）。
+3. 答题页转发后，从卡片打开直达该题。
+4. 实验室转发后，从卡片打开直达当前几何体（path 带 solid 参数）。
+5. 微信端「···」菜单应出现「分享到朋友圈」（抖音端无此入口，属正常）。
