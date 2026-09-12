@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "path": "pages/lessons/index",
+      "style": {
+        "navigationBarTitleText": "课程",
+        "navigationBarBackgroundColor": "#1f3a5f",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/quiz/index",
+      "style": {
+        "navigationBarTitleText": "题库",
+        "navigationBarBackgroundColor": "#1f3a5f",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/wrong/index",
+      "style": {
+        "navigationBarTitleText": "错题本",
+        "navigationBarBackgroundColor": "#1f3a5f",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/lab/index",
+      "style": {
+        "navigationBarTitleText": "实验室",
+        "navigationBarBackgroundColor": "#1f3a5f",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/lessons/player",
+      "style": {
+        "navigationBarTitleText": "课程学习",
+        "navigationBarBackgroundColor": "#1f3a5f",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/quiz/detail",
+      "style": {
+        "navigationBarTitleText": "答题",
+        "navigationBarBackgroundColor": "#1f3a5f",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTitleText": "立体几何课堂",
+    "navigationBarBackgroundColor": "#1f3a5f",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f6f8fb"
+  },
+  "tabBar": {
+    "color": "#7a8aa0",
+    "selectedColor": "#1f3a5f",
+    "backgroundColor": "#ffffff",
+    "list": [
+      { "pagePath": "pages/lessons/index", "text": "课程" },
+      { "pagePath": "pages/quiz/index", "text": "题库" },
+      { "pagePath": "pages/wrong/index", "text": "错题本" },
+      { "pagePath": "pages/lab/index", "text": "实验室" }
+    ]
+  }
+}
