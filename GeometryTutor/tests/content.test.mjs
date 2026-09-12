@@ -120,3 +120,14 @@ test('每题 category 存在且在 8 个合法值内；每类至少 5 题；总�
     assert.ok(n >= 5, `category "${cat}" 只有 ${n} 题（< 5）`);
   }
 });
+
+test('challenge 若存在：lStars ∈ {1,2,3}，eHint 是不超过 50 字的字符串', () => {
+  for (const quiz of QUIZZES) {
+    if (quiz.challenge === undefined || quiz.challenge === null) continue;
+    const { lStars, eHint } = quiz.challenge;
+    assert.ok(Number.isInteger(lStars) && lStars >= 1 && lStars <= 3,
+      `${quiz.id}: lStars=${lStars} 应为 1-3 的整数`);
+    assert.equal(typeof eHint, 'string', `${quiz.id}: eHint 应为字符串`);
+    assert.ok(eHint.length <= 50, `${quiz.id}: eHint 超长（${eHint.length} 字）`);
+  }
+});

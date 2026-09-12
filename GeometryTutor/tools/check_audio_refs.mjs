@@ -1,13 +1,16 @@
-// 交叉核对：lessons.js/quizzes.js 引用的 audio id ↔ tts_lines.py 台词表 ↔ assets/audio/voice/ 文件
+// 交叉核对：lessons.js/quizzes.js/ui/beauty.js 引用的 audio id ↔ tts_lines.py 台词表 ↔ assets/audio/voice/ 文件
 // 用法：node tools/check_audio_refs.mjs
 import { readFileSync, readdirSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 
 const read = (p) => readFileSync(new URL(p, import.meta.url), 'utf8');
 
+// audio 取值有两种形态：'id' 单串（lessons/quizzes/beauty）与 ['id', ...] 数组（beauty 卡片）
 const refs = new Set();
-for (const f of ['../src/data/lessons.js', '../src/data/quizzes.js']) {
-  for (const m of read(f).matchAll(/audio:\s*'([^']+)'/g)) refs.add(m[1]);
+for (const f of ['../src/data/lessons.js', '../src/data/quizzes.js', '../src/ui/beauty.js']) {
+  for (const m of read(f).matchAll(/audio:\s*(\[[^\]]*\]|'[^']+')/g)) {
+    for (const q of m[1].matchAll(/'([^']+)'/g)) refs.add(q[1]);
+  }
 }
 
 const py = execSync(

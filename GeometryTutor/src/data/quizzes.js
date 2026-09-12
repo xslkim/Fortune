@@ -423,6 +423,7 @@ export const QUIZZES = [
   {
     id: 'q10',
     category: '表面积体积',
+    challenge: { lStars: 2, eHint: '不用设未知数，直接按 3:1 分配体积和' },
     title: '同底等高的柱与锥',
     solid: 'cylinder',
     difficulty: 3,
@@ -888,6 +889,7 @@ export const QUIZZES = [
   {
     id: 'q25',
     category: '位置关系',
+    challenge: { lStars: 2, eHint: '别逐条判断，先数「不异面」的：平行的加相交的，再做减法' },
     title: '与一条棱异面的棱有几条',
     solid: 'cube',
     difficulty: 3,
@@ -1024,6 +1026,7 @@ export const QUIZZES = [
   {
     id: 'q29',
     category: '表面积体积',
+    challenge: { lStars: 3, eHint: '试试把这个三棱锥补成正方体' },
     title: '三棱锥的外接球',
     solid: 'pyramid3',
     difficulty: 3,
@@ -1401,6 +1404,7 @@ export const QUIZZES = [
   {
     id: 'q41',
     category: '空间向量',
+    challenge: { lStars: 2, eHint: '不用建系，先找 AC₁ 在底面上的投影' },
     title: '向量法求线面角',
     solid: 'cube',
     difficulty: 3,
@@ -1439,6 +1443,7 @@ export const QUIZZES = [
   {
     id: 'q42',
     category: '空间向量',
+    challenge: { lStars: 2, eHint: '交线是 AB，在点 B 处找两条都垂直 AB 的线，直接看平面角' },
     title: '向量法求二面角',
     solid: 'cube',
     difficulty: 3,
@@ -1541,6 +1546,7 @@ export const QUIZZES = [
   {
     id: 'q45',
     category: '空间向量',
+    challenge: { lStars: 3, eHint: '不用坐标：底面正方形对角线互相垂直，想想三垂线定理' },
     title: '数量积综合（体对角线⊥面对角线）',
     solid: 'cube',
     difficulty: 3,
@@ -1617,6 +1623,7 @@ export const QUIZZES = [
   {
     id: 'q47',
     category: '空间向量',
+    challenge: { lStars: 3, eHint: '不用建系，把 B₁C 平移到 A₁D，找等边三角形' },
     title: '两条面对角线所成角',
     solid: 'cube',
     difficulty: 3,
@@ -1707,6 +1714,7 @@ export const QUIZZES = [
   {
     id: 'q50',
     category: '空间向量',
+    challenge: { lStars: 2, eHint: '不用建系：AC₁ 在底面的投影是 AC，对 BD 用三垂线定理' },
     title: '向量法判线面位置关系',
     solid: 'cube',
     difficulty: 3,
@@ -2011,6 +2019,7 @@ export const QUIZZES = [
   {
     id: 'q60',
     category: '表面积体积',
+    challenge: { lStars: 2, eHint: '别硬作垂线，同一个三棱锥换个底面算体积' },
     title: '换底法求高',
     solid: 'pyramid3',
     difficulty: 3,
@@ -2089,6 +2098,7 @@ export const QUIZZES = [
   {
     id: 'q63',
     category: '表面积体积',
+    challenge: { lStars: 2, eHint: '被盖住的圆和圆柱上底一样大，会互相抵消' },
     title: '组合体的表面积',
     solid: 'cube',
     difficulty: 3,
@@ -2115,6 +2125,7 @@ export const QUIZZES = [
   {
     id: 'q64',
     category: '表面积体积',
+    challenge: { lStars: 1, eHint: 'R²−d² 其实是个 3-4-5 直角三角形' },
     title: '球的截面圆面积',
     solid: 'sphere',
     difficulty: 3,
@@ -2167,6 +2178,7 @@ export const QUIZZES = [
   {
     id: 'q66',
     category: '展开图',
+    challenge: { lStars: 3, eHint: '别沿棱走，把相邻两个面摊平，最短路变成直线' },
     title: '表面最短路径（动点最值入门）',
     solid: 'cube',
     difficulty: 3,
@@ -2245,6 +2257,7 @@ export const QUIZZES = [
   {
     id: 'q69',
     category: '展开图',
+    challenge: { lStars: 3, eHint: '把侧面沿一条母线剪开摊平，绕一周的曲线变成直线' },
     title: '圆柱侧面上的最短路线',
     solid: 'cylinder',
     difficulty: 3,
@@ -2349,6 +2362,7 @@ export const QUIZZES = [
   {
     id: 'q73',
     category: '三视图',
+    challenge: { lStars: 2, eHint: '长方体表面积 = 三个视图面积之和的两倍，不用先还原长宽高' },
     title: '由三视图算长方体表面积',
     solid: 'box',
     difficulty: 3,
@@ -2427,6 +2441,7 @@ export const QUIZZES = [
   {
     id: 'q76',
     category: '截面',
+    challenge: { lStars: 2, eHint: '两个中点的连线是三角形中位线，一步出截面宽度' },
     title: '过两棱中点的竖直截面',
     solid: 'cube',
     difficulty: 3,
@@ -2643,6 +2658,7 @@ export const QUIZZES = [
   {
     id: 'q82',
     category: '位置关系',
+    challenge: { lStars: 2, eHint: '把顶面对角线平移到底面，异面角变成正方形里的角' },
     title: '异面直线所成角（平移法进阶）',
     solid: 'cube',
     difficulty: 3,
@@ -2902,6 +2918,7 @@ export const QUIZZES = [
   {
     id: 'q89',
     category: '平行垂直',
+    challenge: { lStars: 2, eHint: '取底面边的中点，向底面中心和锥顶各连一条线，就是平面角' },
     title: '几何法求二面角',
     solid: 'pyramid4',
     difficulty: 3,
@@ -3260,6 +3277,7 @@ export const QUIZZES = [
   {
     id: 'q100',
     category: '空间向量',
+    challenge: { lStars: 2, eHint: '三条棱两两垂直的墙角锥，体积直接 abc 除以六' },
     title: '截面截去的三棱锥体积',
     solid: 'cube',
     difficulty: 3,

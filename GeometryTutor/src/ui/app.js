@@ -6,7 +6,14 @@ import { LESSONS } from '../data/lessons.js';
 import { QUIZZES } from '../data/quizzes.js';
 import * as audio from '../engine/audio.js';
 import * as progress from '../engine/progress.js';
+import * as mastery from '../engine/mastery.js';
+import * as streak from '../engine/streak.js';
+import * as review from '../engine/review.js';
+import * as report from '../engine/report.js';
+import { todayStr } from '../engine/days.js';
 import { renderThreeViews } from './threeview.js';
+import { initNetGame } from './netgame.js';
+import { initExplore } from './explore.js';
 
 const CATALOG = new Map(catalog().map((c) => [c.id, c]));
 const QUIZ_BY_ID = new Map(QUIZZES.map((q) => [q.id, q]));
@@ -38,6 +45,7 @@ const state = {
   lesson: null, lessonStep: 0,
   quiz: null, quizPicked: -1, explainStep: 0, quizFrom: 'quizzes',
   lab: { solidId: 'cube', spin: false, labels: true, sectionOn: false, t: 0.5, unfold: 0, views: false },
+  extSession: null, // 外部自包含模块（闯关/探究/几何之美）的会话句柄，切 tab 时 destroy
 };
 
 // ---------- 工具 ----------
@@ -59,13 +67,14 @@ function makeSolid(id) {
   return item ? item.make() : CATALOG.get('cube').make();
 }
 
-// 学习统计条：已完成课程数 / 已答题数 / 正确率；传入 quizIds(Set) 时跟随筛选范围统计
+// 学习统计条：已完成课程数 / 已答题数 / 正确率 / 连续学习天数；传入 quizIds(Set) 时跟随筛选范围统计
 function statsBar(quizIds = null) {
   const all = progress.allAttempts();
   const at = quizIds ? all.filter((a) => quizIds.has(a.id)) : all;
   const answered = new Set(at.map((a) => a.id)).size;
   const okCount = at.filter((a) => a.ok).length;
   const acc = at.length ? Math.round((okCount / at.length) * 100) : 0;
+  const s = streak.loadStreak();
   const bar = el('div', 'stats stat-bar');
   if (quizIds) {
     bar.appendChild(el('div', 'stat', `<strong>${quizIds.size}</strong><span>本组题目</span>`));
@@ -75,7 +84,25 @@ function statsBar(quizIds = null) {
   }
   bar.appendChild(el('div', 'stat', `<strong>${answered}</strong><span>已答题数</span>`));
   bar.appendChild(el('div', 'stat', `<strong>${acc}%</strong><span>正确率</span>`));
+  bar.appendChild(el('div', 'stat', `<strong>🔥 ${s.current}</strong><span>连续学习</span>`));
   return bar;
+}
+
+// 统计条下方一行：今日目标进度 + 到期复习入口提示
+function goalLine() {
+  const day = todayStr();
+  const g = streak.goalProgress(streak.loadStreak(), day);
+  const due = review.dueReviews(review.loadReview(), day).filter((id) => QUIZ_BY_ID.has(id));
+  const line = el('div', 'goal-line muted');
+  line.appendChild(el('span', null, g.done
+    ? '✓ 今日目标已达成，明天继续加油'
+    : `今日目标（任一即可）：学 ${streak.GOAL_STEPS} 个课程步骤 / 答 ${streak.GOAL_ANSWERS} 题 / 玩 ${streak.GOAL_GAMES} 关闯关（已学 ${g.steps} 步 · 已答 ${g.answers} 题 · 已玩 ${g.games} 关）`));
+  if (due.length) {
+    const link = el('button', 'btn btn-ghost due-link', `📌 ${due.length} 道错题到期待复习 →`);
+    link.addEventListener('click', () => switchView('wrong'));
+    line.appendChild(link);
+  }
+  return line;
 }
 
 function applyScene(scene) {
@@ -141,6 +168,15 @@ function playerHeader(title, subtitle, onBack) {
   ttsLabel.appendChild(tts);
   ttsLabel.appendChild(document.createTextNode(' 语音兜底'));
   bar.appendChild(ttsLabel);
+
+  const earLabel = el('label', 'tts-toggle');
+  const ear = document.createElement('input');
+  ear.type = 'checkbox';
+  ear.checked = true;
+  ear.addEventListener('change', () => audio.setEarconEnabled(ear.checked));
+  earLabel.appendChild(ear);
+  earLabel.appendChild(document.createTextNode(' 提示音'));
+  bar.appendChild(earLabel);
   head.appendChild(bar);
   return head;
 }
@@ -153,6 +189,7 @@ function renderLessonList() {
   panel.innerHTML = '';
   panel.appendChild(el('h2', 'panel-title', '课程'));
   panel.appendChild(statsBar());
+  panel.appendChild(goalLine());
   const list = el('div', 'card-list');
   for (const lesson of LESSONS) {
     const total = lesson.steps.length;
@@ -197,6 +234,7 @@ function renderLessonStep() {
   const i = state.lessonStep;
   const step = lesson.steps[i];
   progress.setLessonStep(lesson.id, i); // 记录学习进度（只增不减）
+  streak.record('step'); // 每日 streak：学 1 步即达成今日目标
   panel.innerHTML = '';
   panel.appendChild(playerHeader(lesson.title, lesson.subtitle, renderLessonList));
 
@@ -262,8 +300,11 @@ function renderQuizList() {
   const cats = [...CATEGORIES];
   if (QUIZZES.some((q) => quizCategory(q) === FALLBACK_CAT)) cats.push(FALLBACK_CAT);
   if (quizCategoryFilter && !cats.includes(quizCategoryFilter)) quizCategoryFilter = ''; // 数据变更后容错
-  const catBar = el('div', 'filter-bar cat-bar');  for (const [v, name] of [['', '全部'], ...cats.map((c) => [c, c])]) {
-    const b = el('button', `btn btn-small chip${quizCategoryFilter === v ? ' btn-primary' : ''}`, name);
+  const m = mastery.loadMastery(); // 各类掌握度星级
+  const catBar = el('div', 'filter-bar cat-bar');
+  for (const [v, name] of [['', '全部'], ...cats.map((c) => [c, c])]) {
+    const label = v ? `${name} ${mastery.starsOf(m, v)}` : name;
+    const b = el('button', `btn btn-small chip${quizCategoryFilter === v ? ' btn-primary' : ''}`, label);
     b.addEventListener('click', () => { quizCategoryFilter = v; saveFilter(); renderQuizList(); });
     catBar.appendChild(b);
   }
@@ -281,12 +322,15 @@ function renderQuizList() {
   const items = QUIZZES.filter((q) => (!quizFilter || q.difficulty === quizFilter)
     && (!quizCategoryFilter || quizCategory(q) === quizCategoryFilter));
   panel.appendChild(statsBar(new Set(items.map((q) => q.id)))); // 统计条跟随筛选范围
+  panel.appendChild(goalLine());
   if (!items.length) list.appendChild(el('p', 'muted', '该筛选条件下暂无题目'));
   for (const q of items) {
     const card = el('button', 'card');
     card.appendChild(el('strong', null, q.title));
     const badges = el('span', 'badge-row');
-    badges.appendChild(el('span', 'badge cat', quizCategory(q)));
+    const cat = quizCategory(q);
+    badges.appendChild(el('span', 'badge cat', cat));
+    badges.appendChild(el('span', 'badge stars', mastery.starsOf(m, cat)));
     badges.appendChild(el('span', `badge diff-${q.difficulty}`, DIFF_NAMES[q.difficulty] || ''));
     const [stName, stCls] = QUIZ_STATUS[progress.quizStatus(q.id)];
     badges.appendChild(el('span', `badge ${stCls}`, stName));
@@ -307,15 +351,28 @@ function openQuiz(q, from = 'quizzes') {
   state.quizFrom = from;
   state.quizPicked = -1;
   state.explainStep = 0;
+  clearAha();
   viewer.setSolid(makeSolid(q.solid));
   viewer.setLabelsVisible(true);
   renderQuizQuestion();
 }
 
-// 从错题本进入的题，返回时回到错题本
+// 从错题本/复习模式进入的题，返回时回到错题本
 function quizBack() {
-  if (state.quizFrom === 'wrong') renderWrongBook();
+  if (state.quizFrom === 'wrong' || state.quizFrom === 'review') renderWrongBook();
   else renderQuizList();
+}
+
+// 啊哈时刻定时器失效（切题/手动进讲解时调用）
+function clearAha() {
+  state._ahaToken = (state._ahaToken || 0) + 1;
+}
+
+/** 取文本首句（讲解第 1 步兜底为「关键理解」）。 */
+function firstSentence(text) {
+  const m = text.match(/^[^。！？!?]*[。！？!?]/);
+  if (m) return m[0];
+  return text.length > 60 ? text.slice(0, 60) + '…' : text;
 }
 
 function renderQuizQuestion() {
@@ -348,15 +405,34 @@ function pickOption(idx) {
   });
   const ok = idx === q.answer.correct;
   progress.recordAttempt(q.id, ok); // 记录作答；答错进错题本
+  mastery.recordAnswer(quizCategory(q), ok); // 知识点掌握度三星
+  streak.record('answer'); // 每日 streak：答 3 题达成今日目标
+  if (!ok) review.recordWrong(q.id); // 生成/重置 +1/+3/+7 复习计划
+  else if (review.hasActivePlan(review.loadReview(), q.id)) review.recordReviewAnswer(q.id, true); // 复习推进
   const result = el('div', `result ${ok ? 'ok' : 'no'}`, ok ? '✓ 回答正确！' : '✗ 回答错误，看看讲解吧。');
   panel.appendChild(result);
+  if (ok) {
+    // 啊哈时刻：自转几何体 + 高亮题面元素 + 关键理解 + 上行琶音，约 1.8s 后自动进讲解
+    audio.playEarcon();
+    viewer.setSpin(true);
+    viewer.highlight(q.scene && q.scene.highlight || {});
+    const insight = q.insight || firstSentence(stripHtml(q.explain[0].text));
+    panel.appendChild(el('div', 'result ok aha', `💡 关键理解：${insight}`));
+  }
   const btn = el('button', 'btn btn-primary btn-block', '查看讲解 →');
-  btn.addEventListener('click', renderExplainStep);
+  btn.addEventListener('click', () => { clearAha(); renderExplainStep(); });
   panel.appendChild(btn);
-  if (ok) audio.speak('回答正确');
+  if (ok) {
+    audio.speak('回答正确');
+    const token = (state._ahaToken = (state._ahaToken || 0) + 1);
+    setTimeout(() => {
+      if (state._ahaToken === token && state.quiz === q) renderExplainStep(); // 微演示结束自动进讲解
+    }, 1800);
+  }
 }
 
 function renderExplainStep() {
+  clearAha();
   const q = state.quiz;
   const i = state.explainStep;
   const step = q.explain[i];
@@ -367,23 +443,100 @@ function renderExplainStep() {
     `正确答案：${q.answer.options[q.answer.correct]}`));
   panel.appendChild(el('div', 'step-body', step.text));
 
+  // 复习模式：讲解完自动接下一题到期题
+  const inReview = state.quizFrom === 'review';
+  const hasNext = inReview && state.reviewQueue && state.reviewQueue.length > 0;
+  const lastLabel = inReview ? (hasNext ? '下一题 →' : '返回错题本') : '返回题库';
+
   const nav = el('div', 'step-nav');
   const prev = el('button', 'btn', '← 上一步');
   prev.disabled = i === 0;
   prev.addEventListener('click', () => { state.explainStep--; renderExplainStep(); });
   nav.appendChild(prev);
   nav.appendChild(el('span', 'muted', `讲解 ${i + 1} / ${q.explain.length}`));
-  const next = el('button', 'btn btn-primary', i === q.explain.length - 1 ? '返回题库' : '下一步 →');
+  const next = el('button', 'btn btn-primary', i === q.explain.length - 1 ? lastLabel : '下一步 →');
   next.addEventListener('click', () => {
-    if (i === q.explain.length - 1) quizBack();
-    else { state.explainStep++; renderExplainStep(); }
+    if (i !== q.explain.length - 1) { state.explainStep++; renderExplainStep(); }
+    else if (hasNext) nextReviewQuiz();
+    else quizBack();
   });
   nav.appendChild(next);
   panel.appendChild(nav);
 
+  // 答对且带 challenge 字段的难题：讲解最后一步展示「挑战模式」卡（自我评估简洁星）
+  if (i === q.explain.length - 1 && state.quizPicked === q.answer.correct) {
+    const cc = challengeCard(q);
+    if (cc) panel.appendChild(cc);
+  }
+
   state._replay = () => playStepAudio(step);
   applyScene(step.scene);
   playStepAudio(step);
+}
+
+// 复习模式：只做到期题，逐题推进队列
+function startReview(ids) {
+  state.reviewQueue = ids.map((id) => QUIZ_BY_ID.get(id)).filter(Boolean);
+  nextReviewQuiz();
+}
+
+function nextReviewQuiz() {
+  const q = state.reviewQueue && state.reviewQueue.shift();
+  if (!q) { state.quizFrom = 'wrong'; renderWrongBook(); return; }
+  openQuiz(q, 'review');
+}
+
+// ---------- 难题双评分挑战（自我评估式「简洁星」，schema 见 src/data/schema.js）----------
+
+// gt_challenge：{ [quizId]: { stars, ts } }，记录每题拿到的最高简洁星
+function loadChallenge() {
+  try {
+    const v = JSON.parse(localStorage.getItem('gt_challenge') || 'null');
+    return v && typeof v === 'object' && !Array.isArray(v) ? v : {};
+  } catch {
+    try { localStorage.removeItem('gt_challenge'); } catch { /* 忽略 */ }
+    return {};
+  }
+}
+
+/** 容错读取 challenge 字段；无效返回 null。lStars 合法化为 1-3。 */
+function challengeOf(q) {
+  const ch = q && q.challenge;
+  if (!ch || typeof ch !== 'object') return null;
+  const lStars = Number.isInteger(ch.lStars) ? Math.min(3, Math.max(1, ch.lStars)) : 1;
+  return { lStars, eHint: typeof ch.eHint === 'string' && ch.eHint.trim() ? ch.eHint.trim() : null };
+}
+
+// 挑战卡：讲解最后一步、本题答对且带 challenge 字段时展示；自我评估确认后记录简洁星
+function challengeCard(q) {
+  const ch = challengeOf(q);
+  if (!ch) return null;
+  const store = loadChallenge();
+  const best = store[q.id] && Number.isInteger(store[q.id].stars) ? store[q.id].stars : 0;
+  const starText = (n) => '★'.repeat(n) + '☆'.repeat(3 - n);
+
+  const card = el('div', 'challenge-card');
+  card.appendChild(el('strong', null, '⭐ 挑战模式：还能更简洁吗？'));
+  card.appendChild(el('p', null,
+    `你已解出此题。这题其实还有更简的做法（目标 ${starText(ch.lStars)} 简洁星）——试着用更少的步骤、更巧的思路重新解一遍。`));
+  if (ch.eHint) card.appendChild(el('p', 'challenge-hint', `提示：${ch.eHint}`));
+  const bestLine = el('p', 'muted', best ? `我的最佳纪录：${starText(best)}` : '还没有简洁星纪录，来挑战一下吧！');
+  card.appendChild(bestLine);
+
+  const btn = el('button', 'btn btn-small btn-primary', '我做到了更简解法 ✓');
+  btn.addEventListener('click', () => {
+    const stars = Math.max(best, ch.lStars);
+    const s2 = loadChallenge();
+    s2[q.id] = { stars, ts: Date.now() };
+    try { localStorage.setItem('gt_challenge', JSON.stringify(s2)); } catch { /* 静默 */ }
+    audio.playEarcon();
+    btn.remove();
+    card.appendChild(el('p', 'challenge-done',
+      `🏅 已记录 ${starText(stars)} 简洁星！简洁的解法说明理解更深一层。`));
+    bestLine.textContent = `我的最佳纪录：${starText(stars)}`;
+  });
+  card.appendChild(btn);
+  return card;
 }
 
 // ---------- 错题本 ----------
@@ -392,7 +545,12 @@ function renderWrongBook() {
   audio.stopAll();
   state.quiz = null;
   panel.innerHTML = '';
-  panel.appendChild(el('h2', 'panel-title', '错题本'));
+  const wbHead = el('div', 'due-head');
+  wbHead.appendChild(el('h2', 'panel-title', '错题本'));
+  const reportBtn = el('button', 'btn btn-small', '📊 家长周报');
+  reportBtn.addEventListener('click', renderReport);
+  wbHead.appendChild(reportBtn);
+  panel.appendChild(wbHead);
 
   // 统计：总作答数 / 正确率 / 待订正数
   const at = progress.allAttempts();
@@ -406,6 +564,23 @@ function renderWrongBook() {
   bar.appendChild(el('div', 'stat', `<strong>${todo}</strong><span>待订正</span>`));
   panel.appendChild(bar);
 
+  // 待复习区块：间隔复习（+1/+3/+7 天）到期题置顶，可一键进入复习模式
+  const rv = review.loadReview();
+  const due = review.dueReviews(rv, todayStr()).filter((id) => QUIZ_BY_ID.has(id));
+  if (due.length) {
+    const block = el('div', 'due-block');
+    const head = el('div', 'due-head');
+    head.appendChild(el('strong', null, `📌 待复习 ${due.length} 题`));
+    const start = el('button', 'btn btn-small btn-primary', '开始复习');
+    start.addEventListener('click', () => startReview(due));
+    head.appendChild(start);
+    block.appendChild(head);
+    block.appendChild(el('p', 'muted', '按 +1/+3/+7 天间隔安排，复习答对即推进，全部通过标记「已掌握」。'));
+    const names = due.slice(0, 5).map((id) => QUIZ_BY_ID.get(id).title).join('、');
+    block.appendChild(el('p', 'muted', names + (due.length > 5 ? ` 等 ${due.length} 题` : '')));
+    panel.appendChild(block);
+  }
+
   if (!list.length) {
     panel.appendChild(el('p', 'muted', '暂无错题，继续保持！答错的题目会自动收进来。'));
   } else {
@@ -418,8 +593,19 @@ function renderWrongBook() {
       const main = el('div', 'card-main');
       main.appendChild(el('strong', null, q.title));
       const badges = el('span', 'badge-row');
+      badges.appendChild(el('span', 'badge cat', quizCategory(q))); // 错题归因到知识点
       badges.appendChild(el('span', `badge diff-${q.difficulty}`, DIFF_NAMES[q.difficulty] || ''));
       badges.appendChild(el('span', `badge ${w.corrected ? 'st-ok' : 'st-wrong'}`, w.corrected ? '已订正' : '待订正'));
+      const plan = rv[w.id];
+      if (plan && Number.isInteger(plan.node)) {
+        if (review.isMastered(rv, w.id)) {
+          badges.appendChild(el('span', 'badge st-ok', '已掌握'));
+        } else {
+          const dueTag = due.includes(w.id) ? ' · 已到期' : '';
+          badges.appendChild(el('span', 'badge st-doing',
+            `复习 ${plan.node}/${review.OFFSETS.length}${plan.nextReviewAt ? ` · ${plan.nextReviewAt.slice(5).replace('-', '/')} 到期` : ''}${dueTag}`));
+        }
+      }
       main.appendChild(badges);
       card.appendChild(main);
       const actions = el('div', 'wrong-actions');
@@ -439,6 +625,93 @@ function renderWrongBook() {
   viewer.setSection(null);
   viewer.setLabelsVisible(true);
   setViewsVisible(false);
+}
+
+// ---------- 家长周报（数据从 progress/mastery/streak 聚合，见 engine/report.js） ----------
+
+function buildWeeklyReport() {
+  return report.buildReport({
+    attempts: progress.allAttempts(),
+    categoryOf: (id) => { const q = QUIZ_BY_ID.get(id); return q ? quizCategory(q) : FALLBACK_CAT; },
+    categories: [...CATEGORIES],
+    lessonsDone: LESSONS.filter((l) => progress.isLessonDone(l.id, l.steps.length)).length,
+    lessonsTotal: LESSONS.length,
+    mastery: mastery.loadMastery(),
+    streak: streak.loadStreak(),
+  }, todayStr());
+}
+
+// 复制分享文案：优先 clipboard API，降级为 textarea 选中 + execCommand
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    try {
+      const ta = el('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      const ok = document.execCommand('copy');
+      ta.remove();
+      return ok;
+    } catch {
+      return false;
+    }
+  }
+}
+
+function renderReport() {
+  audio.stopAll();
+  const r = buildWeeklyReport();
+  const fmt = (d) => `${Number(d.slice(5, 7))}月${Number(d.slice(8, 10))}日`;
+
+  panel.innerHTML = '';
+  const head = el('div', 'due-head');
+  head.appendChild(el('h2', 'panel-title', `家长周报（${fmt(r.weekStart)} - ${fmt(r.weekEnd)}）`));
+  const back = el('button', 'btn btn-small', '← 错题本');
+  back.addEventListener('click', renderWrongBook);
+  head.appendChild(back);
+  panel.appendChild(head);
+
+  const bar = el('div', 'stats stat-bar');
+  bar.appendChild(el('div', 'stat', `<strong>${r.days}</strong><span>本周学习天数</span>`));
+  bar.appendChild(el('div', 'stat', `<strong>🔥 ${r.currentStreak}</strong><span>连续学习</span>`));
+  bar.appendChild(el('div', 'stat', `<strong>${r.lessonsDone}/${r.lessonsTotal}</strong><span>累计完成课程</span>`));
+  bar.appendChild(el('div', 'stat', `<strong>${r.answers}</strong><span>本周答题数</span>`));
+  bar.appendChild(el('div', 'stat', `<strong>${r.acc}%</strong><span>本周正确率</span>`));
+  bar.appendChild(el('div', 'stat', `<strong>${r.conquered}</strong><span>本周攻克错题</span>`));
+  panel.appendChild(bar);
+
+  panel.appendChild(el('h3', 'report-sec', '各知识点掌握度'));
+  const starsList = el('div', 'report-stars');
+  for (const x of r.stars) {
+    starsList.appendChild(el('div', 'report-star-row',
+      `<span>${x.cat}</span><span class="badge stars">${x.stars}</span>`));
+  }
+  panel.appendChild(starsList);
+
+  if (r.weakCat) {
+    panel.appendChild(el('h3', 'report-sec', '薄弱知识点提醒'));
+    panel.appendChild(el('p', 'report-weak',
+      `「${r.weakCat}」本周答错 ${r.weakWrong} 次，建议重点复习。`));
+  }
+
+  panel.appendChild(el('h3', 'report-sec', '给家长的话'));
+  panel.appendChild(el('p', 'report-advice', r.suggestion));
+
+  const copyBtn = el('button', 'btn btn-primary btn-block', '📋 复制分享文案');
+  copyBtn.addEventListener('click', async () => {
+    const ok = await copyText(report.reportText(r));
+    copyBtn.textContent = ok ? '✓ 已复制，去粘贴给家长吧' : '复制失败，请手动截图分享';
+    setTimeout(() => { copyBtn.textContent = '📋 复制分享文案'; }, 2500);
+  });
+  panel.appendChild(copyBtn);
+  panel.appendChild(el('p', 'muted', '统计口径：本周指周一至今日；学习天数以答题记录计。'));
+
+  viewer.setSpin(true);
 }
 
 // ---------- 实验室 ----------
@@ -578,6 +851,61 @@ function renderLab() {
   panel.appendChild(el('p', 'muted lab-hint', '拖动 3D 区域旋转视角，滚轮或双指缩放。'));
 }
 
+// ---------- 闯关 / 探究 / 几何之美（自包含模块接线） ----------
+
+// 闯关答对 / 探究任务达成也计入 streak 的「玩 1 关闯关」目标：
+// 两个模块在成功时都会调 deps.audio.playEarcon()，这里包一层顺带记录。
+const gameAudio = {
+  ...audio,
+  playEarcon() {
+    try { streak.record('game'); } catch { /* 存储异常不影响游戏 */ }
+    audio.playEarcon();
+  },
+};
+
+function renderNetGame() {
+  audio.stopAll();
+  panel.innerHTML = '';
+  state.extSession = initNetGame(panel, { viewer, audio: gameAudio });
+}
+
+function renderExplore() {
+  audio.stopAll();
+  panel.innerHTML = '';
+  state.extSession = initExplore(panel, { viewer, audio: gameAudio });
+}
+
+// 「几何之美」由并行开发的 src/ui/beauty.js 提供，动态加载：未落盘时显示占位而不阻塞应用
+let beautyMod = null, beautyTried = false;
+async function loadBeauty() {
+  if (!beautyTried) {
+    beautyTried = true;
+    try { beautyMod = await import('./beauty.js'); } catch { beautyMod = null; }
+  }
+  return beautyMod;
+}
+
+function renderBeauty() {
+  audio.stopAll();
+  panel.innerHTML = '';
+  panel.appendChild(el('h2', 'panel-title', '几何之美'));
+  const hint = el('p', 'muted', '加载中…');
+  panel.appendChild(hint);
+  loadBeauty().then((m) => {
+    if (state.view !== 'beauty') return; // 等待期间已切走
+    if (m && typeof m.initBeauty === 'function') {
+      hint.remove();
+      try {
+        state.extSession = m.initBeauty(panel, { viewer, audio: gameAudio });
+      } catch {
+        panel.appendChild(el('p', 'muted', '「几何之美」加载失败，请刷新重试。'));
+      }
+    } else {
+      hint.textContent = '「几何之美」模块尚未就绪，敬请期待。';
+    }
+  });
+}
+
 // ---------- 主视图切换 ----------
 
 const VIEWS = {
@@ -585,9 +913,16 @@ const VIEWS = {
   quizzes: { name: '题库', render: renderQuizList },
   wrong: { name: '错题本', render: renderWrongBook },
   lab: { name: '实验室', render: renderLab },
+  netgame: { name: '闯关', render: renderNetGame },
+  explore: { name: '探究', render: renderExplore },
+  beauty: { name: '几何之美', render: renderBeauty },
 };
 
 function switchView(view) {
+  if (state.extSession) { // 销毁上一个外部模块会话（移除其 DOM/样式/计时器）
+    try { state.extSession.destroy(); } catch { /* 忽略 */ }
+    state.extSession = null;
+  }
   state.view = view;
   for (const [k, b] of Object.entries(tabButtons)) {
     b.classList.toggle('active', k === view);
@@ -615,5 +950,6 @@ switchView('lessons');
   if (Number.isFinite(qUnfold)) state.lab.unfold = Math.min(1, Math.max(0, qUnfold));
   if (qs.get('views') === '1' || qs.get('views') === 'true') state.lab.views = true;
   const qView = qs.get('view');
-  if (qView && VIEWS[qView]) switchView(qView);
+  if (qView === 'report') { state.view = 'wrong'; renderReport(); }
+  else if (qView && VIEWS[qView]) switchView(qView);
 }

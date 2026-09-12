@@ -17,9 +17,12 @@
       padding: 8px 14px; background: #1f3a5f; color: #fff;
     }
     header h1 { font-size: 18px; font-weight: 600; white-space: nowrap; }
-    #tabs { display: flex; gap: 8px; margin-left: auto; }
+    /* tab 栏：7 个 tab 排不下时横向滚动（桌面与手机一致） */
+    #tabs { display: flex; gap: 8px; margin-left: auto; overflow-x: auto; max-width: 100%; -webkit-overflow-scrolling: touch; }
+    #tabs::-webkit-scrollbar { height: 4px; }
     .tab {
-      min-height: 44px; padding: 0 22px; font-size: 16px; border: none; border-radius: 8px;
+      flex-shrink: 0; white-space: nowrap;
+      min-height: 44px; padding: 0 16px; font-size: 16px; border: none; border-radius: 8px;
       background: rgba(255,255,255,.15); color: #fff; cursor: pointer;
     }
     .tab.active { background: #fff; color: #1f3a5f; font-weight: 600; }
@@ -116,6 +119,24 @@
     .cat-bar::-webkit-scrollbar { height: 4px; }
     .cat-bar .chip { flex-shrink: 0; min-height: 40px; padding: 0 14px; white-space: nowrap; }
     .badge.cat { background: #e2ecf9; color: #1f3a5f; }
+    .badge.stars { background: #fff3cd; color: #8a6d00; letter-spacing: 1px; }
+
+    /* 今日目标行与到期复习入口 */
+    .goal-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: -6px 0 12px; font-size: 13px; }
+    .due-link { color: #e8491d; font-size: 13px; min-height: 36px; }
+
+    /* 错题本待复习区块 */
+    .due-block {
+      padding: 12px 14px; margin-bottom: 14px; border-radius: 10px;
+      background: #fff7e6; border: 1px solid #f2d9a4;
+    }
+    .due-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .due-block p { margin-top: 6px; }
+
+    /* 啊哈时刻：关键理解卡片轻微浮入 */
+    .result.aha { border: 1px solid #b7dfc0; }
+    @keyframes aha-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .result.aha { animation: aha-in .35s ease-out; }
 
     .option-list { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
     .option {
@@ -136,6 +157,27 @@
     .lab-toggle input { width: 20px; height: 20px; }
     .lab-slider input[type=range] { flex: 1; min-width: 140px; height: 32px; }
 
+    /* 难题挑战卡（简洁星自我评估） */
+    .challenge-card {
+      margin-top: 14px; padding: 12px 14px; border-radius: 12px;
+      background: #fff7e6; border: 1px solid #f2d9a4;
+      display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
+      font-size: 14px; line-height: 1.6;
+    }
+    .challenge-card strong { color: #9c6b00; font-size: 15px; }
+    .challenge-hint { color: #6b5a1f; background: #fff; border: 1px dashed #e3c97e; border-radius: 8px; padding: 6px 10px; }
+    .challenge-done { color: #2d6a4f; font-weight: 600; }
+
+    /* 家长周报 */
+    .report-sec { font-size: 15px; color: #1f3a5f; margin: 16px 0 8px; }
+    .report-stars { display: flex; flex-direction: column; gap: 6px; }
+    .report-star-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px;
+      padding: 8px 12px; background: #f4f7fb; border: 1px solid #dde4ee; border-radius: 10px; font-size: 14px;
+    }
+    .report-weak { padding: 10px 14px; border-radius: 10px; background: #f8d7da; color: #9c1c24; font-size: 14px; }
+    .report-advice { padding: 10px 14px; border-radius: 10px; background: #dbe7fb; color: #1f3a5f; font-size: 14px; line-height: 1.7; }
+
     .stats { display: flex; gap: 10px; margin: 16px 0 10px; }
     .stat {
       flex: 1; text-align: center; padding: 12px 4px;
@@ -153,7 +195,7 @@
       header { padding: 6px 10px; gap: 8px; }
       header h1 { font-size: 16px; }
       #tabs { width: 100%; }
-      .tab { flex: 1; min-height: 48px; padding: 0; }
+      .tab { flex: 0 0 auto; min-height: 44px; padding: 0 14px; }
       main { flex-direction: column; }
       #stage { flex: none; height: 45vh; }
       #panel { width: 100%; max-width: none; flex: 1; border-left: none; border-top: 1px solid #dde4ee; }

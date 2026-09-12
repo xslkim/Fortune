@@ -5,6 +5,37 @@ const VOICE_BASE = './assets/audio/voice/';
 let current = null;
 let rate = 1;
 let ttsEnabled = true;
+let earconEnabled = true;
+let audioCtx = null;
+
+export function setEarconEnabled(on) {
+  earconEnabled = !!on;
+}
+
+/** 答题正确的「啊哈」提示音：程序合成的三音上行琶音（C5-E5-G5），无音频资产依赖。 */
+export function playEarcon() {
+  if (!earconEnabled) return;
+  try {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    audioCtx = audioCtx || new AC();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const t0 = audioCtx.currentTime;
+    [523.25, 659.25, 783.99].forEach((freq, i) => {
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      const t = t0 + i * 0.11;
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.0001, t);
+      gain.gain.exponentialRampToValueAtTime(0.16, t + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.38);
+      osc.connect(gain).connect(audioCtx.destination);
+      osc.start(t);
+      osc.stop(t + 0.4);
+    });
+  } catch { /* 无音频环境时静默 */ }
+}
 
 export function setRate(x) {
   rate = x;
