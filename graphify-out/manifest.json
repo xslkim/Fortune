@@ -1,0 +1,3920 @@
+{
+  "Geomertry/Assets/Scenes/SampleScene.cs": {
+    "mtime": 1789312994.8326519,
+    "seen": 1789314990.983658,
+    "ast_hash": "b7e9b79763d47b405eb4bd10a682e786",
+    "semantic_hash": "b7e9b79763d47b405eb4bd10a682e786"
+  },
+  "Geomertry/Assets/Script/FreeCamera.cs": {
+    "mtime": 1789312994.8336523,
+    "seen": 1789314990.983658,
+    "ast_hash": "21f072450e68ddd09c3fc41c61aed667",
+    "semantic_hash": "21f072450e68ddd09c3fc41c61aed667"
+  },
+  "Geomertry/Assets/Script/Geometry.cs": {
+    "mtime": 1789312994.8336523,
+    "seen": 1789314990.983658,
+    "ast_hash": "4afd77894d69228c3cd06ee93c590b75",
+    "semantic_hash": "4afd77894d69228c3cd06ee93c590b75"
+  },
+  "Geomertry/Assets/Script/GeometryUtil.cs": {
+    "mtime": 1789312994.8346524,
+    "seen": 1789314990.983658,
+    "ast_hash": "188b8391d3ebc2071cf2d976fb0e2ee6",
+    "semantic_hash": "188b8391d3ebc2071cf2d976fb0e2ee6"
+  },
+  "Geomertry/Packages/manifest.json": {
+    "mtime": 1789312994.8356526,
+    "seen": 1789314990.983658,
+    "ast_hash": "4d59034589eb47913e52375293a68b03",
+    "semantic_hash": "4d59034589eb47913e52375293a68b03"
+  },
+  "GeometryTutor-mp/package.json": {
+    "mtime": 1789312994.841651,
+    "seen": 1789314990.983658,
+    "ast_hash": "114b77873b96c761ae94f110879d8b7d",
+    "semantic_hash": "114b77873b96c761ae94f110879d8b7d"
+  },
+  "GeometryTutor-mp/src/App.vue": {
+    "mtime": 1789312994.841651,
+    "seen": 1789314990.983658,
+    "ast_hash": "c748c6e6dd152f5798e4c32b95ef85c6",
+    "semantic_hash": "c748c6e6dd152f5798e4c32b95ef85c6"
+  },
+  "GeometryTutor-mp/src/components/AudioBar.vue": {
+    "mtime": 1789312994.8426514,
+    "seen": 1789314990.983658,
+    "ast_hash": "71e58e5b63961548ebda38cd8d6601d9",
+    "semantic_hash": "71e58e5b63961548ebda38cd8d6601d9"
+  },
+  "GeometryTutor-mp/src/components/GeoCanvas.vue": {
+    "mtime": 1789312994.8426514,
+    "seen": 1789314990.983658,
+    "ast_hash": "3eafb0b5fdb6674ae01b04e7e55c8102",
+    "semantic_hash": "3eafb0b5fdb6674ae01b04e7e55c8102"
+  },
+  "GeometryTutor-mp/src/components/ThreeView.vue": {
+    "mtime": 1789312994.8426514,
+    "seen": 1789314990.983658,
+    "ast_hash": "e0301ed570bd9cf7cb76d93b9492bba4",
+    "semantic_hash": "e0301ed570bd9cf7cb76d93b9492bba4"
+  },
+  "GeometryTutor-mp/src/config.js": {
+    "mtime": 1789312994.8426514,
+    "seen": 1789314990.983658,
+    "ast_hash": "3e0415fe59d30c10a555272e01414ad0",
+    "semantic_hash": "3e0415fe59d30c10a555272e01414ad0"
+  },
+  "GeometryTutor-mp/src/data/lessons.js": {
+    "mtime": 1789312994.8426514,
+    "seen": 1789314990.983658,
+    "ast_hash": "a6552109bcacc37f0453251f7b3cb321",
+    "semantic_hash": "a6552109bcacc37f0453251f7b3cb321"
+  },
+  "GeometryTutor-mp/src/data/quizzes.js": {
+    "mtime": 1789312994.8436513,
+    "seen": 1789314990.983658,
+    "ast_hash": "f06b3eb2b57dbdffa9a959a67d9de376",
+    "semantic_hash": "f06b3eb2b57dbdffa9a959a67d9de376"
+  },
+  "GeometryTutor-mp/src/engine/audio.js": {
+    "mtime": 1789312994.8436513,
+    "seen": 1789314990.983658,
+    "ast_hash": "4b2c3ee21b5b7b983fe0ff02d9bac62c",
+    "semantic_hash": "4b2c3ee21b5b7b983fe0ff02d9bac62c"
+  },
+  "GeometryTutor-mp/src/engine/progress.js": {
+    "mtime": 1789312994.844652,
+    "seen": 1789314990.983658,
+    "ast_hash": "1298596eb53ece21a20bf0ced7f37d41",
+    "semantic_hash": "1298596eb53ece21a20bf0ced7f37d41"
+  },
+  "GeometryTutor-mp/src/engine/storage.js": {
+    "mtime": 1789312994.844652,
+    "seen": 1789314990.983658,
+    "ast_hash": "b26cc31b6e9abb307a3cdff0178ef57a",
+    "semantic_hash": "b26cc31b6e9abb307a3cdff0178ef57a"
+  },
+  "GeometryTutor-mp/src/geo/solids.js": {
+    "mtime": 1789312994.844652,
+    "seen": 1789314990.983658,
+    "ast_hash": "c211089e580b7c193dcb0ff6157e13c1",
+    "semantic_hash": "c211089e580b7c193dcb0ff6157e13c1"
+  },
+  "GeometryTutor-mp/src/geo/topology.js": {
+    "mtime": 1789312994.844652,
+    "seen": 1789314990.983658,
+    "ast_hash": "1a8f0b1c50b2214855c3f08e4e1d1ce2",
+    "semantic_hash": "1a8f0b1c50b2214855c3f08e4e1d1ce2"
+  },
+  "GeometryTutor-mp/src/geo/unfold.js": {
+    "mtime": 1789312994.845652,
+    "seen": 1789314990.983658,
+    "ast_hash": "c01d08ed3e49f05f21230ffd66df27b5",
+    "semantic_hash": "c01d08ed3e49f05f21230ffd66df27b5"
+  },
+  "GeometryTutor-mp/src/geo/views.js": {
+    "mtime": 1789312994.845652,
+    "seen": 1789314990.983658,
+    "ast_hash": "5844b251919d3154e0566c5f449b4484",
+    "semantic_hash": "5844b251919d3154e0566c5f449b4484"
+  },
+  "GeometryTutor-mp/src/main.js": {
+    "mtime": 1789312994.845652,
+    "seen": 1789314990.983658,
+    "ast_hash": "58d08845e7a029fa2da35010126fa6b0",
+    "semantic_hash": "58d08845e7a029fa2da35010126fa6b0"
+  },
+  "GeometryTutor-mp/src/manifest.json": {
+    "mtime": 1789312994.845652,
+    "seen": 1789314990.983658,
+    "ast_hash": "aa05c75b32dff891e72925b33d16c569",
+    "semantic_hash": "aa05c75b32dff891e72925b33d16c569"
+  },
+  "GeometryTutor-mp/src/pages.json": {
+    "mtime": 1789312994.845652,
+    "seen": 1789314990.983658,
+    "ast_hash": "6bb8f93fd42c17ad1b530a50a1f0fa47",
+    "semantic_hash": "6bb8f93fd42c17ad1b530a50a1f0fa47"
+  },
+  "GeometryTutor-mp/src/pages/lab/index.vue": {
+    "mtime": 1789312994.846652,
+    "seen": 1789314990.983658,
+    "ast_hash": "18acb1e28a90e1c8e0c753347b5dccff",
+    "semantic_hash": "18acb1e28a90e1c8e0c753347b5dccff"
+  },
+  "GeometryTutor-mp/src/pages/lessons/index.vue": {
+    "mtime": 1789312994.846652,
+    "seen": 1789314990.983658,
+    "ast_hash": "d364afa40c199af904077cad16772d4e",
+    "semantic_hash": "d364afa40c199af904077cad16772d4e"
+  },
+  "GeometryTutor-mp/src/pages/lessons/player.vue": {
+    "mtime": 1789312994.846652,
+    "seen": 1789314990.983658,
+    "ast_hash": "9a3c236506df94a077f35bae99eecd9d",
+    "semantic_hash": "9a3c236506df94a077f35bae99eecd9d"
+  },
+  "GeometryTutor-mp/src/pages/quiz/detail.vue": {
+    "mtime": 1789312994.846652,
+    "seen": 1789314990.983658,
+    "ast_hash": "8aea49b15089e9b570e2c40f5a6baaa0",
+    "semantic_hash": "8aea49b15089e9b570e2c40f5a6baaa0"
+  },
+  "GeometryTutor-mp/src/pages/quiz/index.vue": {
+    "mtime": 1789312994.846652,
+    "seen": 1789314990.983658,
+    "ast_hash": "e6c973ba445a14e2df88f2ad7f3ea20f",
+    "semantic_hash": "e6c973ba445a14e2df88f2ad7f3ea20f"
+  },
+  "GeometryTutor-mp/src/pages/wrong/index.vue": {
+    "mtime": 1789312994.8476522,
+    "seen": 1789314990.983658,
+    "ast_hash": "1a323cb3d22dca5294a8ee01005b2ffc",
+    "semantic_hash": "1a323cb3d22dca5294a8ee01005b2ffc"
+  },
+  "GeometryTutor-mp/src/viewer/mpviewer.js": {
+    "mtime": 1789312994.849652,
+    "seen": 1789314990.983658,
+    "ast_hash": "924974b450c8146c71aa537a76dfafbc",
+    "semantic_hash": "924974b450c8146c71aa537a76dfafbc"
+  },
+  "GeometryTutor-mp/tests/content.test.mjs": {
+    "mtime": 1789312994.849652,
+    "seen": 1789314990.983658,
+    "ast_hash": "281271766a3297fe9f63e4fbeca26a20",
+    "semantic_hash": "281271766a3297fe9f63e4fbeca26a20"
+  },
+  "GeometryTutor-mp/tests/geo.test.mjs": {
+    "mtime": 1789312994.849652,
+    "seen": 1789314990.983658,
+    "ast_hash": "99c96923133f55832a0b1234cdcf5232",
+    "semantic_hash": "99c96923133f55832a0b1234cdcf5232"
+  },
+  "GeometryTutor-mp/tests/unfold.test.mjs": {
+    "mtime": 1789312994.849652,
+    "seen": 1789314990.983658,
+    "ast_hash": "5541cd6db9aa6d02abb29e3b8c742393",
+    "semantic_hash": "5541cd6db9aa6d02abb29e3b8c742393"
+  },
+  "GeometryTutor-mp/tests/views.test.mjs": {
+    "mtime": 1789312994.849652,
+    "seen": 1789314990.983658,
+    "ast_hash": "dddd9dffd0c0eb24004142bfb92b284d",
+    "semantic_hash": "dddd9dffd0c0eb24004142bfb92b284d"
+  },
+  "GeometryTutor-mp/tools/gen-icons.sh": {
+    "mtime": 1789312994.8506525,
+    "seen": 1789314990.983658,
+    "ast_hash": "c6232b4146df714308dde5e7baafc34d",
+    "semantic_hash": "c6232b4146df714308dde5e7baafc34d"
+  },
+  "GeometryTutor-mp/tools/gen_icons.py": {
+    "mtime": 1789312994.8506525,
+    "seen": 1789314990.983658,
+    "ast_hash": "5f63932a368f6073daa57007e6dbe184",
+    "semantic_hash": "5f63932a368f6073daa57007e6dbe184"
+  },
+  "GeometryTutor-mp/tools/sync-core.sh": {
+    "mtime": 1789312994.8506525,
+    "seen": 1789314990.983658,
+    "ast_hash": "db135620c877e58782a414b42a056816",
+    "semantic_hash": "db135620c877e58782a414b42a056816"
+  },
+  "GeometryTutor-mp/tools/tts_lines.py": {
+    "mtime": 1789312994.8516512,
+    "seen": 1789314990.983658,
+    "ast_hash": "eee3bb367f073400584f3741bd5a8ae9",
+    "semantic_hash": "eee3bb367f073400584f3741bd5a8ae9"
+  },
+  "GeometryTutor-mp/vite.config.js": {
+    "mtime": 1789312994.8516512,
+    "seen": 1789314990.983658,
+    "ast_hash": "7ffb65b27b5ba92af5da0640890223b0",
+    "semantic_hash": "7ffb65b27b5ba92af5da0640890223b0"
+  },
+  "GeometryTutor/package.json": {
+    "mtime": 1789312995.2703035,
+    "seen": 1789314990.983658,
+    "ast_hash": "65645f0105f033e8a7db27a9e9718117",
+    "semantic_hash": "65645f0105f033e8a7db27a9e9718117"
+  },
+  "GeometryTutor/serve.mjs": {
+    "mtime": 1789312995.2703035,
+    "seen": 1789314990.983658,
+    "ast_hash": "ce50719c739ce1e54480fc613a3896ab",
+    "semantic_hash": "ce50719c739ce1e54480fc613a3896ab"
+  },
+  "GeometryTutor/src/data/lessons.js": {
+    "mtime": 1789312995.2703035,
+    "seen": 1789314990.983658,
+    "ast_hash": "a6552109bcacc37f0453251f7b3cb321",
+    "semantic_hash": "a6552109bcacc37f0453251f7b3cb321"
+  },
+  "GeometryTutor/src/data/netgame.js": {
+    "mtime": 1789312995.271304,
+    "seen": 1789314990.983658,
+    "ast_hash": "e970cd82bfe30f9d3c841d8c47cc8a41",
+    "semantic_hash": "e970cd82bfe30f9d3c841d8c47cc8a41"
+  },
+  "GeometryTutor/src/data/quizzes.js": {
+    "mtime": 1789312995.271304,
+    "seen": 1789314990.983658,
+    "ast_hash": "b74804cb30f46a935bdeb3f9d03000e2",
+    "semantic_hash": "b74804cb30f46a935bdeb3f9d03000e2"
+  },
+  "GeometryTutor/src/data/schema.js": {
+    "mtime": 1789312995.271304,
+    "seen": 1789314990.983658,
+    "ast_hash": "c5fe4c608247d616b99650216626566a",
+    "semantic_hash": "c5fe4c608247d616b99650216626566a"
+  },
+  "GeometryTutor/src/engine/audio.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "d126154aafeb4a7202335a30d549bd8e",
+    "semantic_hash": "d126154aafeb4a7202335a30d549bd8e"
+  },
+  "GeometryTutor/src/engine/days.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "beb0413523c3a6d9abc997fb4494f431",
+    "semantic_hash": "beb0413523c3a6d9abc997fb4494f431"
+  },
+  "GeometryTutor/src/engine/mastery.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "038341de9dd6464d9df8fa3d711417ca",
+    "semantic_hash": "038341de9dd6464d9df8fa3d711417ca"
+  },
+  "GeometryTutor/src/engine/progress.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "6efaafd151a99d42937c64d46ae01366",
+    "semantic_hash": "6efaafd151a99d42937c64d46ae01366"
+  },
+  "GeometryTutor/src/engine/report.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "af940b1ff0de3e3ee9aefa6a7431cd61",
+    "semantic_hash": "af940b1ff0de3e3ee9aefa6a7431cd61"
+  },
+  "GeometryTutor/src/engine/review.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "8a8de3b462dca0e55b0bc6d06f847c5d",
+    "semantic_hash": "8a8de3b462dca0e55b0bc6d06f847c5d"
+  },
+  "GeometryTutor/src/engine/streak.js": {
+    "mtime": 1789312995.272304,
+    "seen": 1789314990.983658,
+    "ast_hash": "b8f6c6f2e20f62dc6eefaf9e5d658646",
+    "semantic_hash": "b8f6c6f2e20f62dc6eefaf9e5d658646"
+  },
+  "GeometryTutor/src/geo/measure.js": {
+    "mtime": 1789312995.2733085,
+    "seen": 1789314990.983658,
+    "ast_hash": "18eda90558573837db34564b1dd7ffd8",
+    "semantic_hash": "18eda90558573837db34564b1dd7ffd8"
+  },
+  "GeometryTutor/src/geo/solids.js": {
+    "mtime": 1789312995.2733085,
+    "seen": 1789314990.983658,
+    "ast_hash": "34e2310c5b349f15f305df53b5080f1d",
+    "semantic_hash": "34e2310c5b349f15f305df53b5080f1d"
+  },
+  "GeometryTutor/src/geo/topology.js": {
+    "mtime": 1789312995.2733085,
+    "seen": 1789314990.983658,
+    "ast_hash": "1a8f0b1c50b2214855c3f08e4e1d1ce2",
+    "semantic_hash": "1a8f0b1c50b2214855c3f08e4e1d1ce2"
+  },
+  "GeometryTutor/src/geo/unfold.js": {
+    "mtime": 1789312995.2733085,
+    "seen": 1789314990.983658,
+    "ast_hash": "c01d08ed3e49f05f21230ffd66df27b5",
+    "semantic_hash": "c01d08ed3e49f05f21230ffd66df27b5"
+  },
+  "GeometryTutor/src/geo/views.js": {
+    "mtime": 1789312995.2733085,
+    "seen": 1789314990.983658,
+    "ast_hash": "5844b251919d3154e0566c5f449b4484",
+    "semantic_hash": "5844b251919d3154e0566c5f449b4484"
+  },
+  "GeometryTutor/src/ui/app.js": {
+    "mtime": 1789312995.2743084,
+    "seen": 1789314990.983658,
+    "ast_hash": "d127436294509d51a1556a544c05c828",
+    "semantic_hash": "d127436294509d51a1556a544c05c828"
+  },
+  "GeometryTutor/src/ui/beauty.js": {
+    "mtime": 1789312995.2743084,
+    "seen": 1789314990.983658,
+    "ast_hash": "257688c66ba29867ea8541465bade105",
+    "semantic_hash": "257688c66ba29867ea8541465bade105"
+  },
+  "GeometryTutor/src/ui/explore.js": {
+    "mtime": 1789312995.2743084,
+    "seen": 1789314990.983658,
+    "ast_hash": "62ca3330ac1e3c65ffecb3528c7b314b",
+    "semantic_hash": "62ca3330ac1e3c65ffecb3528c7b314b"
+  },
+  "GeometryTutor/src/ui/netgame.js": {
+    "mtime": 1789312995.2743084,
+    "seen": 1789314990.983658,
+    "ast_hash": "1367ea8dbe7156dea9c771eb451152a6",
+    "semantic_hash": "1367ea8dbe7156dea9c771eb451152a6"
+  },
+  "GeometryTutor/src/ui/threeview.js": {
+    "mtime": 1789312995.2743084,
+    "seen": 1789314990.983658,
+    "ast_hash": "4cf06abb4f64fc5c331806b725758897",
+    "semantic_hash": "4cf06abb4f64fc5c331806b725758897"
+  },
+  "GeometryTutor/src/viewer/viewer.js": {
+    "mtime": 1789312995.2753086,
+    "seen": 1789314990.983658,
+    "ast_hash": "c39564d30e82f300a53df9ab99c0a382",
+    "semantic_hash": "c39564d30e82f300a53df9ab99c0a382"
+  },
+  "GeometryTutor/tests/content.test.mjs": {
+    "mtime": 1789312995.2753086,
+    "seen": 1789314990.983658,
+    "ast_hash": "d97b6b4ba9f7d860e056681a15914092",
+    "semantic_hash": "d97b6b4ba9f7d860e056681a15914092"
+  },
+  "GeometryTutor/tests/geo.test.mjs": {
+    "mtime": 1789312995.2753086,
+    "seen": 1789314990.983658,
+    "ast_hash": "99c96923133f55832a0b1234cdcf5232",
+    "semantic_hash": "99c96923133f55832a0b1234cdcf5232"
+  },
+  "GeometryTutor/tests/mastery.test.mjs": {
+    "mtime": 1789312995.2753086,
+    "seen": 1789314990.983658,
+    "ast_hash": "c7425b317fc131a18dbe0a291ec31841",
+    "semantic_hash": "c7425b317fc131a18dbe0a291ec31841"
+  },
+  "GeometryTutor/tests/measure.test.mjs": {
+    "mtime": 1789312995.2753086,
+    "seen": 1789314990.983658,
+    "ast_hash": "fbaa6403cd098dae99e360f5912898b9",
+    "semantic_hash": "fbaa6403cd098dae99e360f5912898b9"
+  },
+  "GeometryTutor/tests/netgame.test.mjs": {
+    "mtime": 1789312995.2753086,
+    "seen": 1789314990.983658,
+    "ast_hash": "340f39ad02f9abb49fd1e74b21189b8d",
+    "semantic_hash": "340f39ad02f9abb49fd1e74b21189b8d"
+  },
+  "GeometryTutor/tests/platonic.test.mjs": {
+    "mtime": 1789312995.276308,
+    "seen": 1789314990.983658,
+    "ast_hash": "3fd7bc4aa890796ecefbff96152dacfc",
+    "semantic_hash": "3fd7bc4aa890796ecefbff96152dacfc"
+  },
+  "GeometryTutor/tests/report.test.mjs": {
+    "mtime": 1789312995.276308,
+    "seen": 1789314990.983658,
+    "ast_hash": "32a127f27cd93a6dbd20ebeae12f6e3e",
+    "semantic_hash": "32a127f27cd93a6dbd20ebeae12f6e3e"
+  },
+  "GeometryTutor/tests/review.test.mjs": {
+    "mtime": 1789312995.276308,
+    "seen": 1789314990.983658,
+    "ast_hash": "686c8f9b836025a320d541d004457fd3",
+    "semantic_hash": "686c8f9b836025a320d541d004457fd3"
+  },
+  "GeometryTutor/tests/streak.test.mjs": {
+    "mtime": 1789312995.276308,
+    "seen": 1789314990.983658,
+    "ast_hash": "1ba2c4e0bd108c7578481a46987fef03",
+    "semantic_hash": "1ba2c4e0bd108c7578481a46987fef03"
+  },
+  "GeometryTutor/tests/unfold.test.mjs": {
+    "mtime": 1789312995.276308,
+    "seen": 1789314990.983658,
+    "ast_hash": "5541cd6db9aa6d02abb29e3b8c742393",
+    "semantic_hash": "5541cd6db9aa6d02abb29e3b8c742393"
+  },
+  "GeometryTutor/tests/views.test.mjs": {
+    "mtime": 1789312995.276308,
+    "seen": 1789314990.983658,
+    "ast_hash": "dddd9dffd0c0eb24004142bfb92b284d",
+    "semantic_hash": "dddd9dffd0c0eb24004142bfb92b284d"
+  },
+  "GeometryTutor/tools/asr_check.py": {
+    "mtime": 1789312995.2770512,
+    "seen": 1789314990.983658,
+    "ast_hash": "15dc9be1c0d7f1243a3d484df996c686",
+    "semantic_hash": "15dc9be1c0d7f1243a3d484df996c686"
+  },
+  "GeometryTutor/tools/check_audio_refs.mjs": {
+    "mtime": 1789312995.2770512,
+    "seen": 1789314990.983658,
+    "ast_hash": "b4842d68a312be5a6f42e60e5d29da02",
+    "semantic_hash": "b4842d68a312be5a6f42e60e5d29da02"
+  },
+  "GeometryTutor/tools/gen_voice.py": {
+    "mtime": 1789312995.2770512,
+    "seen": 1789314990.983658,
+    "ast_hash": "27d49f0f35f48aa3d0ca4a93d0e79702",
+    "semantic_hash": "27d49f0f35f48aa3d0ca4a93d0e79702"
+  },
+  "GeometryTutor/tools/tts_lines.py": {
+    "mtime": 1789312995.2775555,
+    "seen": 1789314990.983658,
+    "ast_hash": "23ed3c66b635f88f3c362adea76698a3",
+    "semantic_hash": "23ed3c66b635f88f3c362adea76698a3"
+  },
+  "GeometryTutor/vendor/three.module.js": {
+    "mtime": 1789312995.282851,
+    "seen": 1789314990.983658,
+    "ast_hash": "4072c38489781424d381b9c5ce188ea3",
+    "semantic_hash": "4072c38489781424d381b9c5ce188ea3"
+  },
+  "UnityPractice/Packages/manifest.json": {
+    "mtime": 1789312995.283952,
+    "seen": 1789314990.983658,
+    "ast_hash": "4d59034589eb47913e52375293a68b03",
+    "semantic_hash": "4d59034589eb47913e52375293a68b03"
+  },
+  "Geomertry/ProjectSettings/ProjectVersion.txt": {
+    "mtime": 1789312994.8376522,
+    "seen": 1789314990.983658,
+    "ast_hash": "a358ac7f5fb09f4e0d579bb5146c6cdf",
+    "semantic_hash": "a358ac7f5fb09f4e0d579bb5146c6cdf"
+  },
+  "GeometryTutor-mp/README.md": {
+    "mtime": 1789312994.8396525,
+    "seen": 1789314990.983658,
+    "ast_hash": "f5f6ccb1faaefcf6be87409c30f2113b",
+    "semantic_hash": "f5f6ccb1faaefcf6be87409c30f2113b"
+  },
+  "GeometryTutor-mp/SMOKE.md": {
+    "mtime": 1789312994.8396525,
+    "seen": 1789314990.983658,
+    "ast_hash": "43c95b78352f7ea7fde6cac690d4d6e0",
+    "semantic_hash": "43c95b78352f7ea7fde6cac690d4d6e0"
+  },
+  "GeometryTutor-mp/index.html": {
+    "mtime": 1789312994.8396525,
+    "seen": 1789314990.983658,
+    "ast_hash": "d956609574e573d02f807b02de29f64b",
+    "semantic_hash": "d956609574e573d02f807b02de29f64b"
+  },
+  "GeometryTutor/README.md": {
+    "mtime": 1789312994.852651,
+    "seen": 1789314990.983658,
+    "ast_hash": "5524936732026e5c103126a9644eb8f4",
+    "semantic_hash": "5524936732026e5c103126a9644eb8f4"
+  },
+  "GeometryTutor/docs/audio-manifest.md": {
+    "mtime": 1789312995.2693038,
+    "seen": 1789314990.983658,
+    "ast_hash": "94f68d84a110f4b708426fe7ea671409",
+    "semantic_hash": "94f68d84a110f4b708426fe7ea671409"
+  },
+  "GeometryTutor/docs/product/gamification-research.md": {
+    "mtime": 1789312995.2693038,
+    "seen": 1789314990.983658,
+    "ast_hash": "43b31a4e5a8608dfca081c6679a2b86c",
+    "semantic_hash": "43b31a4e5a8608dfca081c6679a2b86c"
+  },
+  "GeometryTutor/docs/product/growth-research.md": {
+    "mtime": 1789312995.2703035,
+    "seen": 1789314990.983658,
+    "ast_hash": "332ce990d1c65231bcc97f95f27490e4",
+    "semantic_hash": "332ce990d1c65231bcc97f95f27490e4"
+  },
+  "GeometryTutor/index.html": {
+    "mtime": 1789312995.2703035,
+    "seen": 1789314990.983658,
+    "ast_hash": "75037356556a321b6e5413b65f793c1b",
+    "semantic_hash": "75037356556a321b6e5413b65f793c1b"
+  },
+  "UnityPractice/ProjectSettings/ProjectVersion.txt": {
+    "mtime": 1789312995.286029,
+    "seen": 1789314990.983658,
+    "ast_hash": "a358ac7f5fb09f4e0d579bb5146c6cdf",
+    "semantic_hash": "a358ac7f5fb09f4e0d579bb5146c6cdf"
+  },
+  "readme.md": {
+    "mtime": 1789312995.2865534,
+    "seen": 1789314990.983658,
+    "ast_hash": "0fe1b8028d1365541d44e86f736e6f64",
+    "semantic_hash": "0fe1b8028d1365541d44e86f736e6f64"
+  },
+  "GeometryTutor-mp/src/static/tabbar/lab-active.png": {
+    "mtime": 1789312994.8476522,
+    "seen": 1789314990.983658,
+    "ast_hash": "393abcc9fffb3dd2149a02242a31228c",
+    "semantic_hash": "393abcc9fffb3dd2149a02242a31228c"
+  },
+  "GeometryTutor-mp/src/static/tabbar/lab.png": {
+    "mtime": 1789312994.8476522,
+    "seen": 1789314990.983658,
+    "ast_hash": "8b5d6eaf9eab7a17689890ee4d0414f0",
+    "semantic_hash": "8b5d6eaf9eab7a17689890ee4d0414f0"
+  },
+  "GeometryTutor-mp/src/static/tabbar/lessons-active.png": {
+    "mtime": 1789312994.8486521,
+    "seen": 1789314990.983658,
+    "ast_hash": "eba6fc8c14c0ad5a33ceee0096031db8",
+    "semantic_hash": "eba6fc8c14c0ad5a33ceee0096031db8"
+  },
+  "GeometryTutor-mp/src/static/tabbar/lessons.png": {
+    "mtime": 1789312994.8486521,
+    "seen": 1789314990.983658,
+    "ast_hash": "94c7d5b82fa4eab8f477f7f6234726f6",
+    "semantic_hash": "94c7d5b82fa4eab8f477f7f6234726f6"
+  },
+  "GeometryTutor-mp/src/static/tabbar/quiz-active.png": {
+    "mtime": 1789312994.8486521,
+    "seen": 1789314990.983658,
+    "ast_hash": "ab42740e1e90845e9378a9be32a80781",
+    "semantic_hash": "ab42740e1e90845e9378a9be32a80781"
+  },
+  "GeometryTutor-mp/src/static/tabbar/quiz.png": {
+    "mtime": 1789312994.8486521,
+    "seen": 1789314990.983658,
+    "ast_hash": "00fcd597f02cd457040263c03eaf57e0",
+    "semantic_hash": "00fcd597f02cd457040263c03eaf57e0"
+  },
+  "GeometryTutor-mp/src/static/tabbar/wrong-active.png": {
+    "mtime": 1789312994.8486521,
+    "seen": 1789314990.983658,
+    "ast_hash": "060f9cef999b050598636968f7ed8f46",
+    "semantic_hash": "060f9cef999b050598636968f7ed8f46"
+  },
+  "GeometryTutor-mp/src/static/tabbar/wrong.png": {
+    "mtime": 1789312994.8486521,
+    "seen": 1789314990.983658,
+    "ast_hash": "33464665e1dd2a43d8901e348978890c",
+    "semantic_hash": "33464665e1dd2a43d8901e348978890c"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-1.m4a": {
+    "mtime": 1789312994.8536606,
+    "seen": 1789314990.983658,
+    "ast_hash": "6bb0e61a993a66a19b9801860790054e",
+    "semantic_hash": "6bb0e61a993a66a19b9801860790054e"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-1.ogg": {
+    "mtime": 1789312994.8536606,
+    "seen": 1789314990.983658,
+    "ast_hash": "3e6b04760f8600659d1d7dde6131acc0",
+    "semantic_hash": "3e6b04760f8600659d1d7dde6131acc0"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-2.m4a": {
+    "mtime": 1789312994.8546596,
+    "seen": 1789314990.983658,
+    "ast_hash": "3e5a18c00efbff8b56b5e5ccec05e6c2",
+    "semantic_hash": "3e5a18c00efbff8b56b5e5ccec05e6c2"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-2.ogg": {
+    "mtime": 1789312994.8556516,
+    "seen": 1789314990.983658,
+    "ast_hash": "d2c0908e22bc139848da0c86a8f04424",
+    "semantic_hash": "d2c0908e22bc139848da0c86a8f04424"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-3.m4a": {
+    "mtime": 1789312994.8566518,
+    "seen": 1789314990.983658,
+    "ast_hash": "42fd518e7c724fc64946230a2e4d9beb",
+    "semantic_hash": "42fd518e7c724fc64946230a2e4d9beb"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-3.ogg": {
+    "mtime": 1789312994.8566518,
+    "seen": 1789314990.983658,
+    "ast_hash": "3b3eef089e4c03169f70ad49af16a15c",
+    "semantic_hash": "3b3eef089e4c03169f70ad49af16a15c"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-4.m4a": {
+    "mtime": 1789312994.8586512,
+    "seen": 1789314990.983658,
+    "ast_hash": "5a42c70429d69d569e71ed4c236739f8",
+    "semantic_hash": "5a42c70429d69d569e71ed4c236739f8"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-4.ogg": {
+    "mtime": 1789312994.8586512,
+    "seen": 1789314990.983658,
+    "ast_hash": "8fee544c2db2e29cf0b92d2fc20b0a64",
+    "semantic_hash": "8fee544c2db2e29cf0b92d2fc20b0a64"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-5.m4a": {
+    "mtime": 1789312994.8606513,
+    "seen": 1789314990.983658,
+    "ast_hash": "bf9718ac7607161b3bd61f8ea390e3ca",
+    "semantic_hash": "bf9718ac7607161b3bd61f8ea390e3ca"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-5.ogg": {
+    "mtime": 1789312994.8616536,
+    "seen": 1789314990.983658,
+    "ast_hash": "1b82cbe0e748eff8893c9e86fa7be86c",
+    "semantic_hash": "1b82cbe0e748eff8893c9e86fa7be86c"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-6.m4a": {
+    "mtime": 1789312994.8626518,
+    "seen": 1789314990.983658,
+    "ast_hash": "944d8be7b10ffbcd29a7c2b384692b68",
+    "semantic_hash": "944d8be7b10ffbcd29a7c2b384692b68"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-6.ogg": {
+    "mtime": 1789312994.8636522,
+    "seen": 1789314990.983658,
+    "ast_hash": "ca2535286c5271899d90da8b4a1b2310",
+    "semantic_hash": "ca2535286c5271899d90da8b4a1b2310"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-7.m4a": {
+    "mtime": 1789312994.8636522,
+    "seen": 1789314990.983658,
+    "ast_hash": "16ce2470cdff2917d5156e01363da4ae",
+    "semantic_hash": "16ce2470cdff2917d5156e01363da4ae"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-7.ogg": {
+    "mtime": 1789312994.8646524,
+    "seen": 1789314990.983658,
+    "ast_hash": "332fc5685f25863dc06584d15da4b8f8",
+    "semantic_hash": "332fc5685f25863dc06584d15da4b8f8"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-8.m4a": {
+    "mtime": 1789312994.8656602,
+    "seen": 1789314990.983658,
+    "ast_hash": "3cfd46baba196220987e2d039acc582f",
+    "semantic_hash": "3cfd46baba196220987e2d039acc582f"
+  },
+  "GeometryTutor/assets/audio/voice/beauty-8.ogg": {
+    "mtime": 1789312994.8656602,
+    "seen": 1789314990.983658,
+    "ast_hash": "9735226b0e896dae28887d0f4ff8484e",
+    "semantic_hash": "9735226b0e896dae28887d0f4ff8484e"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s1.m4a": {
+    "mtime": 1789312994.866652,
+    "seen": 1789314990.983658,
+    "ast_hash": "06cbecd13fc513f3be15bf127b2153ed",
+    "semantic_hash": "06cbecd13fc513f3be15bf127b2153ed"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s1.ogg": {
+    "mtime": 1789312994.8676517,
+    "seen": 1789314990.983658,
+    "ast_hash": "64c008130d3ec1e605089df51157a012",
+    "semantic_hash": "64c008130d3ec1e605089df51157a012"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s2.m4a": {
+    "mtime": 1789312994.8686519,
+    "seen": 1789314990.983658,
+    "ast_hash": "adff1d7193ace510f1b87d6300554c76",
+    "semantic_hash": "adff1d7193ace510f1b87d6300554c76"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s2.ogg": {
+    "mtime": 1789312994.8696518,
+    "seen": 1789314990.983658,
+    "ast_hash": "af52d9a5df2f36386b59d42019083e66",
+    "semantic_hash": "af52d9a5df2f36386b59d42019083e66"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s3.m4a": {
+    "mtime": 1789312994.8706515,
+    "seen": 1789314990.983658,
+    "ast_hash": "ed4cf8d59258d798889f8215868cc487",
+    "semantic_hash": "ed4cf8d59258d798889f8215868cc487"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s3.ogg": {
+    "mtime": 1789312994.8716514,
+    "seen": 1789314990.983658,
+    "ast_hash": "4ca95be4cb34f90b542e293e7cdebeaa",
+    "semantic_hash": "4ca95be4cb34f90b542e293e7cdebeaa"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s4.m4a": {
+    "mtime": 1789312994.872655,
+    "seen": 1789314990.983658,
+    "ast_hash": "279ecf224728fc7bb720f42aa955f3e9",
+    "semantic_hash": "279ecf224728fc7bb720f42aa955f3e9"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s4.ogg": {
+    "mtime": 1789312994.872655,
+    "seen": 1789314990.983658,
+    "ast_hash": "c2202abfb44f4dc0940aa4214c27624d",
+    "semantic_hash": "c2202abfb44f4dc0940aa4214c27624d"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s5.m4a": {
+    "mtime": 1789312994.8736558,
+    "seen": 1789314990.983658,
+    "ast_hash": "fe0fece8fd0984a6f20f4165d9af24b3",
+    "semantic_hash": "fe0fece8fd0984a6f20f4165d9af24b3"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s5.ogg": {
+    "mtime": 1789312994.8746552,
+    "seen": 1789314990.983658,
+    "ast_hash": "37d4dad715c10f0d86fd77b7ad0b9c49",
+    "semantic_hash": "37d4dad715c10f0d86fd77b7ad0b9c49"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s6.m4a": {
+    "mtime": 1789312994.8756552,
+    "seen": 1789314990.983658,
+    "ast_hash": "ebf019613a6d91b1acc7efef217d0924",
+    "semantic_hash": "ebf019613a6d91b1acc7efef217d0924"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s6.ogg": {
+    "mtime": 1789312994.8766568,
+    "seen": 1789314990.983658,
+    "ast_hash": "d00154fd401fa1bb2ba5c4464c7f4ca3",
+    "semantic_hash": "d00154fd401fa1bb2ba5c4464c7f4ca3"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s7.m4a": {
+    "mtime": 1789312994.8776555,
+    "seen": 1789314990.983658,
+    "ast_hash": "213c294e74426b71f190a27442287bcd",
+    "semantic_hash": "213c294e74426b71f190a27442287bcd"
+  },
+  "GeometryTutor/assets/audio/voice/net-unfold-s7.ogg": {
+    "mtime": 1789312994.8786552,
+    "seen": 1789314990.983658,
+    "ast_hash": "3b921077db1c9db3cf72a77817cab707",
+    "semantic_hash": "3b921077db1c9db3cf72a77817cab707"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s1.m4a": {
+    "mtime": 1789312994.8796551,
+    "seen": 1789314990.983658,
+    "ast_hash": "74833d0e22dbd7ca157ec5dbf16c4b16",
+    "semantic_hash": "74833d0e22dbd7ca157ec5dbf16c4b16"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s1.ogg": {
+    "mtime": 1789312994.8796551,
+    "seen": 1789314990.983658,
+    "ast_hash": "8f75436bcb046b0695387ba3e187fd0e",
+    "semantic_hash": "8f75436bcb046b0695387ba3e187fd0e"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s2.m4a": {
+    "mtime": 1789312994.8806558,
+    "seen": 1789314990.983658,
+    "ast_hash": "5a0e6cb524b8a2eb5897fd1841569739",
+    "semantic_hash": "5a0e6cb524b8a2eb5897fd1841569739"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s2.ogg": {
+    "mtime": 1789312994.8816552,
+    "seen": 1789314990.983658,
+    "ast_hash": "ea7bea31cbd4359a65d8983ccc7d6632",
+    "semantic_hash": "ea7bea31cbd4359a65d8983ccc7d6632"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s3.m4a": {
+    "mtime": 1789312994.882655,
+    "seen": 1789314990.983658,
+    "ast_hash": "3673b7eea7195b9bd5a6419ff8230200",
+    "semantic_hash": "3673b7eea7195b9bd5a6419ff8230200"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s3.ogg": {
+    "mtime": 1789312994.8836553,
+    "seen": 1789314990.983658,
+    "ast_hash": "b4fc869c4052622b24953986acbeacb8",
+    "semantic_hash": "b4fc869c4052622b24953986acbeacb8"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s4.m4a": {
+    "mtime": 1789312994.8856642,
+    "seen": 1789314990.983658,
+    "ast_hash": "34a746bbfd0f43817319ee3648c7997c",
+    "semantic_hash": "34a746bbfd0f43817319ee3648c7997c"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s4.ogg": {
+    "mtime": 1789312994.8856642,
+    "seen": 1789314990.983658,
+    "ast_hash": "c907e723ab17ed8affbc65412f1e6e0a",
+    "semantic_hash": "c907e723ab17ed8affbc65412f1e6e0a"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s5.m4a": {
+    "mtime": 1789312994.8871799,
+    "seen": 1789314990.983658,
+    "ast_hash": "02105c35d4db080fd71f8aae4729675c",
+    "semantic_hash": "02105c35d4db080fd71f8aae4729675c"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s5.ogg": {
+    "mtime": 1789312994.8881843,
+    "seen": 1789314990.983658,
+    "ast_hash": "d823076670c83bd48d8093f9207aad7e",
+    "semantic_hash": "d823076670c83bd48d8093f9207aad7e"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s6.m4a": {
+    "mtime": 1789312994.8891838,
+    "seen": 1789314990.983658,
+    "ast_hash": "8fee8c6bf9452cbde0626dedc87d8e26",
+    "semantic_hash": "8fee8c6bf9452cbde0626dedc87d8e26"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s6.ogg": {
+    "mtime": 1789312994.8891838,
+    "seen": 1789314990.983658,
+    "ast_hash": "cb56235e4dbd24d566fae78011602849",
+    "semantic_hash": "cb56235e4dbd24d566fae78011602849"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s7.m4a": {
+    "mtime": 1789312994.8901844,
+    "seen": 1789314990.983658,
+    "ast_hash": "0d88707d6320dd989027f8a89935c78f",
+    "semantic_hash": "0d88707d6320dd989027f8a89935c78f"
+  },
+  "GeometryTutor/assets/audio/voice/parallel-perp-s7.ogg": {
+    "mtime": 1789312994.891184,
+    "seen": 1789314990.983658,
+    "ast_hash": "d129f5e1f87ce34296f024a83cd289e8",
+    "semantic_hash": "d129f5e1f87ce34296f024a83cd289e8"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s1.m4a": {
+    "mtime": 1789312994.8921845,
+    "seen": 1789314990.983658,
+    "ast_hash": "e9d11018080cc7dd5a0237b7c9ed06fc",
+    "semantic_hash": "e9d11018080cc7dd5a0237b7c9ed06fc"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s1.ogg": {
+    "mtime": 1789312994.8931842,
+    "seen": 1789314990.983658,
+    "ast_hash": "8bb598938ab8149711ae0ae8026d7160",
+    "semantic_hash": "8bb598938ab8149711ae0ae8026d7160"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s2.m4a": {
+    "mtime": 1789312994.8941932,
+    "seen": 1789314990.983658,
+    "ast_hash": "03e8e3f68db93ec64cbc9538ffe900d4",
+    "semantic_hash": "03e8e3f68db93ec64cbc9538ffe900d4"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s2.ogg": {
+    "mtime": 1789312994.8941932,
+    "seen": 1789314990.983658,
+    "ast_hash": "e9df6c39e5c1ba93fd53b22a1bf7baf6",
+    "semantic_hash": "e9df6c39e5c1ba93fd53b22a1bf7baf6"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s3.m4a": {
+    "mtime": 1789312994.8951921,
+    "seen": 1789314990.983658,
+    "ast_hash": "314f7a8c39102e6b971a7be845d0e276",
+    "semantic_hash": "314f7a8c39102e6b971a7be845d0e276"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s3.ogg": {
+    "mtime": 1789312994.896184,
+    "seen": 1789314990.983658,
+    "ast_hash": "0618052a2b709fc315118b808dff10c1",
+    "semantic_hash": "0618052a2b709fc315118b808dff10c1"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s4.m4a": {
+    "mtime": 1789312994.8971841,
+    "seen": 1789314990.983658,
+    "ast_hash": "40c7d41882376b9b074612bd50da0895",
+    "semantic_hash": "40c7d41882376b9b074612bd50da0895"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s4.ogg": {
+    "mtime": 1789312994.8971841,
+    "seen": 1789314990.983658,
+    "ast_hash": "05a385816ebebf746fbdf36245058fbe",
+    "semantic_hash": "05a385816ebebf746fbdf36245058fbe"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s5.m4a": {
+    "mtime": 1789312994.8981843,
+    "seen": 1789314990.983658,
+    "ast_hash": "1cf1681bed4d55e5f611ed6e632beac7",
+    "semantic_hash": "1cf1681bed4d55e5f611ed6e632beac7"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s5.ogg": {
+    "mtime": 1789312994.8991838,
+    "seen": 1789314990.983658,
+    "ast_hash": "7bec47aa625506293bbf30a6743e4099",
+    "semantic_hash": "7bec47aa625506293bbf30a6743e4099"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s6.m4a": {
+    "mtime": 1789312994.9001837,
+    "seen": 1789314990.983658,
+    "ast_hash": "1721068cd5f41236e2a29de6081a6958",
+    "semantic_hash": "1721068cd5f41236e2a29de6081a6958"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s6.ogg": {
+    "mtime": 1789312994.9001837,
+    "seen": 1789314990.983658,
+    "ast_hash": "256a2ecb272339bbf6f166d3a0b728a9",
+    "semantic_hash": "256a2ecb272339bbf6f166d3a0b728a9"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s7.m4a": {
+    "mtime": 1789312994.901184,
+    "seen": 1789314990.983658,
+    "ast_hash": "a29e4e3411fff815dbd9ecef03ee4f7b",
+    "semantic_hash": "a29e4e3411fff815dbd9ecef03ee4f7b"
+  },
+  "GeometryTutor/assets/audio/voice/position-rel-s7.ogg": {
+    "mtime": 1789312994.9021838,
+    "seen": 1789314990.983658,
+    "ast_hash": "1499473b33f029119389ea24d91149db",
+    "semantic_hash": "1499473b33f029119389ea24d91149db"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s1.m4a": {
+    "mtime": 1789312994.9031837,
+    "seen": 1789314990.983658,
+    "ast_hash": "89ceb1c2dee4338436c34d68bc79c8c9",
+    "semantic_hash": "89ceb1c2dee4338436c34d68bc79c8c9"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s1.ogg": {
+    "mtime": 1789312994.904184,
+    "seen": 1789314990.983658,
+    "ast_hash": "32502bb2772bccdd0167bbc4b7322fae",
+    "semantic_hash": "32502bb2772bccdd0167bbc4b7322fae"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s2.m4a": {
+    "mtime": 1789312994.9051838,
+    "seen": 1789314990.983658,
+    "ast_hash": "84ce7fa91bb88467d654f70820c4a002",
+    "semantic_hash": "84ce7fa91bb88467d654f70820c4a002"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s2.ogg": {
+    "mtime": 1789312994.9051838,
+    "seen": 1789314990.983658,
+    "ast_hash": "76dd39494064c4336ff22d6ec7ad1d9f",
+    "semantic_hash": "76dd39494064c4336ff22d6ec7ad1d9f"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s3.m4a": {
+    "mtime": 1789312994.9071853,
+    "seen": 1789314990.983658,
+    "ast_hash": "df80f6f14edd8e099591aacaa831f6c0",
+    "semantic_hash": "df80f6f14edd8e099591aacaa831f6c0"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s3.ogg": {
+    "mtime": 1789312994.9071853,
+    "seen": 1789314990.983658,
+    "ast_hash": "155068cf5acfc2203877d599b1427dcf",
+    "semantic_hash": "155068cf5acfc2203877d599b1427dcf"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s4.m4a": {
+    "mtime": 1789312994.9081838,
+    "seen": 1789314990.983658,
+    "ast_hash": "89ee8e7c56e9fbdc0bae0d6fab254fb8",
+    "semantic_hash": "89ee8e7c56e9fbdc0bae0d6fab254fb8"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s4.ogg": {
+    "mtime": 1789312994.9091835,
+    "seen": 1789314990.983658,
+    "ast_hash": "1fe567a019e8b76346b7ff317a8375e7",
+    "semantic_hash": "1fe567a019e8b76346b7ff317a8375e7"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s5.m4a": {
+    "mtime": 1789312994.9101906,
+    "seen": 1789314990.983658,
+    "ast_hash": "c8a792899801a5bed60a4a8761ac5390",
+    "semantic_hash": "c8a792899801a5bed60a4a8761ac5390"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s5.ogg": {
+    "mtime": 1789312994.9111843,
+    "seen": 1789314990.983658,
+    "ast_hash": "8bbeacc176a2045112f4eed75b6ca983",
+    "semantic_hash": "8bbeacc176a2045112f4eed75b6ca983"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s6.m4a": {
+    "mtime": 1789312994.912184,
+    "seen": 1789314990.983658,
+    "ast_hash": "b7966e5bb130773e9feb1ba8213a542d",
+    "semantic_hash": "b7966e5bb130773e9feb1ba8213a542d"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s6.ogg": {
+    "mtime": 1789312994.9131842,
+    "seen": 1789314990.983658,
+    "ast_hash": "f322b40f6e7cc5bec0dca7e11e300088",
+    "semantic_hash": "f322b40f6e7cc5bec0dca7e11e300088"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s7.m4a": {
+    "mtime": 1789312994.9141836,
+    "seen": 1789314990.983658,
+    "ast_hash": "c5cc2bfe09dc605296b2fff9344f05c2",
+    "semantic_hash": "c5cc2bfe09dc605296b2fff9344f05c2"
+  },
+  "GeometryTutor/assets/audio/voice/prism-volume-s7.ogg": {
+    "mtime": 1789312994.9141836,
+    "seen": 1789314990.983658,
+    "ast_hash": "934c92509912a6c2b18134fb79f5e62c",
+    "semantic_hash": "934c92509912a6c2b18134fb79f5e62c"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s1.m4a": {
+    "mtime": 1789312994.915184,
+    "seen": 1789314990.983658,
+    "ast_hash": "65518b6d172349708f23ae020ed37d8e",
+    "semantic_hash": "65518b6d172349708f23ae020ed37d8e"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s1.ogg": {
+    "mtime": 1789312994.917184,
+    "seen": 1789314990.983658,
+    "ast_hash": "dbe999e8e3b306859212c8f94527b676",
+    "semantic_hash": "dbe999e8e3b306859212c8f94527b676"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s2.m4a": {
+    "mtime": 1789312994.9181838,
+    "seen": 1789314990.983658,
+    "ast_hash": "646a1b3ed9d6238e69a84f6bf79c0272",
+    "semantic_hash": "646a1b3ed9d6238e69a84f6bf79c0272"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s2.ogg": {
+    "mtime": 1789312994.919184,
+    "seen": 1789314990.983658,
+    "ast_hash": "22b4b295372730423f8c99f46cc83191",
+    "semantic_hash": "22b4b295372730423f8c99f46cc83191"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s3.m4a": {
+    "mtime": 1789312994.920184,
+    "seen": 1789314990.983658,
+    "ast_hash": "bf9800e9e84b2edec2e742d998f6097c",
+    "semantic_hash": "bf9800e9e84b2edec2e742d998f6097c"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s3.ogg": {
+    "mtime": 1789312994.920184,
+    "seen": 1789314990.983658,
+    "ast_hash": "c11d48ef7a9c6ebc9483631b4a47f80b",
+    "semantic_hash": "c11d48ef7a9c6ebc9483631b4a47f80b"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s5.m4a": {
+    "mtime": 1789312994.921184,
+    "seen": 1789314990.983658,
+    "ast_hash": "151ffa4f7d1876ae0e34eb776be1400b",
+    "semantic_hash": "151ffa4f7d1876ae0e34eb776be1400b"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s5.ogg": {
+    "mtime": 1789312994.9221838,
+    "seen": 1789314990.983658,
+    "ast_hash": "676a4c9b6a035055ef22b2de975cdbca",
+    "semantic_hash": "676a4c9b6a035055ef22b2de975cdbca"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s6.m4a": {
+    "mtime": 1789312994.9231837,
+    "seen": 1789314990.983658,
+    "ast_hash": "aba8ea71bce12c89223ecfc44f42fca6",
+    "semantic_hash": "aba8ea71bce12c89223ecfc44f42fca6"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s6.ogg": {
+    "mtime": 1789312994.9241838,
+    "seen": 1789314990.983658,
+    "ast_hash": "1f3d007b66cebb990817e293191e195c",
+    "semantic_hash": "1f3d007b66cebb990817e293191e195c"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s7.m4a": {
+    "mtime": 1789312994.9251838,
+    "seen": 1789314990.983658,
+    "ast_hash": "c6193559a3b3d4332d4380f8632098bb",
+    "semantic_hash": "c6193559a3b3d4332d4380f8632098bb"
+  },
+  "GeometryTutor/assets/audio/voice/pyramid-volume-s7.ogg": {
+    "mtime": 1789312994.9251838,
+    "seen": 1789314990.983658,
+    "ast_hash": "a1ec55e586989d80733aee3ed1f4bf48",
+    "semantic_hash": "a1ec55e586989d80733aee3ed1f4bf48"
+  },
+  "GeometryTutor/assets/audio/voice/q01-ex1.m4a": {
+    "mtime": 1789312994.9261844,
+    "seen": 1789314990.983658,
+    "ast_hash": "186d3f5691c6875f73604f0264ac51ff",
+    "semantic_hash": "186d3f5691c6875f73604f0264ac51ff"
+  },
+  "GeometryTutor/assets/audio/voice/q01-ex1.ogg": {
+    "mtime": 1789312994.927184,
+    "seen": 1789314990.983658,
+    "ast_hash": "e138723fbeb5ea2e563aeacb05156adc",
+    "semantic_hash": "e138723fbeb5ea2e563aeacb05156adc"
+  },
+  "GeometryTutor/assets/audio/voice/q01-ex2.m4a": {
+    "mtime": 1789312994.9281838,
+    "seen": 1789314990.983658,
+    "ast_hash": "02a92503cad150f76b9801c17ec26900",
+    "semantic_hash": "02a92503cad150f76b9801c17ec26900"
+  },
+  "GeometryTutor/assets/audio/voice/q01-ex2.ogg": {
+    "mtime": 1789312994.9291835,
+    "seen": 1789314990.983658,
+    "ast_hash": "47dbccfd395ebe8d726b232e8d41f280",
+    "semantic_hash": "47dbccfd395ebe8d726b232e8d41f280"
+  },
+  "GeometryTutor/assets/audio/voice/q02-ex1.m4a": {
+    "mtime": 1789312994.9301832,
+    "seen": 1789314990.983658,
+    "ast_hash": "5ee962182a45dbfbd0e975483e2f5ac8",
+    "semantic_hash": "5ee962182a45dbfbd0e975483e2f5ac8"
+  },
+  "GeometryTutor/assets/audio/voice/q02-ex1.ogg": {
+    "mtime": 1789312994.9311838,
+    "seen": 1789314990.983658,
+    "ast_hash": "9df11418ae0d2a91e975b739164375ba",
+    "semantic_hash": "9df11418ae0d2a91e975b739164375ba"
+  },
+  "GeometryTutor/assets/audio/voice/q02-ex2.m4a": {
+    "mtime": 1789312994.9311838,
+    "seen": 1789314990.983658,
+    "ast_hash": "537dacc2c9083474c1b8962401ab9aeb",
+    "semantic_hash": "537dacc2c9083474c1b8962401ab9aeb"
+  },
+  "GeometryTutor/assets/audio/voice/q02-ex2.ogg": {
+    "mtime": 1789312994.9321835,
+    "seen": 1789314990.983658,
+    "ast_hash": "8c738b53dd8f7dbb76f82d60c886d21d",
+    "semantic_hash": "8c738b53dd8f7dbb76f82d60c886d21d"
+  },
+  "GeometryTutor/assets/audio/voice/q03-ex1.m4a": {
+    "mtime": 1789312994.9331834,
+    "seen": 1789314990.983658,
+    "ast_hash": "973ba258cbd99db0e7008b726f58bf0e",
+    "semantic_hash": "973ba258cbd99db0e7008b726f58bf0e"
+  },
+  "GeometryTutor/assets/audio/voice/q03-ex1.ogg": {
+    "mtime": 1789312994.9331834,
+    "seen": 1789314990.983658,
+    "ast_hash": "aec5066c26bcec5af5e750cf866580b6",
+    "semantic_hash": "aec5066c26bcec5af5e750cf866580b6"
+  },
+  "GeometryTutor/assets/audio/voice/q03-ex2.m4a": {
+    "mtime": 1789312994.934184,
+    "seen": 1789314990.983658,
+    "ast_hash": "7b3db2c22e309b366b8e5b3c5260195b",
+    "semantic_hash": "7b3db2c22e309b366b8e5b3c5260195b"
+  },
+  "GeometryTutor/assets/audio/voice/q03-ex2.ogg": {
+    "mtime": 1789312994.935184,
+    "seen": 1789314990.983658,
+    "ast_hash": "ea2b0b292d951f4caee55a10a436a32d",
+    "semantic_hash": "ea2b0b292d951f4caee55a10a436a32d"
+  },
+  "GeometryTutor/assets/audio/voice/q04-ex1.m4a": {
+    "mtime": 1789312994.9361837,
+    "seen": 1789314990.983658,
+    "ast_hash": "c94ffd1b97cc49758e82a719a0412b5f",
+    "semantic_hash": "c94ffd1b97cc49758e82a719a0412b5f"
+  },
+  "GeometryTutor/assets/audio/voice/q04-ex1.ogg": {
+    "mtime": 1789312994.9361837,
+    "seen": 1789314990.983658,
+    "ast_hash": "958719c0f2aa640d79c1ef6ff640c0db",
+    "semantic_hash": "958719c0f2aa640d79c1ef6ff640c0db"
+  },
+  "GeometryTutor/assets/audio/voice/q04-ex2.m4a": {
+    "mtime": 1789312994.9371836,
+    "seen": 1789314990.983658,
+    "ast_hash": "e57985986d2a9275cedb85f151e50ba8",
+    "semantic_hash": "e57985986d2a9275cedb85f151e50ba8"
+  },
+  "GeometryTutor/assets/audio/voice/q04-ex2.ogg": {
+    "mtime": 1789312994.938184,
+    "seen": 1789314990.983658,
+    "ast_hash": "0dc57ad893a98cb4f917fcad23f3fb09",
+    "semantic_hash": "0dc57ad893a98cb4f917fcad23f3fb09"
+  },
+  "GeometryTutor/assets/audio/voice/q05-ex1.m4a": {
+    "mtime": 1789312994.9391842,
+    "seen": 1789314990.983658,
+    "ast_hash": "53ce609eb4779058b7a937051fad5357",
+    "semantic_hash": "53ce609eb4779058b7a937051fad5357"
+  },
+  "GeometryTutor/assets/audio/voice/q05-ex1.ogg": {
+    "mtime": 1789312994.9391842,
+    "seen": 1789314990.983658,
+    "ast_hash": "5531d33e5011c9bc122edc865f8f6a6f",
+    "semantic_hash": "5531d33e5011c9bc122edc865f8f6a6f"
+  },
+  "GeometryTutor/assets/audio/voice/q05-ex2.m4a": {
+    "mtime": 1789312994.9401846,
+    "seen": 1789314990.983658,
+    "ast_hash": "9107c9db28cd3bf68d9fceeb7568f909",
+    "semantic_hash": "9107c9db28cd3bf68d9fceeb7568f909"
+  },
+  "GeometryTutor/assets/audio/voice/q05-ex2.ogg": {
+    "mtime": 1789312994.9411843,
+    "seen": 1789314990.983658,
+    "ast_hash": "ffc8990210d69a524126d72d9d8cda34",
+    "semantic_hash": "ffc8990210d69a524126d72d9d8cda34"
+  },
+  "GeometryTutor/assets/audio/voice/q06-ex1.m4a": {
+    "mtime": 1789312994.9421844,
+    "seen": 1789314990.983658,
+    "ast_hash": "5c6fff2fd85b8bf8e72055639413f92a",
+    "semantic_hash": "5c6fff2fd85b8bf8e72055639413f92a"
+  },
+  "GeometryTutor/assets/audio/voice/q06-ex1.ogg": {
+    "mtime": 1789312994.9421844,
+    "seen": 1789314990.983658,
+    "ast_hash": "2091323aa23ac2909212071ef8df713f",
+    "semantic_hash": "2091323aa23ac2909212071ef8df713f"
+  },
+  "GeometryTutor/assets/audio/voice/q06-ex2.m4a": {
+    "mtime": 1789312994.9431834,
+    "seen": 1789314990.983658,
+    "ast_hash": "3f74d1780ae00ecd5d453f958be0c34e",
+    "semantic_hash": "3f74d1780ae00ecd5d453f958be0c34e"
+  },
+  "GeometryTutor/assets/audio/voice/q06-ex2.ogg": {
+    "mtime": 1789312994.9441843,
+    "seen": 1789314990.983658,
+    "ast_hash": "c037ca731dfa45447948462fd17665f8",
+    "semantic_hash": "c037ca731dfa45447948462fd17665f8"
+  },
+  "GeometryTutor/assets/audio/voice/q07-ex1.m4a": {
+    "mtime": 1789312994.9441843,
+    "seen": 1789314990.983658,
+    "ast_hash": "13b22aedb9c0cc6ec20b16942d9c25dd",
+    "semantic_hash": "13b22aedb9c0cc6ec20b16942d9c25dd"
+  },
+  "GeometryTutor/assets/audio/voice/q07-ex1.ogg": {
+    "mtime": 1789312994.945184,
+    "seen": 1789314990.983658,
+    "ast_hash": "c8deb851143468400ddec060f0160b56",
+    "semantic_hash": "c8deb851143468400ddec060f0160b56"
+  },
+  "GeometryTutor/assets/audio/voice/q07-ex2.m4a": {
+    "mtime": 1789312994.946184,
+    "seen": 1789314990.983658,
+    "ast_hash": "10fde6d94da54f4a3f8f1bb8798293c4",
+    "semantic_hash": "10fde6d94da54f4a3f8f1bb8798293c4"
+  },
+  "GeometryTutor/assets/audio/voice/q07-ex2.ogg": {
+    "mtime": 1789312994.946184,
+    "seen": 1789314990.983658,
+    "ast_hash": "4145236026803698f661d22db02b5dc7",
+    "semantic_hash": "4145236026803698f661d22db02b5dc7"
+  },
+  "GeometryTutor/assets/audio/voice/q08-ex1.m4a": {
+    "mtime": 1789312994.947184,
+    "seen": 1789314990.983658,
+    "ast_hash": "d9a17d1c436173aad9e6982e531fe838",
+    "semantic_hash": "d9a17d1c436173aad9e6982e531fe838"
+  },
+  "GeometryTutor/assets/audio/voice/q08-ex1.ogg": {
+    "mtime": 1789312994.947184,
+    "seen": 1789314990.983658,
+    "ast_hash": "95f41528d2ef31e0e85e489772d0512d",
+    "semantic_hash": "95f41528d2ef31e0e85e489772d0512d"
+  },
+  "GeometryTutor/assets/audio/voice/q08-ex2.m4a": {
+    "mtime": 1789312994.948185,
+    "seen": 1789314990.983658,
+    "ast_hash": "ecf96a6060e31b8386398c42d4a5ac70",
+    "semantic_hash": "ecf96a6060e31b8386398c42d4a5ac70"
+  },
+  "GeometryTutor/assets/audio/voice/q08-ex2.ogg": {
+    "mtime": 1789312994.949184,
+    "seen": 1789314990.983658,
+    "ast_hash": "a06c6aaa864fe1caea431d4b8150239b",
+    "semantic_hash": "a06c6aaa864fe1caea431d4b8150239b"
+  },
+  "GeometryTutor/assets/audio/voice/q09-ex1.m4a": {
+    "mtime": 1789312994.9501843,
+    "seen": 1789314990.983658,
+    "ast_hash": "53a6303fcb3a24ab74d9ea75c0162752",
+    "semantic_hash": "53a6303fcb3a24ab74d9ea75c0162752"
+  },
+  "GeometryTutor/assets/audio/voice/q09-ex1.ogg": {
+    "mtime": 1789312994.9501843,
+    "seen": 1789314990.983658,
+    "ast_hash": "faa6894950857a0a6b50b9631a4c52c2",
+    "semantic_hash": "faa6894950857a0a6b50b9631a4c52c2"
+  },
+  "GeometryTutor/assets/audio/voice/q09-ex2.m4a": {
+    "mtime": 1789312994.9511843,
+    "seen": 1789314990.983658,
+    "ast_hash": "d2c7fa2d13e142ed34fff6fd3af727a0",
+    "semantic_hash": "d2c7fa2d13e142ed34fff6fd3af727a0"
+  },
+  "GeometryTutor/assets/audio/voice/q09-ex2.ogg": {
+    "mtime": 1789312994.952184,
+    "seen": 1789314990.983658,
+    "ast_hash": "738b3c6a084828896d5be2a90dfc32f3",
+    "semantic_hash": "738b3c6a084828896d5be2a90dfc32f3"
+  },
+  "GeometryTutor/assets/audio/voice/q10-ex1.m4a": {
+    "mtime": 1789312994.9531841,
+    "seen": 1789314990.983658,
+    "ast_hash": "e16819576238b2668af94b1c7fcaeeae",
+    "semantic_hash": "e16819576238b2668af94b1c7fcaeeae"
+  },
+  "GeometryTutor/assets/audio/voice/q10-ex1.ogg": {
+    "mtime": 1789312994.9531841,
+    "seen": 1789314990.983658,
+    "ast_hash": "feca24c461355abb6b287cd2fdf7d71f",
+    "semantic_hash": "feca24c461355abb6b287cd2fdf7d71f"
+  },
+  "GeometryTutor/assets/audio/voice/q10-ex2.m4a": {
+    "mtime": 1789312994.9541838,
+    "seen": 1789314990.983658,
+    "ast_hash": "2459309e9544ba0d6741a5e57118580c",
+    "semantic_hash": "2459309e9544ba0d6741a5e57118580c"
+  },
+  "GeometryTutor/assets/audio/voice/q10-ex2.ogg": {
+    "mtime": 1789312994.9551857,
+    "seen": 1789314990.983658,
+    "ast_hash": "f9695c378ad0feacc4734ae68f6d452a",
+    "semantic_hash": "f9695c378ad0feacc4734ae68f6d452a"
+  },
+  "GeometryTutor/assets/audio/voice/q100-ex1.m4a": {
+    "mtime": 1789312994.9551857,
+    "seen": 1789314990.983658,
+    "ast_hash": "38c1c55dd6724177930ce6fe87292d6c",
+    "semantic_hash": "38c1c55dd6724177930ce6fe87292d6c"
+  },
+  "GeometryTutor/assets/audio/voice/q100-ex1.ogg": {
+    "mtime": 1789312994.9561834,
+    "seen": 1789314990.983658,
+    "ast_hash": "5287556da0b1706178821845ade9bcc7",
+    "semantic_hash": "5287556da0b1706178821845ade9bcc7"
+  },
+  "GeometryTutor/assets/audio/voice/q100-ex2.m4a": {
+    "mtime": 1789312994.957191,
+    "seen": 1789314990.983658,
+    "ast_hash": "6bfe8968e1a1265ccaae0d025b2396dd",
+    "semantic_hash": "6bfe8968e1a1265ccaae0d025b2396dd"
+  },
+  "GeometryTutor/assets/audio/voice/q100-ex2.ogg": {
+    "mtime": 1789312994.957191,
+    "seen": 1789314990.983658,
+    "ast_hash": "27ef396a8e90a7c7fb1e23a5d77c04f7",
+    "semantic_hash": "27ef396a8e90a7c7fb1e23a5d77c04f7"
+  },
+  "GeometryTutor/assets/audio/voice/q11-ex1.m4a": {
+    "mtime": 1789312994.958183,
+    "seen": 1789314990.983658,
+    "ast_hash": "b8f9d5653a030f465e8c36803095bc78",
+    "semantic_hash": "b8f9d5653a030f465e8c36803095bc78"
+  },
+  "GeometryTutor/assets/audio/voice/q11-ex1.ogg": {
+    "mtime": 1789312994.958183,
+    "seen": 1789314990.983658,
+    "ast_hash": "ad3f9e6160d3578922dd9309e5cccb63",
+    "semantic_hash": "ad3f9e6160d3578922dd9309e5cccb63"
+  },
+  "GeometryTutor/assets/audio/voice/q11-ex2.m4a": {
+    "mtime": 1789312994.9591835,
+    "seen": 1789314990.983658,
+    "ast_hash": "44ff8190c45868d868b300501b283558",
+    "semantic_hash": "44ff8190c45868d868b300501b283558"
+  },
+  "GeometryTutor/assets/audio/voice/q11-ex2.ogg": {
+    "mtime": 1789312994.9601836,
+    "seen": 1789314990.983658,
+    "ast_hash": "df751414bcdf5245ad0baae0f9b707b2",
+    "semantic_hash": "df751414bcdf5245ad0baae0f9b707b2"
+  },
+  "GeometryTutor/assets/audio/voice/q12-ex1.m4a": {
+    "mtime": 1789312994.9611838,
+    "seen": 1789314990.983658,
+    "ast_hash": "21fa76f10afdc76f362b1e596485e594",
+    "semantic_hash": "21fa76f10afdc76f362b1e596485e594"
+  },
+  "GeometryTutor/assets/audio/voice/q12-ex1.ogg": {
+    "mtime": 1789312994.9611838,
+    "seen": 1789314990.983658,
+    "ast_hash": "d3599632e953feb0a5609012edfe7943",
+    "semantic_hash": "d3599632e953feb0a5609012edfe7943"
+  },
+  "GeometryTutor/assets/audio/voice/q12-ex2.m4a": {
+    "mtime": 1789312994.9621837,
+    "seen": 1789314990.983658,
+    "ast_hash": "24481134bbb503ff20bc631b3ce841af",
+    "semantic_hash": "24481134bbb503ff20bc631b3ce841af"
+  },
+  "GeometryTutor/assets/audio/voice/q12-ex2.ogg": {
+    "mtime": 1789312994.9621837,
+    "seen": 1789314990.983658,
+    "ast_hash": "a28a4cb6ed86736e6406d295f19e6d8d",
+    "semantic_hash": "a28a4cb6ed86736e6406d295f19e6d8d"
+  },
+  "GeometryTutor/assets/audio/voice/q13-ex1.m4a": {
+    "mtime": 1789312994.9631839,
+    "seen": 1789314990.983658,
+    "ast_hash": "c9ca071cb2262bf18302d75a7f5d2fc8",
+    "semantic_hash": "c9ca071cb2262bf18302d75a7f5d2fc8"
+  },
+  "GeometryTutor/assets/audio/voice/q13-ex1.ogg": {
+    "mtime": 1789312994.964184,
+    "seen": 1789314990.983658,
+    "ast_hash": "cd448173c63fe7151505b241a21d768e",
+    "semantic_hash": "cd448173c63fe7151505b241a21d768e"
+  },
+  "GeometryTutor/assets/audio/voice/q13-ex2.m4a": {
+    "mtime": 1789312994.9651842,
+    "seen": 1789314990.983658,
+    "ast_hash": "78a079ecb95c28d56d3eb9c74ba7aa54",
+    "semantic_hash": "78a079ecb95c28d56d3eb9c74ba7aa54"
+  },
+  "GeometryTutor/assets/audio/voice/q13-ex2.ogg": {
+    "mtime": 1789312994.9651842,
+    "seen": 1789314990.983658,
+    "ast_hash": "0a752858b409dc0c195c86bfc2addc78",
+    "semantic_hash": "0a752858b409dc0c195c86bfc2addc78"
+  },
+  "GeometryTutor/assets/audio/voice/q14-ex1.m4a": {
+    "mtime": 1789312994.966184,
+    "seen": 1789314990.983658,
+    "ast_hash": "3a17abafc2f3ca718193d6382e9722b0",
+    "semantic_hash": "3a17abafc2f3ca718193d6382e9722b0"
+  },
+  "GeometryTutor/assets/audio/voice/q14-ex1.ogg": {
+    "mtime": 1789312994.966184,
+    "seen": 1789314990.983658,
+    "ast_hash": "ccd4ae12d23b06b9cd5883d492081d89",
+    "semantic_hash": "ccd4ae12d23b06b9cd5883d492081d89"
+  },
+  "GeometryTutor/assets/audio/voice/q14-ex2.m4a": {
+    "mtime": 1789312994.967184,
+    "seen": 1789314990.983658,
+    "ast_hash": "0d0c7b891e2f16d1725aca4f05f81f15",
+    "semantic_hash": "0d0c7b891e2f16d1725aca4f05f81f15"
+  },
+  "GeometryTutor/assets/audio/voice/q14-ex2.ogg": {
+    "mtime": 1789312994.968184,
+    "seen": 1789314990.983658,
+    "ast_hash": "5d879b47b59a6ca03b855cc5a4a0163d",
+    "semantic_hash": "5d879b47b59a6ca03b855cc5a4a0163d"
+  },
+  "GeometryTutor/assets/audio/voice/q15-ex1.m4a": {
+    "mtime": 1789312994.9691842,
+    "seen": 1789314990.983658,
+    "ast_hash": "de3a4349b85eedb0dcc002388705543d",
+    "semantic_hash": "de3a4349b85eedb0dcc002388705543d"
+  },
+  "GeometryTutor/assets/audio/voice/q15-ex1.ogg": {
+    "mtime": 1789312994.9711838,
+    "seen": 1789314990.983658,
+    "ast_hash": "2892b3f4687a999ebe45fe55dc82c682",
+    "semantic_hash": "2892b3f4687a999ebe45fe55dc82c682"
+  },
+  "GeometryTutor/assets/audio/voice/q15-ex2.m4a": {
+    "mtime": 1789312994.9711838,
+    "seen": 1789314990.983658,
+    "ast_hash": "8bf9821be2fc78b6dc8896d61c33c0fa",
+    "semantic_hash": "8bf9821be2fc78b6dc8896d61c33c0fa"
+  },
+  "GeometryTutor/assets/audio/voice/q15-ex2.ogg": {
+    "mtime": 1789312994.9721844,
+    "seen": 1789314990.983658,
+    "ast_hash": "47ef12459bb5826d9027b4508170760d",
+    "semantic_hash": "47ef12459bb5826d9027b4508170760d"
+  },
+  "GeometryTutor/assets/audio/voice/q16-ex1.m4a": {
+    "mtime": 1789312994.9731882,
+    "seen": 1789314990.983658,
+    "ast_hash": "72900c48f2e7725721ea8e0d1df42e26",
+    "semantic_hash": "72900c48f2e7725721ea8e0d1df42e26"
+  },
+  "GeometryTutor/assets/audio/voice/q16-ex1.ogg": {
+    "mtime": 1789312994.9731882,
+    "seen": 1789314990.983658,
+    "ast_hash": "6336f2313a0790c397cdea0acd0f40a2",
+    "semantic_hash": "6336f2313a0790c397cdea0acd0f40a2"
+  },
+  "GeometryTutor/assets/audio/voice/q16-ex2.m4a": {
+    "mtime": 1789312994.974188,
+    "seen": 1789314990.983658,
+    "ast_hash": "53bc953d4734f97462fa5e23e6694870",
+    "semantic_hash": "53bc953d4734f97462fa5e23e6694870"
+  },
+  "GeometryTutor/assets/audio/voice/q16-ex2.ogg": {
+    "mtime": 1789312994.9751883,
+    "seen": 1789314990.983658,
+    "ast_hash": "f57ad97aeaecc1cb4137cce949578b20",
+    "semantic_hash": "f57ad97aeaecc1cb4137cce949578b20"
+  },
+  "GeometryTutor/assets/audio/voice/q17-ex1.m4a": {
+    "mtime": 1789312994.9761882,
+    "seen": 1789314990.983658,
+    "ast_hash": "0e4dfaa81f205e96d1da3a6487aa8cf9",
+    "semantic_hash": "0e4dfaa81f205e96d1da3a6487aa8cf9"
+  },
+  "GeometryTutor/assets/audio/voice/q17-ex1.ogg": {
+    "mtime": 1789312994.9761882,
+    "seen": 1789314990.983658,
+    "ast_hash": "921d0c982a8e7860fec49062984a9da4",
+    "semantic_hash": "921d0c982a8e7860fec49062984a9da4"
+  },
+  "GeometryTutor/assets/audio/voice/q17-ex2.m4a": {
+    "mtime": 1789312994.9771876,
+    "seen": 1789314990.983658,
+    "ast_hash": "916f4bd9c2fbd43d9728371a0caf49ce",
+    "semantic_hash": "916f4bd9c2fbd43d9728371a0caf49ce"
+  },
+  "GeometryTutor/assets/audio/voice/q17-ex2.ogg": {
+    "mtime": 1789312994.9791894,
+    "seen": 1789314990.983658,
+    "ast_hash": "52c4b9edf9cffb05f9254ec644c67c92",
+    "semantic_hash": "52c4b9edf9cffb05f9254ec644c67c92"
+  },
+  "GeometryTutor/assets/audio/voice/q18-ex1.m4a": {
+    "mtime": 1789312994.9801884,
+    "seen": 1789314990.983658,
+    "ast_hash": "eeca79d37c26cec5c2c9f26798e726ed",
+    "semantic_hash": "eeca79d37c26cec5c2c9f26798e726ed"
+  },
+  "GeometryTutor/assets/audio/voice/q18-ex1.ogg": {
+    "mtime": 1789312994.9801884,
+    "seen": 1789314990.983658,
+    "ast_hash": "dfa5ebc41ff458c4b2ad5468f82429bd",
+    "semantic_hash": "dfa5ebc41ff458c4b2ad5468f82429bd"
+  },
+  "GeometryTutor/assets/audio/voice/q18-ex2.m4a": {
+    "mtime": 1789312994.9811883,
+    "seen": 1789314990.983658,
+    "ast_hash": "f57c697c38a995b2f5d5c298b8bb26a9",
+    "semantic_hash": "f57c697c38a995b2f5d5c298b8bb26a9"
+  },
+  "GeometryTutor/assets/audio/voice/q18-ex2.ogg": {
+    "mtime": 1789312994.9821887,
+    "seen": 1789314990.983658,
+    "ast_hash": "b355ca100a2180cbcf83ad7364508b02",
+    "semantic_hash": "b355ca100a2180cbcf83ad7364508b02"
+  },
+  "GeometryTutor/assets/audio/voice/q19-ex1.m4a": {
+    "mtime": 1789312994.9821887,
+    "seen": 1789314990.983658,
+    "ast_hash": "fef2ee615086b9f23545aa4921cc330c",
+    "semantic_hash": "fef2ee615086b9f23545aa4921cc330c"
+  },
+  "GeometryTutor/assets/audio/voice/q19-ex1.ogg": {
+    "mtime": 1789312994.9831884,
+    "seen": 1789314990.983658,
+    "ast_hash": "1eb36aca6928264a07f7f4f260437175",
+    "semantic_hash": "1eb36aca6928264a07f7f4f260437175"
+  },
+  "GeometryTutor/assets/audio/voice/q19-ex2.m4a": {
+    "mtime": 1789312994.9851885,
+    "seen": 1789314990.983658,
+    "ast_hash": "f2548c28153823f06805fbe6cb587dab",
+    "semantic_hash": "f2548c28153823f06805fbe6cb587dab"
+  },
+  "GeometryTutor/assets/audio/voice/q19-ex2.ogg": {
+    "mtime": 1789312994.9861884,
+    "seen": 1789314990.983658,
+    "ast_hash": "cf5a84cdd554c26fecaf95d349dc57a5",
+    "semantic_hash": "cf5a84cdd554c26fecaf95d349dc57a5"
+  },
+  "GeometryTutor/assets/audio/voice/q20-ex1.m4a": {
+    "mtime": 1789312994.9861884,
+    "seen": 1789314990.983658,
+    "ast_hash": "734578a406feb6ff69458d5fa9a3c252",
+    "semantic_hash": "734578a406feb6ff69458d5fa9a3c252"
+  },
+  "GeometryTutor/assets/audio/voice/q20-ex1.ogg": {
+    "mtime": 1789312994.9874604,
+    "seen": 1789314990.983658,
+    "ast_hash": "64eda5cd3c0a9422ddaab7ee2db904f3",
+    "semantic_hash": "64eda5cd3c0a9422ddaab7ee2db904f3"
+  },
+  "GeometryTutor/assets/audio/voice/q20-ex2.m4a": {
+    "mtime": 1789312994.9874604,
+    "seen": 1789314990.983658,
+    "ast_hash": "35822dcfb5b9dbe4b29418afb66d7d7f",
+    "semantic_hash": "35822dcfb5b9dbe4b29418afb66d7d7f"
+  },
+  "GeometryTutor/assets/audio/voice/q20-ex2.ogg": {
+    "mtime": 1789312994.988465,
+    "seen": 1789314990.983658,
+    "ast_hash": "8a0e1426a522aeeebc0d3f349ef9be4f",
+    "semantic_hash": "8a0e1426a522aeeebc0d3f349ef9be4f"
+  },
+  "GeometryTutor/assets/audio/voice/q21-ex1.m4a": {
+    "mtime": 1789312994.9894648,
+    "seen": 1789314990.983658,
+    "ast_hash": "9dad51e33ae21be40b2ec28759312aff",
+    "semantic_hash": "9dad51e33ae21be40b2ec28759312aff"
+  },
+  "GeometryTutor/assets/audio/voice/q21-ex1.ogg": {
+    "mtime": 1789312994.9894648,
+    "seen": 1789314990.983658,
+    "ast_hash": "19fc6a8d35caff966dbc910eba5af3d3",
+    "semantic_hash": "19fc6a8d35caff966dbc910eba5af3d3"
+  },
+  "GeometryTutor/assets/audio/voice/q21-ex2.m4a": {
+    "mtime": 1789312994.992472,
+    "seen": 1789314990.983658,
+    "ast_hash": "fe668ca80ff61f61eb495f511634fa06",
+    "semantic_hash": "fe668ca80ff61f61eb495f511634fa06"
+  },
+  "GeometryTutor/assets/audio/voice/q21-ex2.ogg": {
+    "mtime": 1789312994.992472,
+    "seen": 1789314990.983658,
+    "ast_hash": "e51a71c530fc573f68d1d8f213887647",
+    "semantic_hash": "e51a71c530fc573f68d1d8f213887647"
+  },
+  "GeometryTutor/assets/audio/voice/q22-ex1.m4a": {
+    "mtime": 1789312994.9934652,
+    "seen": 1789314990.983658,
+    "ast_hash": "57d467f26273b942ba17b62ee80236c3",
+    "semantic_hash": "57d467f26273b942ba17b62ee80236c3"
+  },
+  "GeometryTutor/assets/audio/voice/q22-ex1.ogg": {
+    "mtime": 1789312994.9944646,
+    "seen": 1789314990.983658,
+    "ast_hash": "aeca20fb316d80db5f46394254208801",
+    "semantic_hash": "aeca20fb316d80db5f46394254208801"
+  },
+  "GeometryTutor/assets/audio/voice/q22-ex2.m4a": {
+    "mtime": 1789312994.9954643,
+    "seen": 1789314990.983658,
+    "ast_hash": "60bc35536b623402ee8cb868804a0885",
+    "semantic_hash": "60bc35536b623402ee8cb868804a0885"
+  },
+  "GeometryTutor/assets/audio/voice/q22-ex2.ogg": {
+    "mtime": 1789312994.9954643,
+    "seen": 1789314990.983658,
+    "ast_hash": "13727a5f32bc462c6418087f07e500ed",
+    "semantic_hash": "13727a5f32bc462c6418087f07e500ed"
+  },
+  "GeometryTutor/assets/audio/voice/q23-ex1.m4a": {
+    "mtime": 1789312994.996465,
+    "seen": 1789314990.983658,
+    "ast_hash": "937790a175db4c8279be928a055e55ed",
+    "semantic_hash": "937790a175db4c8279be928a055e55ed"
+  },
+  "GeometryTutor/assets/audio/voice/q23-ex1.ogg": {
+    "mtime": 1789312994.996465,
+    "seen": 1789314990.983658,
+    "ast_hash": "95a204a48f079ed6641393be15e0c6f5",
+    "semantic_hash": "95a204a48f079ed6641393be15e0c6f5"
+  },
+  "GeometryTutor/assets/audio/voice/q23-ex2.m4a": {
+    "mtime": 1789312994.998465,
+    "seen": 1789314990.983658,
+    "ast_hash": "3f52e88596007100cf6a4623c4c55def",
+    "semantic_hash": "3f52e88596007100cf6a4623c4c55def"
+  },
+  "GeometryTutor/assets/audio/voice/q23-ex2.ogg": {
+    "mtime": 1789312994.999464,
+    "seen": 1789314990.983658,
+    "ast_hash": "003adce9bfcc29580a6a1a67abf7299d",
+    "semantic_hash": "003adce9bfcc29580a6a1a67abf7299d"
+  },
+  "GeometryTutor/assets/audio/voice/q24-ex1.m4a": {
+    "mtime": 1789312995.0004663,
+    "seen": 1789314990.983658,
+    "ast_hash": "f7e934e60f32cc48fb28cc7502f5860c",
+    "semantic_hash": "f7e934e60f32cc48fb28cc7502f5860c"
+  },
+  "GeometryTutor/assets/audio/voice/q24-ex1.ogg": {
+    "mtime": 1789312995.0004663,
+    "seen": 1789314990.983658,
+    "ast_hash": "717f93208b3b767988e3857df683081b",
+    "semantic_hash": "717f93208b3b767988e3857df683081b"
+  },
+  "GeometryTutor/assets/audio/voice/q24-ex2.m4a": {
+    "mtime": 1789312995.001465,
+    "seen": 1789314990.983658,
+    "ast_hash": "2600f667e4e6d986f9cfe162d8eb831f",
+    "semantic_hash": "2600f667e4e6d986f9cfe162d8eb831f"
+  },
+  "GeometryTutor/assets/audio/voice/q24-ex2.ogg": {
+    "mtime": 1789312995.002465,
+    "seen": 1789314990.983658,
+    "ast_hash": "8756ae7e97301862874eea2880ebd405",
+    "semantic_hash": "8756ae7e97301862874eea2880ebd405"
+  },
+  "GeometryTutor/assets/audio/voice/q25-ex1.m4a": {
+    "mtime": 1789312995.0034647,
+    "seen": 1789314990.983658,
+    "ast_hash": "459aacef87b2b16cc5a0095ef49e3d4e",
+    "semantic_hash": "459aacef87b2b16cc5a0095ef49e3d4e"
+  },
+  "GeometryTutor/assets/audio/voice/q25-ex1.ogg": {
+    "mtime": 1789312995.0034647,
+    "seen": 1789314990.983658,
+    "ast_hash": "8670399a71e1c5ba02e21ff9c8abab0c",
+    "semantic_hash": "8670399a71e1c5ba02e21ff9c8abab0c"
+  },
+  "GeometryTutor/assets/audio/voice/q25-ex2.m4a": {
+    "mtime": 1789312995.0044646,
+    "seen": 1789314990.983658,
+    "ast_hash": "c404f9ab48a6efd5459a959caaa2aad2",
+    "semantic_hash": "c404f9ab48a6efd5459a959caaa2aad2"
+  },
+  "GeometryTutor/assets/audio/voice/q25-ex2.ogg": {
+    "mtime": 1789312995.005465,
+    "seen": 1789314990.983658,
+    "ast_hash": "33de8e5d1413d5d014d8a2fc7d4d8333",
+    "semantic_hash": "33de8e5d1413d5d014d8a2fc7d4d8333"
+  },
+  "GeometryTutor/assets/audio/voice/q26-ex1.m4a": {
+    "mtime": 1789312995.005465,
+    "seen": 1789314990.983658,
+    "ast_hash": "e199424c538dbf0410132c2738577ef1",
+    "semantic_hash": "e199424c538dbf0410132c2738577ef1"
+  },
+  "GeometryTutor/assets/audio/voice/q26-ex1.ogg": {
+    "mtime": 1789312995.006465,
+    "seen": 1789314990.983658,
+    "ast_hash": "9e0af998eec15e1619dc37a7e71d2f8f",
+    "semantic_hash": "9e0af998eec15e1619dc37a7e71d2f8f"
+  },
+  "GeometryTutor/assets/audio/voice/q26-ex2.m4a": {
+    "mtime": 1789312995.0074642,
+    "seen": 1789314990.983658,
+    "ast_hash": "713d16048e959ea25222ce0146df4810",
+    "semantic_hash": "713d16048e959ea25222ce0146df4810"
+  },
+  "GeometryTutor/assets/audio/voice/q26-ex2.ogg": {
+    "mtime": 1789312995.0074642,
+    "seen": 1789314990.983658,
+    "ast_hash": "ce63187d5240eba33a0befc7a79563c0",
+    "semantic_hash": "ce63187d5240eba33a0befc7a79563c0"
+  },
+  "GeometryTutor/assets/audio/voice/q27-ex1.m4a": {
+    "mtime": 1789312995.0084648,
+    "seen": 1789314990.983658,
+    "ast_hash": "c27f638f282b823514f927af75e8402d",
+    "semantic_hash": "c27f638f282b823514f927af75e8402d"
+  },
+  "GeometryTutor/assets/audio/voice/q27-ex1.ogg": {
+    "mtime": 1789312995.0094643,
+    "seen": 1789314990.983658,
+    "ast_hash": "47524c8f24dec504c4855038cf0ff0d0",
+    "semantic_hash": "47524c8f24dec504c4855038cf0ff0d0"
+  },
+  "GeometryTutor/assets/audio/voice/q27-ex2.m4a": {
+    "mtime": 1789312995.0094643,
+    "seen": 1789314990.983658,
+    "ast_hash": "131dd0aa9ee511ab786622ec61675768",
+    "semantic_hash": "131dd0aa9ee511ab786622ec61675768"
+  },
+  "GeometryTutor/assets/audio/voice/q27-ex2.ogg": {
+    "mtime": 1789312995.0104642,
+    "seen": 1789314990.983658,
+    "ast_hash": "f6241853535acc1b1aaf8a1aeebc1894",
+    "semantic_hash": "f6241853535acc1b1aaf8a1aeebc1894"
+  },
+  "GeometryTutor/assets/audio/voice/q28-ex1.m4a": {
+    "mtime": 1789312995.0114646,
+    "seen": 1789314990.983658,
+    "ast_hash": "d3d305da2fdad9c29fa6300c57cd3279",
+    "semantic_hash": "d3d305da2fdad9c29fa6300c57cd3279"
+  },
+  "GeometryTutor/assets/audio/voice/q28-ex1.ogg": {
+    "mtime": 1789312995.0114646,
+    "seen": 1789314990.983658,
+    "ast_hash": "24ac74b1ed6693271815d4f24a770b88",
+    "semantic_hash": "24ac74b1ed6693271815d4f24a770b88"
+  },
+  "GeometryTutor/assets/audio/voice/q28-ex2.m4a": {
+    "mtime": 1789312995.0124648,
+    "seen": 1789314990.983658,
+    "ast_hash": "5590df686e0bf4f825e883c911dcfb10",
+    "semantic_hash": "5590df686e0bf4f825e883c911dcfb10"
+  },
+  "GeometryTutor/assets/audio/voice/q28-ex2.ogg": {
+    "mtime": 1789312995.0134637,
+    "seen": 1789314990.983658,
+    "ast_hash": "93c405f8464907f1b7df0e1e25cd90eb",
+    "semantic_hash": "93c405f8464907f1b7df0e1e25cd90eb"
+  },
+  "GeometryTutor/assets/audio/voice/q29-ex1.m4a": {
+    "mtime": 1789312995.014464,
+    "seen": 1789314990.983658,
+    "ast_hash": "d5022a14485e62c6e643f93a82342299",
+    "semantic_hash": "d5022a14485e62c6e643f93a82342299"
+  },
+  "GeometryTutor/assets/audio/voice/q29-ex1.ogg": {
+    "mtime": 1789312995.0154655,
+    "seen": 1789314990.983658,
+    "ast_hash": "59096e03de9061361f2d4643de1106a1",
+    "semantic_hash": "59096e03de9061361f2d4643de1106a1"
+  },
+  "GeometryTutor/assets/audio/voice/q29-ex2.m4a": {
+    "mtime": 1789312995.0184643,
+    "seen": 1789314990.983658,
+    "ast_hash": "344d280121292e7d6740813d93c5a8d9",
+    "semantic_hash": "344d280121292e7d6740813d93c5a8d9"
+  },
+  "GeometryTutor/assets/audio/voice/q29-ex2.ogg": {
+    "mtime": 1789312995.0194647,
+    "seen": 1789314990.983658,
+    "ast_hash": "0c0667000face145f40b470f8dd10073",
+    "semantic_hash": "0c0667000face145f40b470f8dd10073"
+  },
+  "GeometryTutor/assets/audio/voice/q30-ex1.m4a": {
+    "mtime": 1789312995.020465,
+    "seen": 1789314990.983658,
+    "ast_hash": "212ec556b242d4a38d900bde46d415a9",
+    "semantic_hash": "212ec556b242d4a38d900bde46d415a9"
+  },
+  "GeometryTutor/assets/audio/voice/q30-ex1.ogg": {
+    "mtime": 1789312995.020465,
+    "seen": 1789314990.983658,
+    "ast_hash": "8cdb6c4a3be47d54cbe2a812e0ec2e82",
+    "semantic_hash": "8cdb6c4a3be47d54cbe2a812e0ec2e82"
+  },
+  "GeometryTutor/assets/audio/voice/q30-ex2.m4a": {
+    "mtime": 1789312995.021464,
+    "seen": 1789314990.983658,
+    "ast_hash": "4afbdb26d2608f21281f5e42370f26f4",
+    "semantic_hash": "4afbdb26d2608f21281f5e42370f26f4"
+  },
+  "GeometryTutor/assets/audio/voice/q30-ex2.ogg": {
+    "mtime": 1789312995.021464,
+    "seen": 1789314990.983658,
+    "ast_hash": "e5eb2c510cf364ccb6ee3da8dd056f7d",
+    "semantic_hash": "e5eb2c510cf364ccb6ee3da8dd056f7d"
+  },
+  "GeometryTutor/assets/audio/voice/q31-ex1.m4a": {
+    "mtime": 1789312995.0224645,
+    "seen": 1789314990.983658,
+    "ast_hash": "76b7c7dd7a47e318fabd1480166623cf",
+    "semantic_hash": "76b7c7dd7a47e318fabd1480166623cf"
+  },
+  "GeometryTutor/assets/audio/voice/q31-ex1.ogg": {
+    "mtime": 1789312995.0234654,
+    "seen": 1789314990.983658,
+    "ast_hash": "ba0337b0212db89e19d6521207980d85",
+    "semantic_hash": "ba0337b0212db89e19d6521207980d85"
+  },
+  "GeometryTutor/assets/audio/voice/q31-ex2.m4a": {
+    "mtime": 1789312995.0234654,
+    "seen": 1789314990.983658,
+    "ast_hash": "69f48cbd8d075f1eadad6b04d4e14ee6",
+    "semantic_hash": "69f48cbd8d075f1eadad6b04d4e14ee6"
+  },
+  "GeometryTutor/assets/audio/voice/q31-ex2.ogg": {
+    "mtime": 1789312995.0244648,
+    "seen": 1789314990.983658,
+    "ast_hash": "e389aec39505def4bc37755ebd3dc9ca",
+    "semantic_hash": "e389aec39505def4bc37755ebd3dc9ca"
+  },
+  "GeometryTutor/assets/audio/voice/q32-ex1.m4a": {
+    "mtime": 1789312995.0254648,
+    "seen": 1789314990.983658,
+    "ast_hash": "ccfb00901116fdf55f1767ef72032bd7",
+    "semantic_hash": "ccfb00901116fdf55f1767ef72032bd7"
+  },
+  "GeometryTutor/assets/audio/voice/q32-ex1.ogg": {
+    "mtime": 1789312995.0254648,
+    "seen": 1789314990.983658,
+    "ast_hash": "cc158ff892e8eccbbcc17314608fc6ea",
+    "semantic_hash": "cc158ff892e8eccbbcc17314608fc6ea"
+  },
+  "GeometryTutor/assets/audio/voice/q32-ex2.m4a": {
+    "mtime": 1789312995.0264666,
+    "seen": 1789314990.983658,
+    "ast_hash": "77eab0904cf888cf38f7b85e6d285e89",
+    "semantic_hash": "77eab0904cf888cf38f7b85e6d285e89"
+  },
+  "GeometryTutor/assets/audio/voice/q32-ex2.ogg": {
+    "mtime": 1789312995.0274642,
+    "seen": 1789314990.983658,
+    "ast_hash": "8ecfef9b9db004813b771efd2c33af32",
+    "semantic_hash": "8ecfef9b9db004813b771efd2c33af32"
+  },
+  "GeometryTutor/assets/audio/voice/q33-ex1.m4a": {
+    "mtime": 1789312995.0284643,
+    "seen": 1789314990.983658,
+    "ast_hash": "75ee97afdabeac30d9129ad1f3c24cea",
+    "semantic_hash": "75ee97afdabeac30d9129ad1f3c24cea"
+  },
+  "GeometryTutor/assets/audio/voice/q33-ex1.ogg": {
+    "mtime": 1789312995.0284643,
+    "seen": 1789314990.983658,
+    "ast_hash": "8dcfefa5022e10e8698e19084f2e31c5",
+    "semantic_hash": "8dcfefa5022e10e8698e19084f2e31c5"
+  },
+  "GeometryTutor/assets/audio/voice/q33-ex2.m4a": {
+    "mtime": 1789312995.0294645,
+    "seen": 1789314990.983658,
+    "ast_hash": "e2ee09ff773ac9fb108b38b4e7208df8",
+    "semantic_hash": "e2ee09ff773ac9fb108b38b4e7208df8"
+  },
+  "GeometryTutor/assets/audio/voice/q33-ex2.ogg": {
+    "mtime": 1789312995.0294645,
+    "seen": 1789314990.983658,
+    "ast_hash": "3da9b55637f4ce61bf0b2c483f44fe29",
+    "semantic_hash": "3da9b55637f4ce61bf0b2c483f44fe29"
+  },
+  "GeometryTutor/assets/audio/voice/q34-ex1.m4a": {
+    "mtime": 1789312995.0324643,
+    "seen": 1789314990.983658,
+    "ast_hash": "4d2f05b2fd775a23e68c03ee92ad8ca7",
+    "semantic_hash": "4d2f05b2fd775a23e68c03ee92ad8ca7"
+  },
+  "GeometryTutor/assets/audio/voice/q34-ex1.ogg": {
+    "mtime": 1789312995.0324643,
+    "seen": 1789314990.983658,
+    "ast_hash": "49105c452d6e630be2a7808a910f06c7",
+    "semantic_hash": "49105c452d6e630be2a7808a910f06c7"
+  },
+  "GeometryTutor/assets/audio/voice/q34-ex2.m4a": {
+    "mtime": 1789312995.0334647,
+    "seen": 1789314990.983658,
+    "ast_hash": "4c0b0acc76915330867e4dc605003a9d",
+    "semantic_hash": "4c0b0acc76915330867e4dc605003a9d"
+  },
+  "GeometryTutor/assets/audio/voice/q34-ex2.ogg": {
+    "mtime": 1789312995.0344648,
+    "seen": 1789314990.983658,
+    "ast_hash": "64ac095683b54e63c09677ef4c32f9a6",
+    "semantic_hash": "64ac095683b54e63c09677ef4c32f9a6"
+  },
+  "GeometryTutor/assets/audio/voice/q35-ex1.m4a": {
+    "mtime": 1789312995.0354643,
+    "seen": 1789314990.983658,
+    "ast_hash": "d3e29e3bf3ac8c09bbf75aa79b46e06c",
+    "semantic_hash": "d3e29e3bf3ac8c09bbf75aa79b46e06c"
+  },
+  "GeometryTutor/assets/audio/voice/q35-ex1.ogg": {
+    "mtime": 1789312995.0354643,
+    "seen": 1789314990.983658,
+    "ast_hash": "8babf13b17689a720d1c3868fd0c3786",
+    "semantic_hash": "8babf13b17689a720d1c3868fd0c3786"
+  },
+  "GeometryTutor/assets/audio/voice/q35-ex2.m4a": {
+    "mtime": 1789312995.0364647,
+    "seen": 1789314990.983658,
+    "ast_hash": "cf330da76cd3869081175e8fb8c210c4",
+    "semantic_hash": "cf330da76cd3869081175e8fb8c210c4"
+  },
+  "GeometryTutor/assets/audio/voice/q35-ex2.ogg": {
+    "mtime": 1789312995.0374649,
+    "seen": 1789314990.983658,
+    "ast_hash": "03ebff9f394376c31bf46c8ab28593d7",
+    "semantic_hash": "03ebff9f394376c31bf46c8ab28593d7"
+  },
+  "GeometryTutor/assets/audio/voice/q36-ex1.m4a": {
+    "mtime": 1789312995.0374649,
+    "seen": 1789314990.983658,
+    "ast_hash": "7f3d8559c35ef691c7a6828f02c5d78f",
+    "semantic_hash": "7f3d8559c35ef691c7a6828f02c5d78f"
+  },
+  "GeometryTutor/assets/audio/voice/q36-ex1.ogg": {
+    "mtime": 1789312995.0384648,
+    "seen": 1789314990.983658,
+    "ast_hash": "65cbf2643eb4210a5d3d55ce4ac2c27a",
+    "semantic_hash": "65cbf2643eb4210a5d3d55ce4ac2c27a"
+  },
+  "GeometryTutor/assets/audio/voice/q36-ex2.m4a": {
+    "mtime": 1789312995.0394661,
+    "seen": 1789314990.983658,
+    "ast_hash": "4486163cff24704f3a8b959436ec25ee",
+    "semantic_hash": "4486163cff24704f3a8b959436ec25ee"
+  },
+  "GeometryTutor/assets/audio/voice/q36-ex2.ogg": {
+    "mtime": 1789312995.0394661,
+    "seen": 1789314990.983658,
+    "ast_hash": "6a1525edb2a4d281444fc74e2c6f38ad",
+    "semantic_hash": "6a1525edb2a4d281444fc74e2c6f38ad"
+  },
+  "GeometryTutor/assets/audio/voice/q37-ex1.m4a": {
+    "mtime": 1789312995.0404723,
+    "seen": 1789314990.983658,
+    "ast_hash": "c77cc72b82a7d5d5f5563083735666dc",
+    "semantic_hash": "c77cc72b82a7d5d5f5563083735666dc"
+  },
+  "GeometryTutor/assets/audio/voice/q37-ex1.ogg": {
+    "mtime": 1789312995.0404723,
+    "seen": 1789314990.983658,
+    "ast_hash": "014e97928e40fad7a892ef8b4fe92458",
+    "semantic_hash": "014e97928e40fad7a892ef8b4fe92458"
+  },
+  "GeometryTutor/assets/audio/voice/q37-ex2.m4a": {
+    "mtime": 1789312995.0414698,
+    "seen": 1789314990.983658,
+    "ast_hash": "be565a740edf1028fb839606b9c4e181",
+    "semantic_hash": "be565a740edf1028fb839606b9c4e181"
+  },
+  "GeometryTutor/assets/audio/voice/q37-ex2.ogg": {
+    "mtime": 1789312995.0414698,
+    "seen": 1789314990.983658,
+    "ast_hash": "82bd135b487086802026d325b1230d9c",
+    "semantic_hash": "82bd135b487086802026d325b1230d9c"
+  },
+  "GeometryTutor/assets/audio/voice/q38-ex1.m4a": {
+    "mtime": 1789312995.0424716,
+    "seen": 1789314990.983658,
+    "ast_hash": "8b5824d5d0c7722484858d1c7198b16d",
+    "semantic_hash": "8b5824d5d0c7722484858d1c7198b16d"
+  },
+  "GeometryTutor/assets/audio/voice/q38-ex1.ogg": {
+    "mtime": 1789312995.0434642,
+    "seen": 1789314990.983658,
+    "ast_hash": "70d66e441304e5c10b4309951b7420ff",
+    "semantic_hash": "70d66e441304e5c10b4309951b7420ff"
+  },
+  "GeometryTutor/assets/audio/voice/q38-ex2.m4a": {
+    "mtime": 1789312995.0444646,
+    "seen": 1789314990.983658,
+    "ast_hash": "ebb8f9deed2d62719a81a527a5565522",
+    "semantic_hash": "ebb8f9deed2d62719a81a527a5565522"
+  },
+  "GeometryTutor/assets/audio/voice/q38-ex2.ogg": {
+    "mtime": 1789312995.0444646,
+    "seen": 1789314990.983658,
+    "ast_hash": "3ab6c186856abb7cc308b2767ba0c60f",
+    "semantic_hash": "3ab6c186856abb7cc308b2767ba0c60f"
+  },
+  "GeometryTutor/assets/audio/voice/q39-ex1.m4a": {
+    "mtime": 1789312995.0454648,
+    "seen": 1789314990.983658,
+    "ast_hash": "6c2af8dfc64109305a0c89ee1d05178c",
+    "semantic_hash": "6c2af8dfc64109305a0c89ee1d05178c"
+  },
+  "GeometryTutor/assets/audio/voice/q39-ex1.ogg": {
+    "mtime": 1789312995.0454648,
+    "seen": 1789314990.983658,
+    "ast_hash": "c759e2d3af092da7ffe31b5a1fe1a5a6",
+    "semantic_hash": "c759e2d3af092da7ffe31b5a1fe1a5a6"
+  },
+  "GeometryTutor/assets/audio/voice/q39-ex2.m4a": {
+    "mtime": 1789312995.0464647,
+    "seen": 1789314990.983658,
+    "ast_hash": "eea82582c48bf57b36b02d47faff5e74",
+    "semantic_hash": "eea82582c48bf57b36b02d47faff5e74"
+  },
+  "GeometryTutor/assets/audio/voice/q39-ex2.ogg": {
+    "mtime": 1789312995.0474646,
+    "seen": 1789314990.983658,
+    "ast_hash": "c4ffb9f2f4150135688077e2bcfaba1f",
+    "semantic_hash": "c4ffb9f2f4150135688077e2bcfaba1f"
+  },
+  "GeometryTutor/assets/audio/voice/q40-ex1.m4a": {
+    "mtime": 1789312995.0484645,
+    "seen": 1789314990.983658,
+    "ast_hash": "d5ba473f14854312f66669fcc782db70",
+    "semantic_hash": "d5ba473f14854312f66669fcc782db70"
+  },
+  "GeometryTutor/assets/audio/voice/q40-ex1.ogg": {
+    "mtime": 1789312995.0484645,
+    "seen": 1789314990.983658,
+    "ast_hash": "ac3cc8a74e7e549a6b186ba222b7659f",
+    "semantic_hash": "ac3cc8a74e7e549a6b186ba222b7659f"
+  },
+  "GeometryTutor/assets/audio/voice/q40-ex2.m4a": {
+    "mtime": 1789312995.0494652,
+    "seen": 1789314990.983658,
+    "ast_hash": "06e630e31d1b9c5565edb2425c4e368e",
+    "semantic_hash": "06e630e31d1b9c5565edb2425c4e368e"
+  },
+  "GeometryTutor/assets/audio/voice/q40-ex2.ogg": {
+    "mtime": 1789312995.0504646,
+    "seen": 1789314990.983658,
+    "ast_hash": "197a83c9c191b38c28b4e479a7a718fa",
+    "semantic_hash": "197a83c9c191b38c28b4e479a7a718fa"
+  },
+  "GeometryTutor/assets/audio/voice/q41-ex1.m4a": {
+    "mtime": 1789312995.0514643,
+    "seen": 1789314990.983658,
+    "ast_hash": "0425309344078dd520c2ab9a4083acb4",
+    "semantic_hash": "0425309344078dd520c2ab9a4083acb4"
+  },
+  "GeometryTutor/assets/audio/voice/q41-ex1.ogg": {
+    "mtime": 1789312995.0514643,
+    "seen": 1789314990.983658,
+    "ast_hash": "150e0704a58767fad59d53b38736c834",
+    "semantic_hash": "150e0704a58767fad59d53b38736c834"
+  },
+  "GeometryTutor/assets/audio/voice/q41-ex2.m4a": {
+    "mtime": 1789312995.0524645,
+    "seen": 1789314990.983658,
+    "ast_hash": "c1b041cc48a12a7f7775d7dbb8ecef12",
+    "semantic_hash": "c1b041cc48a12a7f7775d7dbb8ecef12"
+  },
+  "GeometryTutor/assets/audio/voice/q41-ex2.ogg": {
+    "mtime": 1789312995.0524645,
+    "seen": 1789314990.983658,
+    "ast_hash": "8e29af13f14af0a9304e54a642d58d21",
+    "semantic_hash": "8e29af13f14af0a9304e54a642d58d21"
+  },
+  "GeometryTutor/assets/audio/voice/q42-ex1.m4a": {
+    "mtime": 1789312995.0534647,
+    "seen": 1789314990.983658,
+    "ast_hash": "95dba37b9ec2ea11b96f90a822b1f221",
+    "semantic_hash": "95dba37b9ec2ea11b96f90a822b1f221"
+  },
+  "GeometryTutor/assets/audio/voice/q42-ex1.ogg": {
+    "mtime": 1789312995.0544643,
+    "seen": 1789314990.983658,
+    "ast_hash": "b8c46e3f0fc28afd65908146195db1d3",
+    "semantic_hash": "b8c46e3f0fc28afd65908146195db1d3"
+  },
+  "GeometryTutor/assets/audio/voice/q42-ex2.m4a": {
+    "mtime": 1789312995.0554645,
+    "seen": 1789314990.983658,
+    "ast_hash": "b2a9c4690bd7707ad0d4cadfbf8545fe",
+    "semantic_hash": "b2a9c4690bd7707ad0d4cadfbf8545fe"
+  },
+  "GeometryTutor/assets/audio/voice/q42-ex2.ogg": {
+    "mtime": 1789312995.0554645,
+    "seen": 1789314990.983658,
+    "ast_hash": "ab340734daf087d602afb91d6e9d9264",
+    "semantic_hash": "ab340734daf087d602afb91d6e9d9264"
+  },
+  "GeometryTutor/assets/audio/voice/q43-ex1.m4a": {
+    "mtime": 1789312995.056466,
+    "seen": 1789314990.983658,
+    "ast_hash": "3c24546e63c816aba4761b90e66c82e4",
+    "semantic_hash": "3c24546e63c816aba4761b90e66c82e4"
+  },
+  "GeometryTutor/assets/audio/voice/q43-ex1.ogg": {
+    "mtime": 1789312995.0574641,
+    "seen": 1789314990.983658,
+    "ast_hash": "7b7b594e6ec2125a1d808f1778336b0f",
+    "semantic_hash": "7b7b594e6ec2125a1d808f1778336b0f"
+  },
+  "GeometryTutor/assets/audio/voice/q43-ex2.m4a": {
+    "mtime": 1789312995.0584638,
+    "seen": 1789314990.983658,
+    "ast_hash": "a8bab65c7657272e8bfd141dfe176490",
+    "semantic_hash": "a8bab65c7657272e8bfd141dfe176490"
+  },
+  "GeometryTutor/assets/audio/voice/q43-ex2.ogg": {
+    "mtime": 1789312995.0584638,
+    "seen": 1789314990.983658,
+    "ast_hash": "c3988a5b917e0cacc960b6ab93609692",
+    "semantic_hash": "c3988a5b917e0cacc960b6ab93609692"
+  },
+  "GeometryTutor/assets/audio/voice/q44-ex1.m4a": {
+    "mtime": 1789312995.059465,
+    "seen": 1789314990.983658,
+    "ast_hash": "e1a47da6493536f57f45de40117d5e38",
+    "semantic_hash": "e1a47da6493536f57f45de40117d5e38"
+  },
+  "GeometryTutor/assets/audio/voice/q44-ex1.ogg": {
+    "mtime": 1789312995.0604646,
+    "seen": 1789314990.983658,
+    "ast_hash": "5e7d684af1a4a092867d18d16ce212f9",
+    "semantic_hash": "5e7d684af1a4a092867d18d16ce212f9"
+  },
+  "GeometryTutor/assets/audio/voice/q44-ex2.m4a": {
+    "mtime": 1789312995.0614655,
+    "seen": 1789314990.983658,
+    "ast_hash": "ac006530d7fdcb0b2c22685120cb4211",
+    "semantic_hash": "ac006530d7fdcb0b2c22685120cb4211"
+  },
+  "GeometryTutor/assets/audio/voice/q44-ex2.ogg": {
+    "mtime": 1789312995.0634646,
+    "seen": 1789314990.983658,
+    "ast_hash": "07b8dcbb44225313e7d5d72a712bc10c",
+    "semantic_hash": "07b8dcbb44225313e7d5d72a712bc10c"
+  },
+  "GeometryTutor/assets/audio/voice/q45-ex1.m4a": {
+    "mtime": 1789312995.0644655,
+    "seen": 1789314990.983658,
+    "ast_hash": "addc6a7b535f65fdcfcf6bfc294e109d",
+    "semantic_hash": "addc6a7b535f65fdcfcf6bfc294e109d"
+  },
+  "GeometryTutor/assets/audio/voice/q45-ex1.ogg": {
+    "mtime": 1789312995.0644655,
+    "seen": 1789314990.983658,
+    "ast_hash": "ee8a40173f47b248087e203469628a33",
+    "semantic_hash": "ee8a40173f47b248087e203469628a33"
+  },
+  "GeometryTutor/assets/audio/voice/q45-ex2.m4a": {
+    "mtime": 1789312995.0654647,
+    "seen": 1789314990.983658,
+    "ast_hash": "fce19f3d718a62553a40ae28233542c3",
+    "semantic_hash": "fce19f3d718a62553a40ae28233542c3"
+  },
+  "GeometryTutor/assets/audio/voice/q45-ex2.ogg": {
+    "mtime": 1789312995.0664651,
+    "seen": 1789314990.983658,
+    "ast_hash": "2556da90516a7e430232af2befad12b6",
+    "semantic_hash": "2556da90516a7e430232af2befad12b6"
+  },
+  "GeometryTutor/assets/audio/voice/q46-ex1.m4a": {
+    "mtime": 1789312995.0674646,
+    "seen": 1789314990.983658,
+    "ast_hash": "e0b1fabe550b5a9b8b1dfd5bd70bfc95",
+    "semantic_hash": "e0b1fabe550b5a9b8b1dfd5bd70bfc95"
+  },
+  "GeometryTutor/assets/audio/voice/q46-ex1.ogg": {
+    "mtime": 1789312995.0674646,
+    "seen": 1789314990.983658,
+    "ast_hash": "45a0882a094998b89db9f2761c3673af",
+    "semantic_hash": "45a0882a094998b89db9f2761c3673af"
+  },
+  "GeometryTutor/assets/audio/voice/q46-ex2.m4a": {
+    "mtime": 1789312995.0684645,
+    "seen": 1789314990.983658,
+    "ast_hash": "35ce722be4144d0cf610f72cfd626c1e",
+    "semantic_hash": "35ce722be4144d0cf610f72cfd626c1e"
+  },
+  "GeometryTutor/assets/audio/voice/q46-ex2.ogg": {
+    "mtime": 1789312995.0684645,
+    "seen": 1789314990.983658,
+    "ast_hash": "32e86c00153f5d910f33791c0528543b",
+    "semantic_hash": "32e86c00153f5d910f33791c0528543b"
+  },
+  "GeometryTutor/assets/audio/voice/q47-ex1.m4a": {
+    "mtime": 1789312995.0694647,
+    "seen": 1789314990.983658,
+    "ast_hash": "d725445807c72c7326a7647c7108495f",
+    "semantic_hash": "d725445807c72c7326a7647c7108495f"
+  },
+  "GeometryTutor/assets/audio/voice/q47-ex1.ogg": {
+    "mtime": 1789312995.0694647,
+    "seen": 1789314990.983658,
+    "ast_hash": "585357fcccfbd60bd7871e259f310feb",
+    "semantic_hash": "585357fcccfbd60bd7871e259f310feb"
+  },
+  "GeometryTutor/assets/audio/voice/q47-ex2.m4a": {
+    "mtime": 1789312995.0704648,
+    "seen": 1789314990.983658,
+    "ast_hash": "7fd149e7e55b61eb8d3b80da103a3af4",
+    "semantic_hash": "7fd149e7e55b61eb8d3b80da103a3af4"
+  },
+  "GeometryTutor/assets/audio/voice/q47-ex2.ogg": {
+    "mtime": 1789312995.071465,
+    "seen": 1789314990.983658,
+    "ast_hash": "3e3032e84c94b8e98d649022f310c600",
+    "semantic_hash": "3e3032e84c94b8e98d649022f310c600"
+  },
+  "GeometryTutor/assets/audio/voice/q48-ex1.m4a": {
+    "mtime": 1789312995.071465,
+    "seen": 1789314990.983658,
+    "ast_hash": "4b7624aeaf4dcdb3e348bebb7db24fe2",
+    "semantic_hash": "4b7624aeaf4dcdb3e348bebb7db24fe2"
+  },
+  "GeometryTutor/assets/audio/voice/q48-ex1.ogg": {
+    "mtime": 1789312995.072465,
+    "seen": 1789314990.983658,
+    "ast_hash": "b22196774b9a18a5135e7ee612706ea0",
+    "semantic_hash": "b22196774b9a18a5135e7ee612706ea0"
+  },
+  "GeometryTutor/assets/audio/voice/q48-ex2.m4a": {
+    "mtime": 1789312995.072465,
+    "seen": 1789314990.983658,
+    "ast_hash": "900a91e4e56035f8455a562e1cc6eba1",
+    "semantic_hash": "900a91e4e56035f8455a562e1cc6eba1"
+  },
+  "GeometryTutor/assets/audio/voice/q48-ex2.ogg": {
+    "mtime": 1789312995.0734692,
+    "seen": 1789314990.983658,
+    "ast_hash": "f3cd764dc00c42d5893ec5991f70a6b5",
+    "semantic_hash": "f3cd764dc00c42d5893ec5991f70a6b5"
+  },
+  "GeometryTutor/assets/audio/voice/q49-ex1.m4a": {
+    "mtime": 1789312995.0734692,
+    "seen": 1789314990.983658,
+    "ast_hash": "31b35f72faaada5202df2a4aa60944e0",
+    "semantic_hash": "31b35f72faaada5202df2a4aa60944e0"
+  },
+  "GeometryTutor/assets/audio/voice/q49-ex1.ogg": {
+    "mtime": 1789312995.074469,
+    "seen": 1789314990.983658,
+    "ast_hash": "0cec21cea3ac4c84b4c1eff097cd429d",
+    "semantic_hash": "0cec21cea3ac4c84b4c1eff097cd429d"
+  },
+  "GeometryTutor/assets/audio/voice/q49-ex2.m4a": {
+    "mtime": 1789312995.0754683,
+    "seen": 1789314990.983658,
+    "ast_hash": "f66bdf10a82b56f621444d588b1c985f",
+    "semantic_hash": "f66bdf10a82b56f621444d588b1c985f"
+  },
+  "GeometryTutor/assets/audio/voice/q49-ex2.ogg": {
+    "mtime": 1789312995.0754683,
+    "seen": 1789314990.983658,
+    "ast_hash": "917ac49256ff74f67c89f5cf0c58acc7",
+    "semantic_hash": "917ac49256ff74f67c89f5cf0c58acc7"
+  },
+  "GeometryTutor/assets/audio/voice/q50-ex1.m4a": {
+    "mtime": 1789312995.0764687,
+    "seen": 1789314990.983658,
+    "ast_hash": "3082a38eb334764983a865333159782d",
+    "semantic_hash": "3082a38eb334764983a865333159782d"
+  },
+  "GeometryTutor/assets/audio/voice/q50-ex1.ogg": {
+    "mtime": 1789312995.0774686,
+    "seen": 1789314990.983658,
+    "ast_hash": "8cbd8972fbebb9cd77b0a0cfbf5f100f",
+    "semantic_hash": "8cbd8972fbebb9cd77b0a0cfbf5f100f"
+  },
+  "GeometryTutor/assets/audio/voice/q50-ex2.m4a": {
+    "mtime": 1789312995.0784688,
+    "seen": 1789314990.983658,
+    "ast_hash": "d3b139288c80ea439f508384bc735886",
+    "semantic_hash": "d3b139288c80ea439f508384bc735886"
+  },
+  "GeometryTutor/assets/audio/voice/q50-ex2.ogg": {
+    "mtime": 1789312995.0784688,
+    "seen": 1789314990.983658,
+    "ast_hash": "65a48c279b17647dba8128ba3566df68",
+    "semantic_hash": "65a48c279b17647dba8128ba3566df68"
+  },
+  "GeometryTutor/assets/audio/voice/q51-ex1.m4a": {
+    "mtime": 1789312995.0794709,
+    "seen": 1789314990.983658,
+    "ast_hash": "dae5eb2d8151d433ca8e1896b05fb2cd",
+    "semantic_hash": "dae5eb2d8151d433ca8e1896b05fb2cd"
+  },
+  "GeometryTutor/assets/audio/voice/q51-ex1.ogg": {
+    "mtime": 1789312995.0814679,
+    "seen": 1789314990.983658,
+    "ast_hash": "7e43613e5a0cd7e074b287c6402ab834",
+    "semantic_hash": "7e43613e5a0cd7e074b287c6402ab834"
+  },
+  "GeometryTutor/assets/audio/voice/q51-ex2.m4a": {
+    "mtime": 1789312995.0824683,
+    "seen": 1789314990.983658,
+    "ast_hash": "9677b0387ef07113f7e664b9858f9491",
+    "semantic_hash": "9677b0387ef07113f7e664b9858f9491"
+  },
+  "GeometryTutor/assets/audio/voice/q51-ex2.ogg": {
+    "mtime": 1789312995.0824683,
+    "seen": 1789314990.983658,
+    "ast_hash": "cf715c83398b43a4ee5c98e8808635ce",
+    "semantic_hash": "cf715c83398b43a4ee5c98e8808635ce"
+  },
+  "GeometryTutor/assets/audio/voice/q52-ex1.m4a": {
+    "mtime": 1789312995.083469,
+    "seen": 1789314990.983658,
+    "ast_hash": "1fa5e2ff23dc3fd8dbc5d7b06936de16",
+    "semantic_hash": "1fa5e2ff23dc3fd8dbc5d7b06936de16"
+  },
+  "GeometryTutor/assets/audio/voice/q52-ex1.ogg": {
+    "mtime": 1789312995.083469,
+    "seen": 1789314990.983658,
+    "ast_hash": "88d2cf0975ebeb6aad7c02f5c7fd714f",
+    "semantic_hash": "88d2cf0975ebeb6aad7c02f5c7fd714f"
+  },
+  "GeometryTutor/assets/audio/voice/q52-ex2.m4a": {
+    "mtime": 1789312995.0844688,
+    "seen": 1789314990.983658,
+    "ast_hash": "931f6126c97cf1b197ae47f2cd7786ae",
+    "semantic_hash": "931f6126c97cf1b197ae47f2cd7786ae"
+  },
+  "GeometryTutor/assets/audio/voice/q52-ex2.ogg": {
+    "mtime": 1789312995.0844688,
+    "seen": 1789314990.983658,
+    "ast_hash": "9e60fce945c632c0418b4e7e11b9c237",
+    "semantic_hash": "9e60fce945c632c0418b4e7e11b9c237"
+  },
+  "GeometryTutor/assets/audio/voice/q53-ex1.m4a": {
+    "mtime": 1789312995.0854685,
+    "seen": 1789314990.983658,
+    "ast_hash": "c44fd5c910f8a75a856c5a7b59f0fb05",
+    "semantic_hash": "c44fd5c910f8a75a856c5a7b59f0fb05"
+  },
+  "GeometryTutor/assets/audio/voice/q53-ex1.ogg": {
+    "mtime": 1789312995.0854685,
+    "seen": 1789314990.983658,
+    "ast_hash": "b31f12407f69363fa6fcd4245b65f153",
+    "semantic_hash": "b31f12407f69363fa6fcd4245b65f153"
+  },
+  "GeometryTutor/assets/audio/voice/q53-ex2.m4a": {
+    "mtime": 1789312995.086469,
+    "seen": 1789314990.983658,
+    "ast_hash": "a976b7a8a6d86ea9092eba4344296b9d",
+    "semantic_hash": "a976b7a8a6d86ea9092eba4344296b9d"
+  },
+  "GeometryTutor/assets/audio/voice/q53-ex2.ogg": {
+    "mtime": 1789312995.0874686,
+    "seen": 1789314990.983658,
+    "ast_hash": "fade0f669ee49684f4ec3075290534fe",
+    "semantic_hash": "fade0f669ee49684f4ec3075290534fe"
+  },
+  "GeometryTutor/assets/audio/voice/q54-ex1.m4a": {
+    "mtime": 1789312995.0874686,
+    "seen": 1789314990.983658,
+    "ast_hash": "38988425fe7e1d9326d4fe3574cf11af",
+    "semantic_hash": "38988425fe7e1d9326d4fe3574cf11af"
+  },
+  "GeometryTutor/assets/audio/voice/q54-ex1.ogg": {
+    "mtime": 1789312995.0874686,
+    "seen": 1789314990.983658,
+    "ast_hash": "2662978de66651b50fd27fd403027e7b",
+    "semantic_hash": "2662978de66651b50fd27fd403027e7b"
+  },
+  "GeometryTutor/assets/audio/voice/q54-ex2.m4a": {
+    "mtime": 1789312995.0888228,
+    "seen": 1789314990.983658,
+    "ast_hash": "afd65123bd82d4aa3dd2030cd47df25a",
+    "semantic_hash": "afd65123bd82d4aa3dd2030cd47df25a"
+  },
+  "GeometryTutor/assets/audio/voice/q54-ex2.ogg": {
+    "mtime": 1789312995.0888228,
+    "seen": 1789314990.983658,
+    "ast_hash": "3487e6a7a6b0af8b32b6e0b55d669ff3",
+    "semantic_hash": "3487e6a7a6b0af8b32b6e0b55d669ff3"
+  },
+  "GeometryTutor/assets/audio/voice/q55-ex1.m4a": {
+    "mtime": 1789312995.0898228,
+    "seen": 1789314990.983658,
+    "ast_hash": "a642a3493beb97bcd07dd63d1022833c",
+    "semantic_hash": "a642a3493beb97bcd07dd63d1022833c"
+  },
+  "GeometryTutor/assets/audio/voice/q55-ex1.ogg": {
+    "mtime": 1789312995.0908227,
+    "seen": 1789314990.983658,
+    "ast_hash": "bb1614b7e9356628965070a2247adcf2",
+    "semantic_hash": "bb1614b7e9356628965070a2247adcf2"
+  },
+  "GeometryTutor/assets/audio/voice/q55-ex2.m4a": {
+    "mtime": 1789312995.0908227,
+    "seen": 1789314990.983658,
+    "ast_hash": "fcfd4063819738e151b6d5529f61a3e5",
+    "semantic_hash": "fcfd4063819738e151b6d5529f61a3e5"
+  },
+  "GeometryTutor/assets/audio/voice/q55-ex2.ogg": {
+    "mtime": 1789312995.0918229,
+    "seen": 1789314990.983658,
+    "ast_hash": "d8bf09d3270b3beb9e44547e75463b4b",
+    "semantic_hash": "d8bf09d3270b3beb9e44547e75463b4b"
+  },
+  "GeometryTutor/assets/audio/voice/q56-ex1.m4a": {
+    "mtime": 1789312995.0918229,
+    "seen": 1789314990.983658,
+    "ast_hash": "eaf3317a6098bb3b9f25b46757eea769",
+    "semantic_hash": "eaf3317a6098bb3b9f25b46757eea769"
+  },
+  "GeometryTutor/assets/audio/voice/q56-ex1.ogg": {
+    "mtime": 1789312995.0928228,
+    "seen": 1789314990.983658,
+    "ast_hash": "45b815a4275132091f6b947ff634c398",
+    "semantic_hash": "45b815a4275132091f6b947ff634c398"
+  },
+  "GeometryTutor/assets/audio/voice/q56-ex2.m4a": {
+    "mtime": 1789312995.0928228,
+    "seen": 1789314990.983658,
+    "ast_hash": "27e8c0898ceb500958ccf4f0e0f66135",
+    "semantic_hash": "27e8c0898ceb500958ccf4f0e0f66135"
+  },
+  "GeometryTutor/assets/audio/voice/q56-ex2.ogg": {
+    "mtime": 1789312995.0938234,
+    "seen": 1789314990.983658,
+    "ast_hash": "f9c6431bddb387572714c774eeeed93e",
+    "semantic_hash": "f9c6431bddb387572714c774eeeed93e"
+  },
+  "GeometryTutor/assets/audio/voice/q57-ex1.m4a": {
+    "mtime": 1789312995.0948231,
+    "seen": 1789314990.983658,
+    "ast_hash": "852913a5a9e8eb2189769aae64d07028",
+    "semantic_hash": "852913a5a9e8eb2189769aae64d07028"
+  },
+  "GeometryTutor/assets/audio/voice/q57-ex1.ogg": {
+    "mtime": 1789312995.0948231,
+    "seen": 1789314990.983658,
+    "ast_hash": "57e1190c06c4df67dfeb9e249dd57db8",
+    "semantic_hash": "57e1190c06c4df67dfeb9e249dd57db8"
+  },
+  "GeometryTutor/assets/audio/voice/q57-ex2.m4a": {
+    "mtime": 1789312995.0958233,
+    "seen": 1789314990.983658,
+    "ast_hash": "3a8136a6a52d0c5b40c66b51b2c15215",
+    "semantic_hash": "3a8136a6a52d0c5b40c66b51b2c15215"
+  },
+  "GeometryTutor/assets/audio/voice/q57-ex2.ogg": {
+    "mtime": 1789312995.0968225,
+    "seen": 1789314990.983658,
+    "ast_hash": "37791bec938e197dd0b05d6bb50e750d",
+    "semantic_hash": "37791bec938e197dd0b05d6bb50e750d"
+  },
+  "GeometryTutor/assets/audio/voice/q58-ex1.m4a": {
+    "mtime": 1789312995.0968225,
+    "seen": 1789314990.983658,
+    "ast_hash": "8ac83c1dcff9cdd6d7a730de3e5704d9",
+    "semantic_hash": "8ac83c1dcff9cdd6d7a730de3e5704d9"
+  },
+  "GeometryTutor/assets/audio/voice/q58-ex1.ogg": {
+    "mtime": 1789312995.097823,
+    "seen": 1789314990.983658,
+    "ast_hash": "e5e8bc2335fbc4b2a6c6fb0b9c5523fd",
+    "semantic_hash": "e5e8bc2335fbc4b2a6c6fb0b9c5523fd"
+  },
+  "GeometryTutor/assets/audio/voice/q58-ex2.m4a": {
+    "mtime": 1789312995.0988228,
+    "seen": 1789314990.983658,
+    "ast_hash": "58290c617c246fbbb7add112ef675372",
+    "semantic_hash": "58290c617c246fbbb7add112ef675372"
+  },
+  "GeometryTutor/assets/audio/voice/q58-ex2.ogg": {
+    "mtime": 1789312995.0988228,
+    "seen": 1789314990.983658,
+    "ast_hash": "f6bf2fe6479bba1d569ca52cc0ef457b",
+    "semantic_hash": "f6bf2fe6479bba1d569ca52cc0ef457b"
+  },
+  "GeometryTutor/assets/audio/voice/q59-ex1.m4a": {
+    "mtime": 1789312995.099823,
+    "seen": 1789314990.983658,
+    "ast_hash": "91715ffeca096f562a75a41534452bb3",
+    "semantic_hash": "91715ffeca096f562a75a41534452bb3"
+  },
+  "GeometryTutor/assets/audio/voice/q59-ex1.ogg": {
+    "mtime": 1789312995.099823,
+    "seen": 1789314990.983658,
+    "ast_hash": "deab9b58f528777ea38fb45b9580123c",
+    "semantic_hash": "deab9b58f528777ea38fb45b9580123c"
+  },
+  "GeometryTutor/assets/audio/voice/q59-ex2.m4a": {
+    "mtime": 1789312995.1008248,
+    "seen": 1789314990.983658,
+    "ast_hash": "b7cf85b0d1eafa9d305c2e69aa934a5c",
+    "semantic_hash": "b7cf85b0d1eafa9d305c2e69aa934a5c"
+  },
+  "GeometryTutor/assets/audio/voice/q59-ex2.ogg": {
+    "mtime": 1789312995.1018229,
+    "seen": 1789314990.983658,
+    "ast_hash": "edb44c26120f65fb649ec2ac015c2ad3",
+    "semantic_hash": "edb44c26120f65fb649ec2ac015c2ad3"
+  },
+  "GeometryTutor/assets/audio/voice/q60-ex1.m4a": {
+    "mtime": 1789312995.1018229,
+    "seen": 1789314990.983658,
+    "ast_hash": "813a8c30ed20d33ba333e525e410c664",
+    "semantic_hash": "813a8c30ed20d33ba333e525e410c664"
+  },
+  "GeometryTutor/assets/audio/voice/q60-ex1.ogg": {
+    "mtime": 1789312995.102823,
+    "seen": 1789314990.983658,
+    "ast_hash": "4eaf18113ffc569153886aba52034178",
+    "semantic_hash": "4eaf18113ffc569153886aba52034178"
+  },
+  "GeometryTutor/assets/audio/voice/q60-ex2.m4a": {
+    "mtime": 1789312995.1038225,
+    "seen": 1789314990.983658,
+    "ast_hash": "3807512d8327927a506a730e68f2018f",
+    "semantic_hash": "3807512d8327927a506a730e68f2018f"
+  },
+  "GeometryTutor/assets/audio/voice/q60-ex2.ogg": {
+    "mtime": 1789312995.1038225,
+    "seen": 1789314990.983658,
+    "ast_hash": "7d2393afffebef676adb0f57c3bcb041",
+    "semantic_hash": "7d2393afffebef676adb0f57c3bcb041"
+  },
+  "GeometryTutor/assets/audio/voice/q61-ex1.m4a": {
+    "mtime": 1789312995.1048229,
+    "seen": 1789314990.983658,
+    "ast_hash": "06ef0cef53358175af1279a611f81031",
+    "semantic_hash": "06ef0cef53358175af1279a611f81031"
+  },
+  "GeometryTutor/assets/audio/voice/q61-ex1.ogg": {
+    "mtime": 1789312995.1058228,
+    "seen": 1789314990.983658,
+    "ast_hash": "b9956f0fe63bc9fc70af4037ac575d26",
+    "semantic_hash": "b9956f0fe63bc9fc70af4037ac575d26"
+  },
+  "GeometryTutor/assets/audio/voice/q61-ex2.m4a": {
+    "mtime": 1789312995.1058228,
+    "seen": 1789314990.983658,
+    "ast_hash": "6b0c0e7212cc4ac92cc74927e960dc29",
+    "semantic_hash": "6b0c0e7212cc4ac92cc74927e960dc29"
+  },
+  "GeometryTutor/assets/audio/voice/q61-ex2.ogg": {
+    "mtime": 1789312995.106823,
+    "seen": 1789314990.983658,
+    "ast_hash": "6aab1b5162fc9d33d5e56fa3f6929ec6",
+    "semantic_hash": "6aab1b5162fc9d33d5e56fa3f6929ec6"
+  },
+  "GeometryTutor/assets/audio/voice/q62-ex1.m4a": {
+    "mtime": 1789312995.106823,
+    "seen": 1789314990.983658,
+    "ast_hash": "bed02109fcf74ec212bec60c2bbe1d2b",
+    "semantic_hash": "bed02109fcf74ec212bec60c2bbe1d2b"
+  },
+  "GeometryTutor/assets/audio/voice/q62-ex1.ogg": {
+    "mtime": 1789312995.1078227,
+    "seen": 1789314990.983658,
+    "ast_hash": "47d20199c8c8cc380b64fa8aa88a7222",
+    "semantic_hash": "47d20199c8c8cc380b64fa8aa88a7222"
+  },
+  "GeometryTutor/assets/audio/voice/q62-ex2.m4a": {
+    "mtime": 1789312995.1088228,
+    "seen": 1789314990.983658,
+    "ast_hash": "57e7cd8bd120685d7d2508fec8bbbaf9",
+    "semantic_hash": "57e7cd8bd120685d7d2508fec8bbbaf9"
+  },
+  "GeometryTutor/assets/audio/voice/q62-ex2.ogg": {
+    "mtime": 1789312995.1088228,
+    "seen": 1789314990.983658,
+    "ast_hash": "3b071a3fbb3bab4fe2bb9ad6b8249070",
+    "semantic_hash": "3b071a3fbb3bab4fe2bb9ad6b8249070"
+  },
+  "GeometryTutor/assets/audio/voice/q63-ex1.m4a": {
+    "mtime": 1789312995.109823,
+    "seen": 1789314990.983658,
+    "ast_hash": "f4a6b6bda26f5d7cf63110bd3eaa9915",
+    "semantic_hash": "f4a6b6bda26f5d7cf63110bd3eaa9915"
+  },
+  "GeometryTutor/assets/audio/voice/q63-ex1.ogg": {
+    "mtime": 1789312995.109823,
+    "seen": 1789314990.983658,
+    "ast_hash": "80d949f00232da5a36dd28340e636540",
+    "semantic_hash": "80d949f00232da5a36dd28340e636540"
+  },
+  "GeometryTutor/assets/audio/voice/q63-ex2.m4a": {
+    "mtime": 1789312995.1108232,
+    "seen": 1789314990.983658,
+    "ast_hash": "9c9386eb225d467bf339bbe092a28e3b",
+    "semantic_hash": "9c9386eb225d467bf339bbe092a28e3b"
+  },
+  "GeometryTutor/assets/audio/voice/q63-ex2.ogg": {
+    "mtime": 1789312995.1108232,
+    "seen": 1789314990.983658,
+    "ast_hash": "226e81a8eec450fbf0e9be9208bf6399",
+    "semantic_hash": "226e81a8eec450fbf0e9be9208bf6399"
+  },
+  "GeometryTutor/assets/audio/voice/q64-ex1.m4a": {
+    "mtime": 1789312995.1118233,
+    "seen": 1789314990.983658,
+    "ast_hash": "b9cc75780ff7b8cf6a2986b38968d91c",
+    "semantic_hash": "b9cc75780ff7b8cf6a2986b38968d91c"
+  },
+  "GeometryTutor/assets/audio/voice/q64-ex1.ogg": {
+    "mtime": 1789312995.1128228,
+    "seen": 1789314990.983658,
+    "ast_hash": "34f0831ba7010daa02c33b71c78edf70",
+    "semantic_hash": "34f0831ba7010daa02c33b71c78edf70"
+  },
+  "GeometryTutor/assets/audio/voice/q64-ex2.m4a": {
+    "mtime": 1789312995.1138246,
+    "seen": 1789314990.983658,
+    "ast_hash": "eaa51cee122263018f9d5acba6d9f291",
+    "semantic_hash": "eaa51cee122263018f9d5acba6d9f291"
+  },
+  "GeometryTutor/assets/audio/voice/q64-ex2.ogg": {
+    "mtime": 1789312995.1138246,
+    "seen": 1789314990.983658,
+    "ast_hash": "a72ab21f8e0532a884f651f38790872a",
+    "semantic_hash": "a72ab21f8e0532a884f651f38790872a"
+  },
+  "GeometryTutor/assets/audio/voice/q65-ex1.m4a": {
+    "mtime": 1789312995.1148224,
+    "seen": 1789314990.983658,
+    "ast_hash": "6fdef95d7d8f962ced3523fbbd1947e8",
+    "semantic_hash": "6fdef95d7d8f962ced3523fbbd1947e8"
+  },
+  "GeometryTutor/assets/audio/voice/q65-ex1.ogg": {
+    "mtime": 1789312995.1158295,
+    "seen": 1789314990.983658,
+    "ast_hash": "cf59a2fed25b4309d991718eb67e86a1",
+    "semantic_hash": "cf59a2fed25b4309d991718eb67e86a1"
+  },
+  "GeometryTutor/assets/audio/voice/q65-ex2.m4a": {
+    "mtime": 1789312995.1158295,
+    "seen": 1789314990.983658,
+    "ast_hash": "88702e64c5fc03895dfeee63994ddda9",
+    "semantic_hash": "88702e64c5fc03895dfeee63994ddda9"
+  },
+  "GeometryTutor/assets/audio/voice/q65-ex2.ogg": {
+    "mtime": 1789312995.1168225,
+    "seen": 1789314990.983658,
+    "ast_hash": "a67422e92616f2c9e436d987702b23db",
+    "semantic_hash": "a67422e92616f2c9e436d987702b23db"
+  },
+  "GeometryTutor/assets/audio/voice/q66-ex1.m4a": {
+    "mtime": 1789312995.1178226,
+    "seen": 1789314990.983658,
+    "ast_hash": "7615764a57d6b017135337dbc7fc82ca",
+    "semantic_hash": "7615764a57d6b017135337dbc7fc82ca"
+  },
+  "GeometryTutor/assets/audio/voice/q66-ex1.ogg": {
+    "mtime": 1789312995.1178226,
+    "seen": 1789314990.983658,
+    "ast_hash": "ba6af479d9a0ca6e4979edaa2106255d",
+    "semantic_hash": "ba6af479d9a0ca6e4979edaa2106255d"
+  },
+  "GeometryTutor/assets/audio/voice/q66-ex2.m4a": {
+    "mtime": 1789312995.1188219,
+    "seen": 1789314990.983658,
+    "ast_hash": "f66a8a2194505451cc4f826141afbd10",
+    "semantic_hash": "f66a8a2194505451cc4f826141afbd10"
+  },
+  "GeometryTutor/assets/audio/voice/q66-ex2.ogg": {
+    "mtime": 1789312995.1198225,
+    "seen": 1789314990.983658,
+    "ast_hash": "5dc9cdfe0b5273f2eaacdeafd0e55ae2",
+    "semantic_hash": "5dc9cdfe0b5273f2eaacdeafd0e55ae2"
+  },
+  "GeometryTutor/assets/audio/voice/q67-ex1.m4a": {
+    "mtime": 1789312995.1198225,
+    "seen": 1789314990.983658,
+    "ast_hash": "e9452d4dbd25e419650a349330263972",
+    "semantic_hash": "e9452d4dbd25e419650a349330263972"
+  },
+  "GeometryTutor/assets/audio/voice/q67-ex1.ogg": {
+    "mtime": 1789312995.120823,
+    "seen": 1789314990.983658,
+    "ast_hash": "830ec3b128c0e5083a34e86a1551c954",
+    "semantic_hash": "830ec3b128c0e5083a34e86a1551c954"
+  },
+  "GeometryTutor/assets/audio/voice/q67-ex2.m4a": {
+    "mtime": 1789312995.120823,
+    "seen": 1789314990.983658,
+    "ast_hash": "1028f3b534f09cf06184f6f07d330512",
+    "semantic_hash": "1028f3b534f09cf06184f6f07d330512"
+  },
+  "GeometryTutor/assets/audio/voice/q67-ex2.ogg": {
+    "mtime": 1789312995.1218233,
+    "seen": 1789314990.983658,
+    "ast_hash": "f1d94d10c1193b3dd99d1f39db08ae88",
+    "semantic_hash": "f1d94d10c1193b3dd99d1f39db08ae88"
+  },
+  "GeometryTutor/assets/audio/voice/q68-ex1.m4a": {
+    "mtime": 1789312995.1218233,
+    "seen": 1789314990.983658,
+    "ast_hash": "6162e817407f8da82cae98b224b60a6f",
+    "semantic_hash": "6162e817407f8da82cae98b224b60a6f"
+  },
+  "GeometryTutor/assets/audio/voice/q68-ex1.ogg": {
+    "mtime": 1789312995.1228235,
+    "seen": 1789314990.983658,
+    "ast_hash": "da60d9838d1c02cba786bc144dacc1ab",
+    "semantic_hash": "da60d9838d1c02cba786bc144dacc1ab"
+  },
+  "GeometryTutor/assets/audio/voice/q68-ex2.m4a": {
+    "mtime": 1789312995.1238227,
+    "seen": 1789314990.983658,
+    "ast_hash": "4d8b22afd9ba9d48325649570b05ca69",
+    "semantic_hash": "4d8b22afd9ba9d48325649570b05ca69"
+  },
+  "GeometryTutor/assets/audio/voice/q68-ex2.ogg": {
+    "mtime": 1789312995.1238227,
+    "seen": 1789314990.983658,
+    "ast_hash": "b2930e534c6407a3430145143739896f",
+    "semantic_hash": "b2930e534c6407a3430145143739896f"
+  },
+  "GeometryTutor/assets/audio/voice/q69-ex1.m4a": {
+    "mtime": 1789312995.124824,
+    "seen": 1789314990.983658,
+    "ast_hash": "c486b5bd4c98c79458459fd979ff2775",
+    "semantic_hash": "c486b5bd4c98c79458459fd979ff2775"
+  },
+  "GeometryTutor/assets/audio/voice/q69-ex1.ogg": {
+    "mtime": 1789312995.124824,
+    "seen": 1789314990.983658,
+    "ast_hash": "e6422d7985126ca1acd65d1a9671adcf",
+    "semantic_hash": "e6422d7985126ca1acd65d1a9671adcf"
+  },
+  "GeometryTutor/assets/audio/voice/q69-ex2.m4a": {
+    "mtime": 1789312995.125823,
+    "seen": 1789314990.983658,
+    "ast_hash": "c91e685eefc4f971cbb89cf25d66e153",
+    "semantic_hash": "c91e685eefc4f971cbb89cf25d66e153"
+  },
+  "GeometryTutor/assets/audio/voice/q69-ex2.ogg": {
+    "mtime": 1789312995.1268232,
+    "seen": 1789314990.983658,
+    "ast_hash": "282f55eabd70f4be512e8cba383e2c1e",
+    "semantic_hash": "282f55eabd70f4be512e8cba383e2c1e"
+  },
+  "GeometryTutor/assets/audio/voice/q70-ex1.m4a": {
+    "mtime": 1789312995.1278229,
+    "seen": 1789314990.983658,
+    "ast_hash": "a7146ddebc10898e177d1b560cf0b9b3",
+    "semantic_hash": "a7146ddebc10898e177d1b560cf0b9b3"
+  },
+  "GeometryTutor/assets/audio/voice/q70-ex1.ogg": {
+    "mtime": 1789312995.1278229,
+    "seen": 1789314990.983658,
+    "ast_hash": "013a217d5a0b690ae410d8d601c6efa9",
+    "semantic_hash": "013a217d5a0b690ae410d8d601c6efa9"
+  },
+  "GeometryTutor/assets/audio/voice/q70-ex2.m4a": {
+    "mtime": 1789312995.1288233,
+    "seen": 1789314990.983658,
+    "ast_hash": "b36d5a3494a0f270eae7a9e54e9a224e",
+    "semantic_hash": "b36d5a3494a0f270eae7a9e54e9a224e"
+  },
+  "GeometryTutor/assets/audio/voice/q70-ex2.ogg": {
+    "mtime": 1789312995.1298225,
+    "seen": 1789314990.983658,
+    "ast_hash": "c9782b978baf0bbc9e7d6aaa08a21b19",
+    "semantic_hash": "c9782b978baf0bbc9e7d6aaa08a21b19"
+  },
+  "GeometryTutor/assets/audio/voice/q71-ex1.m4a": {
+    "mtime": 1789312995.1298225,
+    "seen": 1789314990.983658,
+    "ast_hash": "cfd4be8e76c32861775c3d49898ccd9c",
+    "semantic_hash": "cfd4be8e76c32861775c3d49898ccd9c"
+  },
+  "GeometryTutor/assets/audio/voice/q71-ex1.ogg": {
+    "mtime": 1789312995.1308234,
+    "seen": 1789314990.983658,
+    "ast_hash": "3c7eb08d91c8a9d1d32cbb607d39bda1",
+    "semantic_hash": "3c7eb08d91c8a9d1d32cbb607d39bda1"
+  },
+  "GeometryTutor/assets/audio/voice/q71-ex2.m4a": {
+    "mtime": 1789312995.1318235,
+    "seen": 1789314990.983658,
+    "ast_hash": "daa7b0576165449fd7dffd1dae9c2999",
+    "semantic_hash": "daa7b0576165449fd7dffd1dae9c2999"
+  },
+  "GeometryTutor/assets/audio/voice/q71-ex2.ogg": {
+    "mtime": 1789312995.1318235,
+    "seen": 1789314990.983658,
+    "ast_hash": "9f0ab9f63aa3b9ad666d716f98c59354",
+    "semantic_hash": "9f0ab9f63aa3b9ad666d716f98c59354"
+  },
+  "GeometryTutor/assets/audio/voice/q72-ex1.m4a": {
+    "mtime": 1789312995.1328225,
+    "seen": 1789314990.983658,
+    "ast_hash": "f6318444ad74fc7a5a7ee240c004a020",
+    "semantic_hash": "f6318444ad74fc7a5a7ee240c004a020"
+  },
+  "GeometryTutor/assets/audio/voice/q72-ex1.ogg": {
+    "mtime": 1789312995.1328225,
+    "seen": 1789314990.983658,
+    "ast_hash": "06c68ebccc653f5ed04cbceec732f6b6",
+    "semantic_hash": "06c68ebccc653f5ed04cbceec732f6b6"
+  },
+  "GeometryTutor/assets/audio/voice/q72-ex2.m4a": {
+    "mtime": 1789312995.1338227,
+    "seen": 1789314990.983658,
+    "ast_hash": "0171ac514d1c9161fda9a05d69019502",
+    "semantic_hash": "0171ac514d1c9161fda9a05d69019502"
+  },
+  "GeometryTutor/assets/audio/voice/q72-ex2.ogg": {
+    "mtime": 1789312995.1348224,
+    "seen": 1789314990.983658,
+    "ast_hash": "3314fdb37ac9d31a5e4fa083c62062a9",
+    "semantic_hash": "3314fdb37ac9d31a5e4fa083c62062a9"
+  },
+  "GeometryTutor/assets/audio/voice/q73-ex1.m4a": {
+    "mtime": 1789312995.1358228,
+    "seen": 1789314990.983658,
+    "ast_hash": "8a83371b9bd5cfc743b5c83087f2f49e",
+    "semantic_hash": "8a83371b9bd5cfc743b5c83087f2f49e"
+  },
+  "GeometryTutor/assets/audio/voice/q73-ex1.ogg": {
+    "mtime": 1789312995.1358228,
+    "seen": 1789314990.983658,
+    "ast_hash": "6fa85d827d73e63322df5cd629035c83",
+    "semantic_hash": "6fa85d827d73e63322df5cd629035c83"
+  },
+  "GeometryTutor/assets/audio/voice/q73-ex2.m4a": {
+    "mtime": 1789312995.136823,
+    "seen": 1789314990.983658,
+    "ast_hash": "a4134e4a8b73939cf9d74e313630e2bf",
+    "semantic_hash": "a4134e4a8b73939cf9d74e313630e2bf"
+  },
+  "GeometryTutor/assets/audio/voice/q73-ex2.ogg": {
+    "mtime": 1789312995.136823,
+    "seen": 1789314990.983658,
+    "ast_hash": "ddc16ba72cfa7f4560b84e91767b6fd6",
+    "semantic_hash": "ddc16ba72cfa7f4560b84e91767b6fd6"
+  },
+  "GeometryTutor/assets/audio/voice/q74-ex1.m4a": {
+    "mtime": 1789312995.1378236,
+    "seen": 1789314990.983658,
+    "ast_hash": "645266a09e65671ac4d82639a611da7c",
+    "semantic_hash": "645266a09e65671ac4d82639a611da7c"
+  },
+  "GeometryTutor/assets/audio/voice/q74-ex1.ogg": {
+    "mtime": 1789312995.1388226,
+    "seen": 1789314990.983658,
+    "ast_hash": "c8d8f788e6ef611065570e2bc932d6d4",
+    "semantic_hash": "c8d8f788e6ef611065570e2bc932d6d4"
+  },
+  "GeometryTutor/assets/audio/voice/q74-ex2.m4a": {
+    "mtime": 1789312995.1398225,
+    "seen": 1789314990.983658,
+    "ast_hash": "c84456245e4c388e56a54ab7b7424f5b",
+    "semantic_hash": "c84456245e4c388e56a54ab7b7424f5b"
+  },
+  "GeometryTutor/assets/audio/voice/q74-ex2.ogg": {
+    "mtime": 1789312995.1408248,
+    "seen": 1789314990.983658,
+    "ast_hash": "dfd8a733b36d6a2f13ae018cfee655d9",
+    "semantic_hash": "dfd8a733b36d6a2f13ae018cfee655d9"
+  },
+  "GeometryTutor/assets/audio/voice/q75-ex1.m4a": {
+    "mtime": 1789312995.141822,
+    "seen": 1789314990.983658,
+    "ast_hash": "274bb6a48429b0fdd3e2e0f0bdc7540b",
+    "semantic_hash": "274bb6a48429b0fdd3e2e0f0bdc7540b"
+  },
+  "GeometryTutor/assets/audio/voice/q75-ex1.ogg": {
+    "mtime": 1789312995.1428227,
+    "seen": 1789314990.983658,
+    "ast_hash": "6f89409e5353844299edab38527d1f04",
+    "semantic_hash": "6f89409e5353844299edab38527d1f04"
+  },
+  "GeometryTutor/assets/audio/voice/q75-ex2.m4a": {
+    "mtime": 1789312995.143823,
+    "seen": 1789314990.983658,
+    "ast_hash": "d10fb9b955e21a6ea703ecbf706032fb",
+    "semantic_hash": "d10fb9b955e21a6ea703ecbf706032fb"
+  },
+  "GeometryTutor/assets/audio/voice/q75-ex2.ogg": {
+    "mtime": 1789312995.143823,
+    "seen": 1789314990.983658,
+    "ast_hash": "13252eaa950f965c6a1fec5d73939310",
+    "semantic_hash": "13252eaa950f965c6a1fec5d73939310"
+  },
+  "GeometryTutor/assets/audio/voice/q76-ex1.m4a": {
+    "mtime": 1789312995.1448233,
+    "seen": 1789314990.983658,
+    "ast_hash": "200fad6f7d2bf02808d56fc352768273",
+    "semantic_hash": "200fad6f7d2bf02808d56fc352768273"
+  },
+  "GeometryTutor/assets/audio/voice/q76-ex1.ogg": {
+    "mtime": 1789312995.1458225,
+    "seen": 1789314990.983658,
+    "ast_hash": "3ef8062641b8fa486738fdbb744c9261",
+    "semantic_hash": "3ef8062641b8fa486738fdbb744c9261"
+  },
+  "GeometryTutor/assets/audio/voice/q76-ex2.m4a": {
+    "mtime": 1789312995.1458225,
+    "seen": 1789314990.983658,
+    "ast_hash": "265651f89cf02a1c1a0eb6077aa98ab6",
+    "semantic_hash": "265651f89cf02a1c1a0eb6077aa98ab6"
+  },
+  "GeometryTutor/assets/audio/voice/q76-ex2.ogg": {
+    "mtime": 1789312995.146823,
+    "seen": 1789314990.983658,
+    "ast_hash": "519f4e24aecb00ab51d34f51691734cd",
+    "semantic_hash": "519f4e24aecb00ab51d34f51691734cd"
+  },
+  "GeometryTutor/assets/audio/voice/q77-ex1.m4a": {
+    "mtime": 1789312995.147823,
+    "seen": 1789314990.983658,
+    "ast_hash": "78185ce79fc87cd466c70b8befada808",
+    "semantic_hash": "78185ce79fc87cd466c70b8befada808"
+  },
+  "GeometryTutor/assets/audio/voice/q77-ex1.ogg": {
+    "mtime": 1789312995.147823,
+    "seen": 1789314990.983658,
+    "ast_hash": "ee4b6a1f84df3ee0941285747691b018",
+    "semantic_hash": "ee4b6a1f84df3ee0941285747691b018"
+  },
+  "GeometryTutor/assets/audio/voice/q77-ex2.m4a": {
+    "mtime": 1789312995.1488254,
+    "seen": 1789314990.983658,
+    "ast_hash": "6162879fa816c507f4e015102af671ce",
+    "semantic_hash": "6162879fa816c507f4e015102af671ce"
+  },
+  "GeometryTutor/assets/audio/voice/q77-ex2.ogg": {
+    "mtime": 1789312995.1488254,
+    "seen": 1789314990.983658,
+    "ast_hash": "35e7c90a0e5e69d5e4c84f9c3a5b40c5",
+    "semantic_hash": "35e7c90a0e5e69d5e4c84f9c3a5b40c5"
+  },
+  "GeometryTutor/assets/audio/voice/q78-ex1.m4a": {
+    "mtime": 1789312995.1498227,
+    "seen": 1789314990.983658,
+    "ast_hash": "78344a25d427605fed963606e3fa6015",
+    "semantic_hash": "78344a25d427605fed963606e3fa6015"
+  },
+  "GeometryTutor/assets/audio/voice/q78-ex1.ogg": {
+    "mtime": 1789312995.1508229,
+    "seen": 1789314990.983658,
+    "ast_hash": "14634e635541ef29356326886df26cca",
+    "semantic_hash": "14634e635541ef29356326886df26cca"
+  },
+  "GeometryTutor/assets/audio/voice/q78-ex2.m4a": {
+    "mtime": 1789312995.1508229,
+    "seen": 1789314990.983658,
+    "ast_hash": "38dd7115fa2b7693b3c35b80dfeebb00",
+    "semantic_hash": "38dd7115fa2b7693b3c35b80dfeebb00"
+  },
+  "GeometryTutor/assets/audio/voice/q78-ex2.ogg": {
+    "mtime": 1789312995.1518233,
+    "seen": 1789314990.983658,
+    "ast_hash": "ad84996485b028c5e481f0e24bc82990",
+    "semantic_hash": "ad84996485b028c5e481f0e24bc82990"
+  },
+  "GeometryTutor/assets/audio/voice/q79-ex1.m4a": {
+    "mtime": 1789312995.1518233,
+    "seen": 1789314990.983658,
+    "ast_hash": "e2b13753a0f3541f23d98b96c9a0e5ce",
+    "semantic_hash": "e2b13753a0f3541f23d98b96c9a0e5ce"
+  },
+  "GeometryTutor/assets/audio/voice/q79-ex1.ogg": {
+    "mtime": 1789312995.1528232,
+    "seen": 1789314990.983658,
+    "ast_hash": "da6a10f36eeabf844b480d24f94ca3f5",
+    "semantic_hash": "da6a10f36eeabf844b480d24f94ca3f5"
+  },
+  "GeometryTutor/assets/audio/voice/q79-ex2.m4a": {
+    "mtime": 1789312995.153823,
+    "seen": 1789314990.983658,
+    "ast_hash": "22a139ab027181431f8bb4018c5a6d38",
+    "semantic_hash": "22a139ab027181431f8bb4018c5a6d38"
+  },
+  "GeometryTutor/assets/audio/voice/q79-ex2.ogg": {
+    "mtime": 1789312995.153823,
+    "seen": 1789314990.983658,
+    "ast_hash": "0b6ccfd063b0cb6a288ed4c96a76a64e",
+    "semantic_hash": "0b6ccfd063b0cb6a288ed4c96a76a64e"
+  },
+  "GeometryTutor/assets/audio/voice/q80-ex1.m4a": {
+    "mtime": 1789312995.1548233,
+    "seen": 1789314990.983658,
+    "ast_hash": "82b9c6194604113189dfbbdd3da62503",
+    "semantic_hash": "82b9c6194604113189dfbbdd3da62503"
+  },
+  "GeometryTutor/assets/audio/voice/q80-ex1.ogg": {
+    "mtime": 1789312995.1548233,
+    "seen": 1789314990.983658,
+    "ast_hash": "82f4d97d1bfe880d1d27a0462def0690",
+    "semantic_hash": "82f4d97d1bfe880d1d27a0462def0690"
+  },
+  "GeometryTutor/assets/audio/voice/q80-ex2.m4a": {
+    "mtime": 1789312995.1578226,
+    "seen": 1789314990.983658,
+    "ast_hash": "0dbbd55853b15abf3c72f68ae5d1d3c9",
+    "semantic_hash": "0dbbd55853b15abf3c72f68ae5d1d3c9"
+  },
+  "GeometryTutor/assets/audio/voice/q80-ex2.ogg": {
+    "mtime": 1789312995.1578226,
+    "seen": 1789314990.983658,
+    "ast_hash": "49e19f51d6a7132291a4b021a6eb1b8d",
+    "semantic_hash": "49e19f51d6a7132291a4b021a6eb1b8d"
+  },
+  "GeometryTutor/assets/audio/voice/q81-ex1.m4a": {
+    "mtime": 1789312995.1588235,
+    "seen": 1789314990.983658,
+    "ast_hash": "26f1e330b28cf6b21827a0065bf14efc",
+    "semantic_hash": "26f1e330b28cf6b21827a0065bf14efc"
+  },
+  "GeometryTutor/assets/audio/voice/q81-ex1.ogg": {
+    "mtime": 1789312995.1588235,
+    "seen": 1789314990.983658,
+    "ast_hash": "01a43daaa3309f362111f12377191de5",
+    "semantic_hash": "01a43daaa3309f362111f12377191de5"
+  },
+  "GeometryTutor/assets/audio/voice/q81-ex2.m4a": {
+    "mtime": 1789312995.159823,
+    "seen": 1789314990.983658,
+    "ast_hash": "726cdb336e7ede852ee63ac04dada613",
+    "semantic_hash": "726cdb336e7ede852ee63ac04dada613"
+  },
+  "GeometryTutor/assets/audio/voice/q81-ex2.ogg": {
+    "mtime": 1789312995.1608229,
+    "seen": 1789314990.983658,
+    "ast_hash": "765d2d37e733c12b700e32697d8be80f",
+    "semantic_hash": "765d2d37e733c12b700e32697d8be80f"
+  },
+  "GeometryTutor/assets/audio/voice/q82-ex1.m4a": {
+    "mtime": 1789312995.1608229,
+    "seen": 1789314990.983658,
+    "ast_hash": "d1eb4b8da83491ba07b66c0292edd8bc",
+    "semantic_hash": "d1eb4b8da83491ba07b66c0292edd8bc"
+  },
+  "GeometryTutor/assets/audio/voice/q82-ex1.ogg": {
+    "mtime": 1789312995.161823,
+    "seen": 1789314990.983658,
+    "ast_hash": "5dcfe321bf2e6a2e81b82910580a0592",
+    "semantic_hash": "5dcfe321bf2e6a2e81b82910580a0592"
+  },
+  "GeometryTutor/assets/audio/voice/q82-ex2.m4a": {
+    "mtime": 1789312995.1628225,
+    "seen": 1789314990.983658,
+    "ast_hash": "b711cbe55af3599317f300d73ee9a5b1",
+    "semantic_hash": "b711cbe55af3599317f300d73ee9a5b1"
+  },
+  "GeometryTutor/assets/audio/voice/q82-ex2.ogg": {
+    "mtime": 1789312995.1628225,
+    "seen": 1789314990.983658,
+    "ast_hash": "c4dedc6c2d608fcd6ca32004dfef8ba6",
+    "semantic_hash": "c4dedc6c2d608fcd6ca32004dfef8ba6"
+  },
+  "GeometryTutor/assets/audio/voice/q83-ex1.m4a": {
+    "mtime": 1789312995.1638236,
+    "seen": 1789314990.983658,
+    "ast_hash": "c3ba960588c4adb659882730945fca20",
+    "semantic_hash": "c3ba960588c4adb659882730945fca20"
+  },
+  "GeometryTutor/assets/audio/voice/q83-ex1.ogg": {
+    "mtime": 1789312995.1638236,
+    "seen": 1789314990.983658,
+    "ast_hash": "6e65cf707f02f9a237a40396b79556b3",
+    "semantic_hash": "6e65cf707f02f9a237a40396b79556b3"
+  },
+  "GeometryTutor/assets/audio/voice/q83-ex2.m4a": {
+    "mtime": 1789312995.1648233,
+    "seen": 1789314990.983658,
+    "ast_hash": "b1c690404564239df93854080c2a3c03",
+    "semantic_hash": "b1c690404564239df93854080c2a3c03"
+  },
+  "GeometryTutor/assets/audio/voice/q83-ex2.ogg": {
+    "mtime": 1789312995.1648233,
+    "seen": 1789314990.983658,
+    "ast_hash": "029438056a96129304faf167320b14cd",
+    "semantic_hash": "029438056a96129304faf167320b14cd"
+  },
+  "GeometryTutor/assets/audio/voice/q84-ex1.m4a": {
+    "mtime": 1789312995.1658232,
+    "seen": 1789314990.983658,
+    "ast_hash": "a136fd1c76e736f2384ee7c8cb373d7d",
+    "semantic_hash": "a136fd1c76e736f2384ee7c8cb373d7d"
+  },
+  "GeometryTutor/assets/audio/voice/q84-ex1.ogg": {
+    "mtime": 1789312995.166823,
+    "seen": 1789314990.983658,
+    "ast_hash": "5a9eaf4c8ac35b1d53a5deba277a015d",
+    "semantic_hash": "5a9eaf4c8ac35b1d53a5deba277a015d"
+  },
+  "GeometryTutor/assets/audio/voice/q84-ex2.m4a": {
+    "mtime": 1789312995.1678224,
+    "seen": 1789314990.983658,
+    "ast_hash": "9d3de3f018e5d9f94857f469b6ad00a6",
+    "semantic_hash": "9d3de3f018e5d9f94857f469b6ad00a6"
+  },
+  "GeometryTutor/assets/audio/voice/q84-ex2.ogg": {
+    "mtime": 1789312995.1688237,
+    "seen": 1789314990.983658,
+    "ast_hash": "2d9766f454044b5de29bc0e902e83566",
+    "semantic_hash": "2d9766f454044b5de29bc0e902e83566"
+  },
+  "GeometryTutor/assets/audio/voice/q85-ex1.m4a": {
+    "mtime": 1789312995.1698227,
+    "seen": 1789314990.983658,
+    "ast_hash": "7c267b588f12d9cb8814aeb36e543c59",
+    "semantic_hash": "7c267b588f12d9cb8814aeb36e543c59"
+  },
+  "GeometryTutor/assets/audio/voice/q85-ex1.ogg": {
+    "mtime": 1789312995.1698227,
+    "seen": 1789314990.983658,
+    "ast_hash": "f602eed8ca89fb1cc1071bbf41a082be",
+    "semantic_hash": "f602eed8ca89fb1cc1071bbf41a082be"
+  },
+  "GeometryTutor/assets/audio/voice/q85-ex2.m4a": {
+    "mtime": 1789312995.1708229,
+    "seen": 1789314990.983658,
+    "ast_hash": "1a3792f59206ea857cb84a0729bed11c",
+    "semantic_hash": "1a3792f59206ea857cb84a0729bed11c"
+  },
+  "GeometryTutor/assets/audio/voice/q85-ex2.ogg": {
+    "mtime": 1789312995.1718235,
+    "seen": 1789314990.983658,
+    "ast_hash": "e17ddda2e653e70ee5055398a54c06b6",
+    "semantic_hash": "e17ddda2e653e70ee5055398a54c06b6"
+  },
+  "GeometryTutor/assets/audio/voice/q86-ex1.m4a": {
+    "mtime": 1789312995.1728292,
+    "seen": 1789314990.983658,
+    "ast_hash": "05ca89a804f3e510fa9d2f89f35fb0ef",
+    "semantic_hash": "05ca89a804f3e510fa9d2f89f35fb0ef"
+  },
+  "GeometryTutor/assets/audio/voice/q86-ex1.ogg": {
+    "mtime": 1789312995.173828,
+    "seen": 1789314990.983658,
+    "ast_hash": "c66ea2c7d3391e54f7ab583e92636394",
+    "semantic_hash": "c66ea2c7d3391e54f7ab583e92636394"
+  },
+  "GeometryTutor/assets/audio/voice/q86-ex2.m4a": {
+    "mtime": 1789312995.174828,
+    "seen": 1789314990.983658,
+    "ast_hash": "4c91dca99647d705e6d99c03d50909ae",
+    "semantic_hash": "4c91dca99647d705e6d99c03d50909ae"
+  },
+  "GeometryTutor/assets/audio/voice/q86-ex2.ogg": {
+    "mtime": 1789312995.174828,
+    "seen": 1789314990.983658,
+    "ast_hash": "5e909355e675adc4b540da9e405f54f3",
+    "semantic_hash": "5e909355e675adc4b540da9e405f54f3"
+  },
+  "GeometryTutor/assets/audio/voice/q87-ex1.m4a": {
+    "mtime": 1789312995.1758282,
+    "seen": 1789314990.983658,
+    "ast_hash": "04bd5238e4ddc5d04dc023f710b7c04e",
+    "semantic_hash": "04bd5238e4ddc5d04dc023f710b7c04e"
+  },
+  "GeometryTutor/assets/audio/voice/q87-ex1.ogg": {
+    "mtime": 1789312995.1758282,
+    "seen": 1789314990.983658,
+    "ast_hash": "0157c3d5fd40e6df7623ed4792f9eddc",
+    "semantic_hash": "0157c3d5fd40e6df7623ed4792f9eddc"
+  },
+  "GeometryTutor/assets/audio/voice/q87-ex2.m4a": {
+    "mtime": 1789312995.1768272,
+    "seen": 1789314990.983658,
+    "ast_hash": "287f303ca36ed9f185fc086fe422687e",
+    "semantic_hash": "287f303ca36ed9f185fc086fe422687e"
+  },
+  "GeometryTutor/assets/audio/voice/q87-ex2.ogg": {
+    "mtime": 1789312995.1778276,
+    "seen": 1789314990.983658,
+    "ast_hash": "55c8fe4ada096a0dba6ee4e025ce57f1",
+    "semantic_hash": "55c8fe4ada096a0dba6ee4e025ce57f1"
+  },
+  "GeometryTutor/assets/audio/voice/q88-ex1.m4a": {
+    "mtime": 1789312995.1788273,
+    "seen": 1789314990.983658,
+    "ast_hash": "e64d292fbe63f5dd28cd605afab24f94",
+    "semantic_hash": "e64d292fbe63f5dd28cd605afab24f94"
+  },
+  "GeometryTutor/assets/audio/voice/q88-ex1.ogg": {
+    "mtime": 1789312995.1788273,
+    "seen": 1789314990.983658,
+    "ast_hash": "5e2302278e5a5e6a8ab6ccee9122a869",
+    "semantic_hash": "5e2302278e5a5e6a8ab6ccee9122a869"
+  },
+  "GeometryTutor/assets/audio/voice/q88-ex2.m4a": {
+    "mtime": 1789312995.1798277,
+    "seen": 1789314990.983658,
+    "ast_hash": "48e43c7b068df7faa305ef63f5218162",
+    "semantic_hash": "48e43c7b068df7faa305ef63f5218162"
+  },
+  "GeometryTutor/assets/audio/voice/q88-ex2.ogg": {
+    "mtime": 1789312995.1798277,
+    "seen": 1789314990.983658,
+    "ast_hash": "41cbfa99d95794de5f50ed7264fcd986",
+    "semantic_hash": "41cbfa99d95794de5f50ed7264fcd986"
+  },
+  "GeometryTutor/assets/audio/voice/q89-ex1.m4a": {
+    "mtime": 1789312995.180828,
+    "seen": 1789314990.983658,
+    "ast_hash": "43804ea4b09efebba31ef24285a9b2f4",
+    "semantic_hash": "43804ea4b09efebba31ef24285a9b2f4"
+  },
+  "GeometryTutor/assets/audio/voice/q89-ex1.ogg": {
+    "mtime": 1789312995.1818275,
+    "seen": 1789314990.983658,
+    "ast_hash": "8427d567d1779d6a13680c7ae9751650",
+    "semantic_hash": "8427d567d1779d6a13680c7ae9751650"
+  },
+  "GeometryTutor/assets/audio/voice/q89-ex2.m4a": {
+    "mtime": 1789312995.1828277,
+    "seen": 1789314990.983658,
+    "ast_hash": "6253d8115fa97cd5bbd5e7b351c17440",
+    "semantic_hash": "6253d8115fa97cd5bbd5e7b351c17440"
+  },
+  "GeometryTutor/assets/audio/voice/q89-ex2.ogg": {
+    "mtime": 1789312995.1828277,
+    "seen": 1789314990.983658,
+    "ast_hash": "0b10de545eebc3b19f79992d5ab09692",
+    "semantic_hash": "0b10de545eebc3b19f79992d5ab09692"
+  },
+  "GeometryTutor/assets/audio/voice/q90-ex1.m4a": {
+    "mtime": 1789312995.1828277,
+    "seen": 1789314990.983658,
+    "ast_hash": "dfc525cdeeed46513727445226bdd405",
+    "semantic_hash": "dfc525cdeeed46513727445226bdd405"
+  },
+  "GeometryTutor/assets/audio/voice/q90-ex1.ogg": {
+    "mtime": 1789312995.1838279,
+    "seen": 1789314990.983658,
+    "ast_hash": "6ba50fe540486adab8158760923ab9d2",
+    "semantic_hash": "6ba50fe540486adab8158760923ab9d2"
+  },
+  "GeometryTutor/assets/audio/voice/q90-ex2.m4a": {
+    "mtime": 1789312995.1838279,
+    "seen": 1789314990.983658,
+    "ast_hash": "86c0d4f1ea3f8e5c03684cef0e4acadf",
+    "semantic_hash": "86c0d4f1ea3f8e5c03684cef0e4acadf"
+  },
+  "GeometryTutor/assets/audio/voice/q90-ex2.ogg": {
+    "mtime": 1789312995.184828,
+    "seen": 1789314990.983658,
+    "ast_hash": "146d54f6f79241a9476858e63b04ab87",
+    "semantic_hash": "146d54f6f79241a9476858e63b04ab87"
+  },
+  "GeometryTutor/assets/audio/voice/q91-ex1.m4a": {
+    "mtime": 1789312995.1858275,
+    "seen": 1789314990.983658,
+    "ast_hash": "034f7806c3195458b50ed5b72e194b58",
+    "semantic_hash": "034f7806c3195458b50ed5b72e194b58"
+  },
+  "GeometryTutor/assets/audio/voice/q91-ex1.ogg": {
+    "mtime": 1789312995.1858275,
+    "seen": 1789314990.983658,
+    "ast_hash": "36073a16394708f7ea38bfbbea6c2eee",
+    "semantic_hash": "36073a16394708f7ea38bfbbea6c2eee"
+  },
+  "GeometryTutor/assets/audio/voice/q91-ex2.m4a": {
+    "mtime": 1789312995.1858275,
+    "seen": 1789314990.983658,
+    "ast_hash": "df8b3d7c24d426dd9675e5fbb4f755e6",
+    "semantic_hash": "df8b3d7c24d426dd9675e5fbb4f755e6"
+  },
+  "GeometryTutor/assets/audio/voice/q91-ex2.ogg": {
+    "mtime": 1789312995.187332,
+    "seen": 1789314990.983658,
+    "ast_hash": "87152ea0a3de0e560590743a3321ade5",
+    "semantic_hash": "87152ea0a3de0e560590743a3321ade5"
+  },
+  "GeometryTutor/assets/audio/voice/q92-ex1.m4a": {
+    "mtime": 1789312995.1893368,
+    "seen": 1789314990.983658,
+    "ast_hash": "48116bc6021a4a87b44108803030c592",
+    "semantic_hash": "48116bc6021a4a87b44108803030c592"
+  },
+  "GeometryTutor/assets/audio/voice/q92-ex1.ogg": {
+    "mtime": 1789312995.1893368,
+    "seen": 1789314990.983658,
+    "ast_hash": "678fd70096bbc61d8d1318cce64c2219",
+    "semantic_hash": "678fd70096bbc61d8d1318cce64c2219"
+  },
+  "GeometryTutor/assets/audio/voice/q92-ex2.m4a": {
+    "mtime": 1789312995.1903367,
+    "seen": 1789314990.983658,
+    "ast_hash": "9221615416c70da286b2ab95ac55e07a",
+    "semantic_hash": "9221615416c70da286b2ab95ac55e07a"
+  },
+  "GeometryTutor/assets/audio/voice/q92-ex2.ogg": {
+    "mtime": 1789312995.1913364,
+    "seen": 1789314990.983658,
+    "ast_hash": "33094d57340edfabd35420fdd0f7c048",
+    "semantic_hash": "33094d57340edfabd35420fdd0f7c048"
+  },
+  "GeometryTutor/assets/audio/voice/q93-ex1.m4a": {
+    "mtime": 1789312995.1923366,
+    "seen": 1789314990.983658,
+    "ast_hash": "163fdc0ed450593b671ea869d4210049",
+    "semantic_hash": "163fdc0ed450593b671ea869d4210049"
+  },
+  "GeometryTutor/assets/audio/voice/q93-ex1.ogg": {
+    "mtime": 1789312995.1923366,
+    "seen": 1789314990.983658,
+    "ast_hash": "8f51afb391c966fbfe0c5621a4e8abb2",
+    "semantic_hash": "8f51afb391c966fbfe0c5621a4e8abb2"
+  },
+  "GeometryTutor/assets/audio/voice/q93-ex2.m4a": {
+    "mtime": 1789312995.1933367,
+    "seen": 1789314990.983658,
+    "ast_hash": "4a1297aa115dd9d8351838beeafb1546",
+    "semantic_hash": "4a1297aa115dd9d8351838beeafb1546"
+  },
+  "GeometryTutor/assets/audio/voice/q93-ex2.ogg": {
+    "mtime": 1789312995.1933367,
+    "seen": 1789314990.983658,
+    "ast_hash": "f888da62a88dd2f0ab7dc89750dd8af0",
+    "semantic_hash": "f888da62a88dd2f0ab7dc89750dd8af0"
+  },
+  "GeometryTutor/assets/audio/voice/q94-ex1.m4a": {
+    "mtime": 1789312995.1943367,
+    "seen": 1789314990.983658,
+    "ast_hash": "197404af9a96f2b3a08db1aae0b226a9",
+    "semantic_hash": "197404af9a96f2b3a08db1aae0b226a9"
+  },
+  "GeometryTutor/assets/audio/voice/q94-ex1.ogg": {
+    "mtime": 1789312995.1943367,
+    "seen": 1789314990.983658,
+    "ast_hash": "e75f6906fdabe36de01efd1b2f64513e",
+    "semantic_hash": "e75f6906fdabe36de01efd1b2f64513e"
+  },
+  "GeometryTutor/assets/audio/voice/q94-ex2.m4a": {
+    "mtime": 1789312995.195336,
+    "seen": 1789314990.983658,
+    "ast_hash": "90c332d5795f53904ae70e0587d69b3a",
+    "semantic_hash": "90c332d5795f53904ae70e0587d69b3a"
+  },
+  "GeometryTutor/assets/audio/voice/q94-ex2.ogg": {
+    "mtime": 1789312995.196337,
+    "seen": 1789314990.983658,
+    "ast_hash": "5e34222d0f127499002d1ea069ecb111",
+    "semantic_hash": "5e34222d0f127499002d1ea069ecb111"
+  },
+  "GeometryTutor/assets/audio/voice/q95-ex1.m4a": {
+    "mtime": 1789312995.1973364,
+    "seen": 1789314990.983658,
+    "ast_hash": "642e449dbbf08cb7139bb2a377e15670",
+    "semantic_hash": "642e449dbbf08cb7139bb2a377e15670"
+  },
+  "GeometryTutor/assets/audio/voice/q95-ex1.ogg": {
+    "mtime": 1789312995.1973364,
+    "seen": 1789314990.983658,
+    "ast_hash": "5002888836f8c1706b9a8c597b727012",
+    "semantic_hash": "5002888836f8c1706b9a8c597b727012"
+  },
+  "GeometryTutor/assets/audio/voice/q95-ex2.m4a": {
+    "mtime": 1789312995.1983366,
+    "seen": 1789314990.983658,
+    "ast_hash": "0a7d3df2615a75a65a763d70ffee9ec6",
+    "semantic_hash": "0a7d3df2615a75a65a763d70ffee9ec6"
+  },
+  "GeometryTutor/assets/audio/voice/q95-ex2.ogg": {
+    "mtime": 1789312995.1993363,
+    "seen": 1789314990.983658,
+    "ast_hash": "af09b04b5170a0703815427a1ed94512",
+    "semantic_hash": "af09b04b5170a0703815427a1ed94512"
+  },
+  "GeometryTutor/assets/audio/voice/q96-ex1.m4a": {
+    "mtime": 1789312995.2003367,
+    "seen": 1789314990.983658,
+    "ast_hash": "50e42677b72dd6cad88aa65eb7ac2568",
+    "semantic_hash": "50e42677b72dd6cad88aa65eb7ac2568"
+  },
+  "GeometryTutor/assets/audio/voice/q96-ex1.ogg": {
+    "mtime": 1789312995.2003367,
+    "seen": 1789314990.983658,
+    "ast_hash": "4e6b6d5343cde0467b145ffa925ca4b4",
+    "semantic_hash": "4e6b6d5343cde0467b145ffa925ca4b4"
+  },
+  "GeometryTutor/assets/audio/voice/q96-ex2.m4a": {
+    "mtime": 1789312995.2013366,
+    "seen": 1789314990.983658,
+    "ast_hash": "1b262980d09e32d73c81a3cdf53f26c3",
+    "semantic_hash": "1b262980d09e32d73c81a3cdf53f26c3"
+  },
+  "GeometryTutor/assets/audio/voice/q96-ex2.ogg": {
+    "mtime": 1789312995.2023365,
+    "seen": 1789314990.983658,
+    "ast_hash": "8ae5c52288a520a73d49a528523192a0",
+    "semantic_hash": "8ae5c52288a520a73d49a528523192a0"
+  },
+  "GeometryTutor/assets/audio/voice/q97-ex1.m4a": {
+    "mtime": 1789312995.2033405,
+    "seen": 1789314990.983658,
+    "ast_hash": "daaa317141cbe54a17d40a7e53b3620f",
+    "semantic_hash": "daaa317141cbe54a17d40a7e53b3620f"
+  },
+  "GeometryTutor/assets/audio/voice/q97-ex1.ogg": {
+    "mtime": 1789312995.204337,
+    "seen": 1789314990.983658,
+    "ast_hash": "cc14dfaf80e0084ddb785448da478ba7",
+    "semantic_hash": "cc14dfaf80e0084ddb785448da478ba7"
+  },
+  "GeometryTutor/assets/audio/voice/q97-ex2.m4a": {
+    "mtime": 1789312995.2048404,
+    "seen": 1789314990.983658,
+    "ast_hash": "5dece2dc63ed1151b5384fbf2e43c05e",
+    "semantic_hash": "5dece2dc63ed1151b5384fbf2e43c05e"
+  },
+  "GeometryTutor/assets/audio/voice/q97-ex2.ogg": {
+    "mtime": 1789312995.2053442,
+    "seen": 1789314990.983658,
+    "ast_hash": "eaab28384ca73e592a0d56cbc3cee4c6",
+    "semantic_hash": "eaab28384ca73e592a0d56cbc3cee4c6"
+  },
+  "GeometryTutor/assets/audio/voice/q98-ex1.m4a": {
+    "mtime": 1789312995.2063484,
+    "seen": 1789314990.983658,
+    "ast_hash": "f50551e10db2dfb9f08d3ff46cf9e356",
+    "semantic_hash": "f50551e10db2dfb9f08d3ff46cf9e356"
+  },
+  "GeometryTutor/assets/audio/voice/q98-ex1.ogg": {
+    "mtime": 1789312995.2063484,
+    "seen": 1789314990.983658,
+    "ast_hash": "d028b23ff1d84c5290a7db7014ec1b29",
+    "semantic_hash": "d028b23ff1d84c5290a7db7014ec1b29"
+  },
+  "GeometryTutor/assets/audio/voice/q98-ex2.m4a": {
+    "mtime": 1789312995.2073565,
+    "seen": 1789314990.983658,
+    "ast_hash": "a9e0e65bcb7a81e38a9602a4edc38149",
+    "semantic_hash": "a9e0e65bcb7a81e38a9602a4edc38149"
+  },
+  "GeometryTutor/assets/audio/voice/q98-ex2.ogg": {
+    "mtime": 1789312995.2073565,
+    "seen": 1789314990.983658,
+    "ast_hash": "b98f91a777016c9a6838c67b1edc7a6e",
+    "semantic_hash": "b98f91a777016c9a6838c67b1edc7a6e"
+  },
+  "GeometryTutor/assets/audio/voice/q99-ex1.m4a": {
+    "mtime": 1789312995.208362,
+    "seen": 1789314990.983658,
+    "ast_hash": "38f75772df92323c1144bbec7be035e7",
+    "semantic_hash": "38f75772df92323c1144bbec7be035e7"
+  },
+  "GeometryTutor/assets/audio/voice/q99-ex1.ogg": {
+    "mtime": 1789312995.208362,
+    "seen": 1789314990.983658,
+    "ast_hash": "bed4edce76269bd4f9b4725fdca39a22",
+    "semantic_hash": "bed4edce76269bd4f9b4725fdca39a22"
+  },
+  "GeometryTutor/assets/audio/voice/q99-ex2.m4a": {
+    "mtime": 1789312995.209764,
+    "seen": 1789314990.983658,
+    "ast_hash": "5f1afe3150b102e0a52d7a3aad30c424",
+    "semantic_hash": "5f1afe3150b102e0a52d7a3aad30c424"
+  },
+  "GeometryTutor/assets/audio/voice/q99-ex2.ogg": {
+    "mtime": 1789312995.2107685,
+    "seen": 1789314990.983658,
+    "ast_hash": "abcdf32afb1d34837505d34adc8910c4",
+    "semantic_hash": "abcdf32afb1d34837505d34adc8910c4"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s1.m4a": {
+    "mtime": 1789312995.2107685,
+    "seen": 1789314990.983658,
+    "ast_hash": "0ff8435639a6c25d5a049a043324e8fa",
+    "semantic_hash": "0ff8435639a6c25d5a049a043324e8fa"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s1.ogg": {
+    "mtime": 1789312995.2121372,
+    "seen": 1789314990.983658,
+    "ast_hash": "55745f60df37bd44942f62aa0ca5a132",
+    "semantic_hash": "55745f60df37bd44942f62aa0ca5a132"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s2.m4a": {
+    "mtime": 1789312995.2131422,
+    "seen": 1789314990.983658,
+    "ast_hash": "f9f9938194505f26fda9d3ae3d59afc1",
+    "semantic_hash": "f9f9938194505f26fda9d3ae3d59afc1"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s2.ogg": {
+    "mtime": 1789312995.2131422,
+    "seen": 1789314990.983658,
+    "ast_hash": "b0b60bf903120762ea3f872bdd8d2228",
+    "semantic_hash": "b0b60bf903120762ea3f872bdd8d2228"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s3.m4a": {
+    "mtime": 1789312995.2144353,
+    "seen": 1789314990.983658,
+    "ast_hash": "11aa9ed54e5298d67a7960bc1084968f",
+    "semantic_hash": "11aa9ed54e5298d67a7960bc1084968f"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s3.ogg": {
+    "mtime": 1789312995.2154422,
+    "seen": 1789314990.983658,
+    "ast_hash": "f2bde7efb8dcfa614c4315c716fd7fa8",
+    "semantic_hash": "f2bde7efb8dcfa614c4315c716fd7fa8"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s4.m4a": {
+    "mtime": 1789312995.2164423,
+    "seen": 1789314990.983658,
+    "ast_hash": "d7ee78ae828ac2e4ff0bb4a262214e11",
+    "semantic_hash": "d7ee78ae828ac2e4ff0bb4a262214e11"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s4.ogg": {
+    "mtime": 1789312995.217446,
+    "seen": 1789314990.983658,
+    "ast_hash": "b355001961a87cd4d3ffb0d053ddfd45",
+    "semantic_hash": "b355001961a87cd4d3ffb0d053ddfd45"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s5.m4a": {
+    "mtime": 1789312995.2184355,
+    "seen": 1789314990.983658,
+    "ast_hash": "e80c7a7a3d1cb52736938ce83f16b7c3",
+    "semantic_hash": "e80c7a7a3d1cb52736938ce83f16b7c3"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s5.ogg": {
+    "mtime": 1789312995.2184355,
+    "seen": 1789314990.983658,
+    "ast_hash": "0aaaf8b9cefd7cbc16af5e2434385e77",
+    "semantic_hash": "0aaaf8b9cefd7cbc16af5e2434385e77"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s6.m4a": {
+    "mtime": 1789312995.2194355,
+    "seen": 1789314990.983658,
+    "ast_hash": "994c0feb4dff61bb4b267f8876a12806",
+    "semantic_hash": "994c0feb4dff61bb4b267f8876a12806"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s6.ogg": {
+    "mtime": 1789312995.2204354,
+    "seen": 1789314990.983658,
+    "ast_hash": "bbeefcf823643b9669e6bac0fb9a88ea",
+    "semantic_hash": "bbeefcf823643b9669e6bac0fb9a88ea"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s7.m4a": {
+    "mtime": 1789312995.221435,
+    "seen": 1789314990.983658,
+    "ast_hash": "bec40e8950824507452a53fa1a116b43",
+    "semantic_hash": "bec40e8950824507452a53fa1a116b43"
+  },
+  "GeometryTutor/assets/audio/voice/section-skill-s7.ogg": {
+    "mtime": 1789312995.2224445,
+    "seen": 1789314990.983658,
+    "ast_hash": "38bf07cc1abeb9932582b5c5ee5a2829",
+    "semantic_hash": "38bf07cc1abeb9932582b5c5ee5a2829"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s1.m4a": {
+    "mtime": 1789312995.2234354,
+    "seen": 1789314990.983658,
+    "ast_hash": "8dc2697a0db0a79ab6cad1e9d248bf21",
+    "semantic_hash": "8dc2697a0db0a79ab6cad1e9d248bf21"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s1.ogg": {
+    "mtime": 1789312995.2244346,
+    "seen": 1789314990.983658,
+    "ast_hash": "df3770e2d6c93de05099bdf231239b09",
+    "semantic_hash": "df3770e2d6c93de05099bdf231239b09"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s2.m4a": {
+    "mtime": 1789312995.225435,
+    "seen": 1789314990.983658,
+    "ast_hash": "081d6051c304bb169b3fea88ff75a857",
+    "semantic_hash": "081d6051c304bb169b3fea88ff75a857"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s2.ogg": {
+    "mtime": 1789312995.2264357,
+    "seen": 1789314990.983658,
+    "ast_hash": "061b4bc32289d96e2ceaa00497463f1f",
+    "semantic_hash": "061b4bc32289d96e2ceaa00497463f1f"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s3.m4a": {
+    "mtime": 1789312995.227435,
+    "seen": 1789314990.983658,
+    "ast_hash": "8ba862d3de946269ecc804f90c8929b6",
+    "semantic_hash": "8ba862d3de946269ecc804f90c8929b6"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s3.ogg": {
+    "mtime": 1789312995.227435,
+    "seen": 1789314990.983658,
+    "ast_hash": "1a801232e98f387ca52d84be208f4117",
+    "semantic_hash": "1a801232e98f387ca52d84be208f4117"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s4.m4a": {
+    "mtime": 1789312995.2284355,
+    "seen": 1789314990.983658,
+    "ast_hash": "d9b8a3e9baabe5161c4c435a958af0a8",
+    "semantic_hash": "d9b8a3e9baabe5161c4c435a958af0a8"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s4.ogg": {
+    "mtime": 1789312995.2294352,
+    "seen": 1789314990.983658,
+    "ast_hash": "6b1c3214bc7c47f428c235e529911e91",
+    "semantic_hash": "6b1c3214bc7c47f428c235e529911e91"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s5.m4a": {
+    "mtime": 1789312995.2304354,
+    "seen": 1789314990.983658,
+    "ast_hash": "5f39250a85af69847535c179be7fce71",
+    "semantic_hash": "5f39250a85af69847535c179be7fce71"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s5.ogg": {
+    "mtime": 1789312995.231437,
+    "seen": 1789314990.983658,
+    "ast_hash": "c6ce587c1378e677a6779036e6c0c810",
+    "semantic_hash": "c6ce587c1378e677a6779036e6c0c810"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s6.m4a": {
+    "mtime": 1789312995.2324357,
+    "seen": 1789314990.983658,
+    "ast_hash": "1df1be45c40d4d6370436a7e471882c0",
+    "semantic_hash": "1df1be45c40d4d6370436a7e471882c0"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s6.ogg": {
+    "mtime": 1789312995.2324357,
+    "seen": 1789314990.983658,
+    "ast_hash": "95725a53739be5759e9b41b35f7e24f3",
+    "semantic_hash": "95725a53739be5759e9b41b35f7e24f3"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s7.m4a": {
+    "mtime": 1789312995.2334354,
+    "seen": 1789314990.983658,
+    "ast_hash": "995a7e85c2b318657077f5007b0514b1",
+    "semantic_hash": "995a7e85c2b318657077f5007b0514b1"
+  },
+  "GeometryTutor/assets/audio/voice/solid-basic-s7.ogg": {
+    "mtime": 1789312995.234435,
+    "seen": 1789314990.983658,
+    "ast_hash": "5f44df20417a9515e8dacfa49e74d48c",
+    "semantic_hash": "5f44df20417a9515e8dacfa49e74d48c"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s1.m4a": {
+    "mtime": 1789312995.2354352,
+    "seen": 1789314990.983658,
+    "ast_hash": "5279e97b892cc58b4b97966b86851544",
+    "semantic_hash": "5279e97b892cc58b4b97966b86851544"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s1.ogg": {
+    "mtime": 1789312995.2364368,
+    "seen": 1789314990.983658,
+    "ast_hash": "e749f8e90710e5533d2e61201ed8458f",
+    "semantic_hash": "e749f8e90710e5533d2e61201ed8458f"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s2.m4a": {
+    "mtime": 1789312995.2374363,
+    "seen": 1789314990.983658,
+    "ast_hash": "99f77359afb9f4f499eacb85e10657dd",
+    "semantic_hash": "99f77359afb9f4f499eacb85e10657dd"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s2.ogg": {
+    "mtime": 1789312995.2374363,
+    "seen": 1789314990.983658,
+    "ast_hash": "2a94e4a35c7b6f442719a83f77bf62c6",
+    "semantic_hash": "2a94e4a35c7b6f442719a83f77bf62c6"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s3.m4a": {
+    "mtime": 1789312995.2384362,
+    "seen": 1789314990.983658,
+    "ast_hash": "585e700da74083462ab537f96a725cb2",
+    "semantic_hash": "585e700da74083462ab537f96a725cb2"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s3.ogg": {
+    "mtime": 1789312995.2394352,
+    "seen": 1789314990.983658,
+    "ast_hash": "fdb7977292efac552e5f5b389c4c89d6",
+    "semantic_hash": "fdb7977292efac552e5f5b389c4c89d6"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s4.m4a": {
+    "mtime": 1789312995.2404351,
+    "seen": 1789314990.983658,
+    "ast_hash": "8903443e4e0f2b9cd1a97c868c94f10d",
+    "semantic_hash": "8903443e4e0f2b9cd1a97c868c94f10d"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s4.ogg": {
+    "mtime": 1789312995.2404351,
+    "seen": 1789314990.983658,
+    "ast_hash": "be5e724466d339aa6a6c0250dd510f2b",
+    "semantic_hash": "be5e724466d339aa6a6c0250dd510f2b"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s5.m4a": {
+    "mtime": 1789312995.2414358,
+    "seen": 1789314990.983658,
+    "ast_hash": "7180701974c531897a719f5e7abf61d7",
+    "semantic_hash": "7180701974c531897a719f5e7abf61d7"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s5.ogg": {
+    "mtime": 1789312995.2424352,
+    "seen": 1789314990.983658,
+    "ast_hash": "f1c31518d1fba62b3263573ae66a1b22",
+    "semantic_hash": "f1c31518d1fba62b3263573ae66a1b22"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s6.m4a": {
+    "mtime": 1789312995.243435,
+    "seen": 1789314990.983658,
+    "ast_hash": "67485afefb9ad6e031e8f013038ddf8b",
+    "semantic_hash": "67485afefb9ad6e031e8f013038ddf8b"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s6.ogg": {
+    "mtime": 1789312995.2444353,
+    "seen": 1789314990.983658,
+    "ast_hash": "b3b52cf77119cc04d47d69e106f29f6f",
+    "semantic_hash": "b3b52cf77119cc04d47d69e106f29f6f"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s7.m4a": {
+    "mtime": 1789312995.245435,
+    "seen": 1789314990.983658,
+    "ast_hash": "e7daec86ee9eb82677d1bf9db1f7c8b9",
+    "semantic_hash": "e7daec86ee9eb82677d1bf9db1f7c8b9"
+  },
+  "GeometryTutor/assets/audio/voice/three-views-s7.ogg": {
+    "mtime": 1789312995.2464352,
+    "seen": 1789314990.983658,
+    "ast_hash": "99e24cb3f5ed9763d792481fa142b237",
+    "semantic_hash": "99e24cb3f5ed9763d792481fa142b237"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s1.m4a": {
+    "mtime": 1789312995.247435,
+    "seen": 1789314990.983658,
+    "ast_hash": "cd6e07bb19feff7dd5728770e768dd34",
+    "semantic_hash": "cd6e07bb19feff7dd5728770e768dd34"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s1.ogg": {
+    "mtime": 1789312995.247435,
+    "seen": 1789314990.983658,
+    "ast_hash": "fee059e1a2de41beb469225446711a4e",
+    "semantic_hash": "fee059e1a2de41beb469225446711a4e"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s2.m4a": {
+    "mtime": 1789312995.2484353,
+    "seen": 1789314990.983658,
+    "ast_hash": "680b68454883e97d4347f69c32d76455",
+    "semantic_hash": "680b68454883e97d4347f69c32d76455"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s2.ogg": {
+    "mtime": 1789312995.2494352,
+    "seen": 1789314990.983658,
+    "ast_hash": "7a1f1c472182f7bfc3e88225cc110b17",
+    "semantic_hash": "7a1f1c472182f7bfc3e88225cc110b17"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s3.m4a": {
+    "mtime": 1789312995.250435,
+    "seen": 1789314990.983658,
+    "ast_hash": "d4a59cd70c89403872ef35ec03ab43d9",
+    "semantic_hash": "d4a59cd70c89403872ef35ec03ab43d9"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s3.ogg": {
+    "mtime": 1789312995.2514355,
+    "seen": 1789314990.983658,
+    "ast_hash": "c76ff2e93db5b2f04965d3d759eec21f",
+    "semantic_hash": "c76ff2e93db5b2f04965d3d759eec21f"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s4.m4a": {
+    "mtime": 1789312995.2514355,
+    "seen": 1789314990.983658,
+    "ast_hash": "fa07bb2320b7172abd82314c98131dd3",
+    "semantic_hash": "fa07bb2320b7172abd82314c98131dd3"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s4.ogg": {
+    "mtime": 1789312995.2524343,
+    "seen": 1789314990.983658,
+    "ast_hash": "0972d7c1e09ccabb785720bc1aeef956",
+    "semantic_hash": "0972d7c1e09ccabb785720bc1aeef956"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s5.m4a": {
+    "mtime": 1789312995.2534347,
+    "seen": 1789314990.983658,
+    "ast_hash": "62cf558b97361af39679a2e5eee4f1a0",
+    "semantic_hash": "62cf558b97361af39679a2e5eee4f1a0"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s5.ogg": {
+    "mtime": 1789312995.2544355,
+    "seen": 1789314990.983658,
+    "ast_hash": "018e5e3610ddfd12c04ab8d88977c3f3",
+    "semantic_hash": "018e5e3610ddfd12c04ab8d88977c3f3"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s6.m4a": {
+    "mtime": 1789312995.2551515,
+    "seen": 1789314990.983658,
+    "ast_hash": "6229141d56df9490a35cb16e4db59359",
+    "semantic_hash": "6229141d56df9490a35cb16e4db59359"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s6.ogg": {
+    "mtime": 1789312995.2556548,
+    "seen": 1789314990.983658,
+    "ast_hash": "9cb5852bdceb1a32656843db0daeb0c8",
+    "semantic_hash": "9cb5852bdceb1a32656843db0daeb0c8"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s7.m4a": {
+    "mtime": 1789312995.256734,
+    "seen": 1789314990.983658,
+    "ast_hash": "0ced8cd8907847711da77de446bf1ed7",
+    "semantic_hash": "0ced8cd8907847711da77de446bf1ed7"
+  },
+  "GeometryTutor/assets/audio/voice/vector-angle-s7.ogg": {
+    "mtime": 1789312995.257257,
+    "seen": 1789314990.983658,
+    "ast_hash": "7d68d274066132ca82418136b777f53e",
+    "semantic_hash": "7d68d274066132ca82418136b777f53e"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s1.m4a": {
+    "mtime": 1789312995.2583196,
+    "seen": 1789314990.983658,
+    "ast_hash": "688329af3c42a65c451ff308cf8d4385",
+    "semantic_hash": "688329af3c42a65c451ff308cf8d4385"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s1.ogg": {
+    "mtime": 1789312995.258834,
+    "seen": 1789314990.983658,
+    "ast_hash": "7901036536ceb9085bfb788d59ec21cf",
+    "semantic_hash": "7901036536ceb9085bfb788d59ec21cf"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s2.m4a": {
+    "mtime": 1789312995.2604208,
+    "seen": 1789314990.983658,
+    "ast_hash": "09fc874095356ffff6fd4c35168b8484",
+    "semantic_hash": "09fc874095356ffff6fd4c35168b8484"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s2.ogg": {
+    "mtime": 1789312995.2609386,
+    "seen": 1789314990.983658,
+    "ast_hash": "935b368aa951e6db94370603e4c176c8",
+    "semantic_hash": "935b368aa951e6db94370603e4c176c8"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s3.m4a": {
+    "mtime": 1789312995.2620294,
+    "seen": 1789314990.983658,
+    "ast_hash": "a7a1053133a8d96c808eedbcc8c9915d",
+    "semantic_hash": "a7a1053133a8d96c808eedbcc8c9915d"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s3.ogg": {
+    "mtime": 1789312995.263089,
+    "seen": 1789314990.983658,
+    "ast_hash": "8f50b75ac1f0b7f16bac057a05221ab3",
+    "semantic_hash": "8f50b75ac1f0b7f16bac057a05221ab3"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s4.m4a": {
+    "mtime": 1789312995.2641542,
+    "seen": 1789314990.983658,
+    "ast_hash": "4f42a04c3eac23bcaaac8a81b761ac3a",
+    "semantic_hash": "4f42a04c3eac23bcaaac8a81b761ac3a"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s4.ogg": {
+    "mtime": 1789312995.2646708,
+    "seen": 1789314990.983658,
+    "ast_hash": "95e4b951268cb74c3ebe58c88b789aa2",
+    "semantic_hash": "95e4b951268cb74c3ebe58c88b789aa2"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s5.m4a": {
+    "mtime": 1789312995.2657113,
+    "seen": 1789314990.983658,
+    "ast_hash": "66f375eb7d75d84b1e25327308d8a03c",
+    "semantic_hash": "66f375eb7d75d84b1e25327308d8a03c"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s5.ogg": {
+    "mtime": 1789312995.2662992,
+    "seen": 1789314990.983658,
+    "ast_hash": "1ea2ea1f7dfdb7afd054016f18fd4de7",
+    "semantic_hash": "1ea2ea1f7dfdb7afd054016f18fd4de7"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s6.m4a": {
+    "mtime": 1789312995.2673051,
+    "seen": 1789314990.983658,
+    "ast_hash": "62bb7b9924b9b91d212ec4c85eeefde3",
+    "semantic_hash": "62bb7b9924b9b91d212ec4c85eeefde3"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s6.ogg": {
+    "mtime": 1789312995.2673051,
+    "seen": 1789314990.983658,
+    "ast_hash": "1bb397b6f3194cd14939bb072222b2f4",
+    "semantic_hash": "1bb397b6f3194cd14939bb072222b2f4"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s7.m4a": {
+    "mtime": 1789312995.2683043,
+    "seen": 1789314990.983658,
+    "ast_hash": "a3e40c7b6432dd369d48d06e30ce4354",
+    "semantic_hash": "a3e40c7b6432dd369d48d06e30ce4354"
+  },
+  "GeometryTutor/assets/audio/voice/vector-basic-s7.ogg": {
+    "mtime": 1789312995.2693038,
+    "seen": 1789314990.983658,
+    "ast_hash": "22ee7534e280f151d2371b5e7046fa8b",
+    "semantic_hash": "22ee7534e280f151d2371b5e7046fa8b"
+  }
+}
