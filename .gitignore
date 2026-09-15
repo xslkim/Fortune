@@ -1,2 +1,9 @@
-# Graphify local cache (regenerable)
-graphify-out/cache/
+# Graphify local artifacts (regenerable)
+graphify-out/
+
+# npm workspaces
+node_modules/
+dist/
+
+# Python 字节码缓存
+__pycache__/

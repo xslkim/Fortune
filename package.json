@@ -1,0 +1,21 @@
+{
+  "name": "fortune-geometry",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check:audio": "npm run check:audio -w apps/web",
+    "serve": "npm run serve -w apps/web"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6"
+  }
+}

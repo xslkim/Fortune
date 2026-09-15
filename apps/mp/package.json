@@ -1,0 +1,30 @@
+{
+  "name": "geometry-tutor-mp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "立体几何课堂（微信+抖音小程序双端，uni-app Vue3 移植）",
+  "scripts": {
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "dev:mp-toutiao": "uni -p mp-toutiao",
+    "build:mp-weixin": "node tools/check-config.mjs && uni build -p mp-weixin",
+    "build:mp-toutiao": "node tools/check-config.mjs && uni build -p mp-toutiao",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@geo/core": "*",
+    "@dcloudio/uni-app": "3.0.0-alpha-5020520260829001",
+    "@dcloudio/uni-mp-toutiao": "3.0.0-alpha-5020520260829001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-5020520260829001",
+    "three": "0.133.0",
+    "three-platformize": "1.133.3",
+    "vue": "3.4.21"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "3.4.31",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-5020520260829001",
+    "@dcloudio/uni-stacktracey": "3.0.0-alpha-5020520260829001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-5020520260829001",
+    "vite": "5.2.8"
+  }
+}
