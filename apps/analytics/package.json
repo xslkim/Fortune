@@ -1,0 +1,11 @@
+{
+  "name": "geometry-analytics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "立体几何课堂访问统计服务与后台",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

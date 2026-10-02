@@ -9,6 +9,7 @@ import * as mastery from '../../engine/mastery.js';
 import * as streak from '../../engine/streak.js';
 import * as review from '../../engine/review.js';
 import * as store from '../../engine/store.js';
+import * as analytics from '../../engine/analytics.js';
 import { flame, bulb, medal, starFilled, book } from '../icons.js';
 import { state, viewer, panel, statsBar, setViewsVisible, applyScene, switchView } from '../app.js';
 import {
@@ -178,6 +179,11 @@ export function openQuiz(q, from = 'quizzes') {
   state.quizPicked = -1;
   state.explainStep = 0;
   clearAha();
+  try {
+    analytics.trackQuiz(q.id, { from });
+  } catch {
+    /* 埋点失败不影响产品 */
+  }
   viewer.setSolid(makeSolid(q.solid));
   viewer.setLabelsVisible(true);
   renderQuizQuestion();

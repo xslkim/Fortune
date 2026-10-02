@@ -7,3 +7,6 @@ dist/
 
 # Python 字节码缓存
 __pycache__/
+
+# 访问统计本地数据库
+apps/analytics/data/

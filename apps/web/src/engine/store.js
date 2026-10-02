@@ -16,6 +16,7 @@ export const STORAGE_KEYS = {
   mastery: 'gt_mastery', // engine/mastery：各分类掌握度
   streak: 'gt_streak', // engine/streak：连续学习/每日目标
   review: 'gt_review', // engine/review：+1/+3/+7 复习计划
+  visitor: 'gt_visitor_id', // analytics：匿名访客 ID
 };
 
 // localStorage 不可用时的进程内兜底

@@ -354,6 +354,10 @@
     <div id="stage"></div>
     <div id="panel"></div>
   </main>
+  <script>
+    // 访问统计服务地址；设为空字符串可关闭上报。详见 apps/analytics/README.md
+    window.__GEO_ANALYTICS_URL__ = window.__GEO_ANALYTICS_URL__ || 'http://localhost:8472';
+  </script>
   <script type="module" src="./src/ui/app.js"></script>
 </body>
 </html>

@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "check:audio": "npm run check:audio -w apps/web",
-    "serve": "npm run serve -w apps/web"
+    "serve": "npm run serve -w apps/web",
+    "analytics": "npm run start -w apps/analytics"
   },
   "devDependencies": {
     "eslint": "^9.39.5",

@@ -23,6 +23,7 @@ export default [
       'apps/web/serve.mjs',
       'apps/web/tools/*.mjs',
       'apps/mp/src/**/*.js',
+      'apps/analytics/src/**/*.js',
       '**/*.mjs',
     ],
     languageOptions: {

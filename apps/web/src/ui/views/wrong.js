@@ -7,6 +7,7 @@ import * as mastery from '../../engine/mastery.js';
 import * as streak from '../../engine/streak.js';
 import * as review from '../../engine/review.js';
 import * as report from '../../engine/report.js';
+import * as analytics from '../../engine/analytics.js';
 import { todayStr } from '../../engine/days.js';
 import { chart, clipboard, pin, flame } from '../icons.js';
 import { state, viewer, panel, setViewsVisible, switchView } from '../app.js';
@@ -194,6 +195,11 @@ async function copyText(text) {
 
 export function renderReport() {
   audio.stopAll();
+  try {
+    analytics.trackPage('report');
+  } catch {
+    /* 埋点失败不影响产品 */
+  }
   const r = buildWeeklyReport();
   const fmt = (d) => `${Number(d.slice(5, 7))}月${Number(d.slice(8, 10))}日`;
 

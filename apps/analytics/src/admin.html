@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>立体几何课堂 · 访问统计</title>
+  <style>
+    :root {
+      --brand: #1f3a5f;
+      --primary: #2f6fdd;
+      --text: #1f2d3d;
+      --muted: #5a6b80;
+      --bg: #eef2f7;
+      --card: #ffffff;
+      --border: #dde4ee;
+      --ok: #2d6a4f;
+      --err: #9c1c24;
+      --r: 10px;
+      --shadow: 0 1px 0 rgba(31,58,95,.04), 0 8px 24px rgba(31,58,95,.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #d7e4f7 0%, transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, #e8eef6 0%, transparent 50%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    header {
+      padding: 28px 24px 12px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header h1 {
+      font-family: "Source Serif 4", "Noto Serif SC", Georgia, serif;
+      font-weight: 600;
+      font-size: 1.75rem;
+      color: var(--brand);
+      letter-spacing: -0.02em;
+      margin: 0 0 6px;
+    }
+    header p { margin: 0; color: var(--muted); font-size: .95rem; }
+    main { max-width: 1100px; margin: 0 auto; padding: 12px 24px 48px; }
+    .gate, .panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .gate { max-width: 420px; margin: 48px auto; }
+    .gate label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 8px; }
+    .gate input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font: inherit;
+      margin-bottom: 12px;
+    }
+    button, .btn {
+      appearance: none;
+      border: 0;
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font: inherit;
+      cursor: pointer;
+    }
+    button:hover { filter: brightness(1.05); }
+    button.ghost {
+      background: transparent;
+      color: var(--brand);
+      border: 1px solid var(--border);
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .toolbar select, .toolbar input[type="date"] {
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font: inherit;
+      background: #fff;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 900px) {
+      .cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .card .label { color: var(--muted); font-size: .8rem; margin-bottom: 6px; }
+    .card .value {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--brand);
+      font-variant-numeric: tabular-nums;
+      line-height: 1.1;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .panel h2 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      color: var(--brand);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 6px;
+      border-bottom: 1px solid var(--border);
+      font-variant-numeric: tabular-nums;
+    }
+    th { color: var(--muted); font-weight: 500; font-size: .78rem; }
+    .muted { color: var(--muted); }
+    .err { color: var(--err); margin-top: 8px; font-size: .9rem; }
+    .ok { color: var(--ok); }
+    .mono { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: .82rem; }
+    #dash { display: none; }
+    #dash.on { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>立体几何课堂</h1>
+    <p>访问统计后台 · 访客数 / 页面 / 题目</p>
+  </header>
+
+  <main>
+    <section id="gate" class="gate">
+      <label for="token">管理 Token（ANALYTICS_TOKEN）</label>
+      <input id="token" type="password" autocomplete="current-password" placeholder="输入 Token" />
+      <button id="login" type="button">进入后台</button>
+      <p id="gateErr" class="err" hidden></p>
+      <p class="muted" style="margin-top:14px;font-size:.85rem">默认开发口令为 <code>dev-token-change-me</code>，上线请用环境变量改掉。</p>
+    </section>
+
+    <section id="dash">
+      <div class="toolbar">
+        <label class="muted">范围</label>
+        <select id="range">
+          <option value="1">今天</option>
+          <option value="7" selected>近 7 天</option>
+          <option value="30">近 30 天</option>
+          <option value="90">近 90 天</option>
+        </select>
+        <button id="refresh" type="button" class="ghost">刷新</button>
+        <button id="logout" type="button" class="ghost">退出</button>
+        <span id="status" class="muted"></span>
+      </div>
+
+      <div class="cards">
+        <div class="card"><div class="label">独立访客</div><div class="value" id="vVisitors">—</div></div>
+        <div class="card"><div class="label">今日访客</div><div class="value" id="vToday">—</div></div>
+        <div class="card"><div class="label">页面浏览</div><div class="value" id="vPages">—</div></div>
+        <div class="card"><div class="label">题目打开</div><div class="value" id="vQuizzes">—</div></div>
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <h2>页面访问排行</h2>
+          <table>
+            <thead><tr><th>页面</th><th>浏览</th><th>访客</th></tr></thead>
+            <tbody id="pageRows"><tr><td colspan="3" class="muted">加载中…</td></tr></tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h2>题目打开排行</h2>
+          <table>
+            <thead><tr><th>题目 ID</th><th>打开</th><th>访客</th></tr></thead>
+            <tbody id="quizRows"><tr><td colspan="3" class="muted">加载中…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>最近事件</h2>
+        <table>
+          <thead><tr><th>时间</th><th>类型</th><th>页面/题目</th><th>访客</th></tr></thead>
+          <tbody id="recentRows"><tr><td colspan="4" class="muted">加载中…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const PAGE_LABELS = {
+      lessons: '课程',
+      quizzes: '题库',
+      wrong: '错题本',
+      lab: '实验室',
+      netgame: '闯关',
+      explore: '探究',
+      beauty: '几何之美',
+      report: '家长周报',
+    };
+
+    const tokenKey = 'gt_admin_token';
+    const $ = (id) => document.getElementById(id);
+
+    function token() {
+      return sessionStorage.getItem(tokenKey) || '';
+    }
+
+    function setToken(v) {
+      if (v) sessionStorage.setItem(tokenKey, v);
+      else sessionStorage.removeItem(tokenKey);
+    }
+
+    function rangeMs() {
+      const days = Number($('range').value) || 7;
+      const to = Date.now();
+      const fromDate = new Date();
+      fromDate.setHours(0, 0, 0, 0);
+      if (days === 1) return { from: fromDate.getTime(), to };
+      fromDate.setDate(fromDate.getDate() - (days - 1));
+      return { from: fromDate.getTime(), to };
+    }
+
+    async function api(path) {
+      const { from, to } = rangeMs();
+      const url = `${path}${path.includes('?') ? '&' : '?'}from=${from}&to=${to}`;
+      const res = await fetch(url, {
+        headers: { Authorization: `Bearer ${token()}` },
+      });
+      if (res.status === 401) throw new Error('unauthorized');
+      if (!res.ok) throw new Error(`http_${res.status}`);
+      return res.json();
+    }
+
+    function showDash(on) {
+      $('gate').style.display = on ? 'none' : '';
+      $('dash').classList.toggle('on', on);
+    }
+
+    function fmtTime(ts) {
+      const d = new Date(ts);
+      return d.toLocaleString('zh-CN', { hour12: false });
+    }
+
+    function renderPages(pages) {
+      const body = $('pageRows');
+      if (!pages.length) {
+        body.innerHTML = '<tr><td colspan="3" class="muted">暂无数据</td></tr>';
+        return;
+      }
+      body.innerHTML = pages.map((p) =>
+        `<tr><td>${PAGE_LABELS[p.page] || p.page}</td><td>${p.views}</td><td>${p.visitors}</td></tr>`
+      ).join('');
+    }
+
+    function renderQuizzes(quizzes) {
+      const body = $('quizRows');
+      if (!quizzes.length) {
+        body.innerHTML = '<tr><td colspan="3" class="muted">暂无数据</td></tr>';
+        return;
+      }
+      body.innerHTML = quizzes.map((q) =>
+        `<tr><td class="mono">${q.quizId}</td><td>${q.views}</td><td>${q.visitors}</td></tr>`
+      ).join('');
+    }
+
+    function renderRecent(events) {
+      const body = $('recentRows');
+      if (!events.length) {
+        body.innerHTML = '<tr><td colspan="4" class="muted">暂无数据</td></tr>';
+        return;
+      }
+      body.innerHTML = events.map((e) => {
+        const target = e.type === 'quiz_view'
+          ? (e.quizId || '—')
+          : (PAGE_LABELS[e.page] || e.page || e.type);
+        return `<tr>
+          <td>${fmtTime(e.ts)}</td>
+          <td>${e.type}</td>
+          <td class="mono">${target}</td>
+          <td class="mono">${(e.visitorId || '').slice(0, 10)}…</td>
+        </tr>`;
+      }).join('');
+    }
+
+    async function load() {
+      $('status').textContent = '加载中…';
+      try {
+        const [overview, pages, quizzes, recent] = await Promise.all([
+          api('/api/v1/stats/overview'),
+          api('/api/v1/stats/pages'),
+          api('/api/v1/stats/quizzes?limit=40'),
+          api('/api/v1/stats/recent?limit=40'),
+        ]);
+        $('vVisitors').textContent = overview.visitors;
+        $('vToday').textContent = overview.todayVisitors;
+        $('vPages').textContent = overview.pageViews;
+        $('vQuizzes').textContent = overview.quizViews;
+        renderPages(pages.pages || []);
+        renderQuizzes(quizzes.quizzes || []);
+        renderRecent(recent.events || []);
+        $('status').textContent = `已更新 ${new Date().toLocaleTimeString('zh-CN', { hour12: false })}`;
+        showDash(true);
+      } catch (err) {
+        if (err.message === 'unauthorized') {
+          setToken('');
+          showDash(false);
+          $('gateErr').hidden = false;
+          $('gateErr').textContent = 'Token 无效，请重试。';
+          return;
+        }
+        $('status').textContent = '加载失败';
+        $('status').className = 'err';
+      }
+    }
+
+    $('login').addEventListener('click', async () => {
+      const v = $('token').value.trim();
+      if (!v) {
+        $('gateErr').hidden = false;
+        $('gateErr').textContent = '请输入 Token';
+        return;
+      }
+      setToken(v);
+      $('gateErr').hidden = true;
+      await load();
+    });
+    $('token').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') $('login').click();
+    });
+    $('refresh').addEventListener('click', load);
+    $('range').addEventListener('change', load);
+    $('logout').addEventListener('click', () => {
+      setToken('');
+      showDash(false);
+      $('token').value = '';
+    });
+
+    if (token()) {
+      $('token').value = token();
+      load();
+    }
+  </script>
+</body>
+</html>

@@ -35,6 +35,9 @@
 npm run serve     # 零依赖静态服务器，端口 8471，监听 0.0.0.0（服务仓库根）
 # 浏览器打开 http://localhost:8471/apps/web/（手机与电脑同一局域网也可访问）
 # 仓库根目录也可运行：npm run serve
+
+npm run analytics # 访问统计后台，端口 8472（Token 默认 dev-token-change-me）
+# http://localhost:8472/ 查看访客数 / 页面 / 题目排行
 ```
 
 ## 测试

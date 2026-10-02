@@ -8,6 +8,7 @@ import * as audio from '../engine/audio.js';
 import * as progress from '../engine/progress.js';
 import * as streak from '../engine/streak.js';
 import * as store from '../engine/store.js';
+import * as analytics from '../engine/analytics.js';
 import { renderThreeViews } from './threeview.js';
 import { initNetGame } from './netgame.js';
 import { initExplore } from './explore.js';
@@ -205,6 +206,11 @@ export function switchView(view) {
   for (const [k, b] of Object.entries(tabButtons)) {
     b.classList.toggle('active', k === view);
   }
+  try {
+    analytics.trackPage(view);
+  } catch {
+    /* 埋点失败不影响产品 */
+  }
   viewById(view).init();
 }
 
@@ -218,6 +224,12 @@ for (const v of VIEWS) {
 }
 
 store.migrate(); // 存储 schema 迁移钩子（见 engine/store.js）
+
+try {
+  analytics.trackSession();
+} catch {
+  /* 埋点失败不影响产品 */
+}
 
 switchView('lessons');
 
